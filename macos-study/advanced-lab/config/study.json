@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "name": "Учёба",
+  "timezone": "Europe/Minsk",
+  "work_ends": "15:00",
+  "session_minutes": 25,
+  "pause_minutes": 5,
+  "blocked_domains": [
+    "youtube.com", "youtu.be", "youtube-nocookie.com", "googlevideo.com",
+    "instagram.com", "cdninstagram.com", "tiktok.com", "tiktokcdn.com",
+    "facebook.com", "fb.watch", "x.com", "twitter.com", "t.co",
+    "reddit.com", "redd.it", "twitch.tv", "ttvnw.net",
+    "vk.com", "vkvideo.ru", "dzen.ru", "rutube.ru",
+    "web.telegram.org", "outlook.office.com", "outlook.office365.com",
+    "teams.microsoft.com"
+  ],
+  "protected_domains": ["gitlab.eskhata.com", "openai.com", "chatgpt.com"],
+  "blocked_app_bundle_ids": [
+    "ru.keepcoder.Telegram", "com.tdesktop.Telegram",
+    "com.microsoft.Outlook", "com.microsoft.teams2", "com.microsoft.teams",
+    "com.operasoftware.OperaGX", "com.ru.dolphin.anty", "org.mozilla.camoufox"
+  ],
+  "youtube_policy": "offline-selected-material-only",
+  "adult_content_policy": "unchanged",
+  "pixel": {
+    "automatic_sync": false,
+    "session_rule": "Same 25-minute session; phone out of reach; emergency calls available",
+    "soft_mode_only": "Digital Wellbeing Focus mode is optional friction, not an enforced lock"
+  }
+}

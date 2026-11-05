@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02",
+  "result": "PASS: synthetic user LaunchAgent installed, updated to distinct CDHash, restarted with byte-identical ledger and unspent budget, returned, stopped and uninstalled; ledger retained.",
+  "cleanup": "Own scoped job, process and socket absent after completion; matching start/end scope records observed.",
+  "synthetic_agent_1": {
+    "sha256": "8237f4734df4390f3705b43f3e466d9c7e775f395becf17d0113b20142274912",
+    "cdhash": "a7e590fd589db565b219e772c1741b95232bd848"
+  },
+  "synthetic_agent_2": {
+    "sha256": "e2ddef8277a73ab5c4e6b62984b0c585674da187e79575176f2c8a40b73c16ef",
+    "cdhash": "4412fff003b084e1ecff6cd1c73b56a70291bfe4"
+  },
+  "test_source_sha256": "097a56f98a834d86ecce31c90c5914981bdf333381107580989fa1664078aaec",
+  "limitations": "Standalone USER_GUARD_TEST build only; no production app registration, login/reboot, sleep, faulted update rollback, real profile or prior SMAppService diagnosis."
+}

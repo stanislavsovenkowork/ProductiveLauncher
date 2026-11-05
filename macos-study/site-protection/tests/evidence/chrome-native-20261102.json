@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-02",
+  "scope": "headless Chrome, isolated temporary profile, synthetic local HTTP pages and test agent; application-level simulated agent failure; no personal tabs or system network changes",
+  "result": "PASS: actual Chrome native host, open-tab injection, active, mouse blocking, allowed page, relief and return, expiry, agent failure/recovery, extension removal/reinstallation, exit and page context.",
+  "screenshot": "chrome-barrier-20261102.png",
+  "sha256": {
+    "synthetic_agent_binary": "b7a24502e890bb5802182b218b1a7701d1541b27c0f0ab45962217f7e9d0b7e1",
+    "qa_native_host_binary": "38568891a96f3422aed2d72d00f93484171d1eff13543a26ee5dff7bc2cfce0d",
+    "qa_client_binary": "ba825f8f47dd874fa97e6272694a37398d4f96385413783b1ad13f27d8b3235e",
+    "extension_manifest": "05b02d3e1061323917b2581a0035819524536e3afb57dcaf802c2386b1954f3f",
+    "extension_worker": "057d942fe0db986d005e238a1b3d8727c184ae583d9640eedb1dd262f7a27882",
+    "extension_content": "c893a6468565200e0c5fa60eec65f0b06c2e0f2af1d31dfef33ab65115fb2598",
+    "barrier_screenshot": "eba2707fa3aa479959b89410b957113e38a44cb78b490070e35933b2726ac7a2"
+  },
+  "limitations": "Synthetic agent; no installed user service, normal Chrome profile, private browsing, reboot/sleep, CSP coverage, or real-world retention verified."
+}

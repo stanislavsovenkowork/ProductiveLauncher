@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FocusDeck</string>
+    <string name="app_gate_description">Ограничивает выбранные приложения во время сессии: видит только активный пакет, не читает содержимое экрана. Телефон, настройки и восстановление остаются доступными.</string>
+</resources>

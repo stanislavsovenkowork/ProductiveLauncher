@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "aliasesByBase": {
+    "youtube.com": ["www.youtube.com", "m.youtube.com", "music.youtube.com"],
+    "instagram.com": ["www.instagram.com"],
+    "facebook.com": ["www.facebook.com"],
+    "reddit.com": ["www.reddit.com", "old.reddit.com"],
+    "twitch.tv": ["www.twitch.tv"]
+  },
+  "reviewedAt": "2026-10-28",
+  "sources": [
+    "https://www.youtube.com/",
+    "https://support.google.com/youtube/answer/6098135",
+    "https://support.google.com/youtube/answer/7548835",
+    "https://www.instagram.com/",
+    "https://www.facebook.com/",
+    "https://www.reddit.com/",
+    "https://old.reddit.com/",
+    "https://www.twitch.tv/"
+  ],
+  "coverage": "explicit frontend names only; no wildcard, dynamic CDN, alternate profile, DoH or proxy guarantee"
+}

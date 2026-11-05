@@ -1,0 +1,32 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+# Run build-app.sh first. This only packages a fixture UI; never installs helpers.
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/RootSocket.swift Sources/PrivilegedAppGuard.swift Sources/RootFixtureApp.swift -framework SwiftUI -framework AppKit -o build/FocusDeckRootFixture
+bundle=build/FocusDeckRootFixture.app
+resources="$bundle/Contents/Resources"
+root_resources="$resources/RootGuard"
+mkdir -p "$bundle/Contents/MacOS" "$root_resources/build" "$root_resources/Packaging" "$root_resources/config"
+cp build/FocusDeckRootFixture "$bundle/Contents/MacOS/FocusDeckRootFixture"
+cp build/GuardFixture "$resources/GuardFixture"
+cp build/FocusDeckRootGuard build/FocusDeckGuardAdmin "$root_resources/build/"
+cp Packaging/dev.stanislav.focusdeck.guard.plist "$root_resources/Packaging/"
+cp install-root-guard.sh "$root_resources/"
+printf '%s\n' '{"blocked_app_bundle_ids":["dev.stanislav.focusdeck.guard-fixture"],"blocked_domains":["focusdeck-fixture.test"],"protected_domains":["gitlab.eskhata.com","openai.com","chatgpt.com"]}' > "$root_resources/config/study.json"
+cat > "$bundle/Contents/Info.plist" <<'PLIST'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>dev.stanislav.focusdeck.root-fixture</string>
+<key>CFBundleExecutable</key><string>FocusDeckRootFixture</string>
+<key>CFBundleName</key><string>FocusDeck Root Fixture</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleVersion</key><string>1</string>
+<key>CFBundleShortVersionString</key><string>0.1</string>
+<key>LSMinimumSystemVersion</key><string>15.0</string>
+</dict></plist>
+PLIST
+plutil -lint "$bundle/Contents/Info.plist"
+codesign --force --sign - --options runtime "$bundle"
+codesign --verify --deep --strict "$bundle"
+echo 'Fixture GUI packaged; only owned dev.stanislav.focusdeck.guard-fixture target, domains OFF. No root action executed.'

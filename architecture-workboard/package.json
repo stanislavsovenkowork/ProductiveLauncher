@@ -1,0 +1,26 @@
+{
+  "name": "atlas-workboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4319 --strictPort",
+    "build": "vite build",
+    "start": "node scripts/start.mjs",
+    "test": "node --test tests/graph.test.mjs tests/architecture.test.mjs tests/zones.test.mjs tests/pipelines.test.mjs tests/sequence-colors.test.mjs",
+    "test:integration": "node --test tests/integration.test.mjs"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.10.0",
+    "elkjs": "^0.11.0",
+    "monaco-editor": "^0.56.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.0"
+  },
+  "overrides": {
+    "dompurify": "^3.4.15"
+  }
+}

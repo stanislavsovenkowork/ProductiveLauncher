@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+# This script only assembles an unsigned .app under build/. No signing/install/activation.
+[ "$#" = 1 ] || { echo 'Usage: package-unsigned.sh TEAM_ID' >&2; exit 2; }
+team_id=$1
+case "$team_id" in *[!A-Z0-9]*|'') echo 'Team ID must contain only uppercase letters and digits' >&2; exit 2;; esac
+[ "${#team_id}" = 10 ] || { echo 'Expected 10-character Apple Team ID' >&2; exit 2; }
+./build.sh
+bundle=build/FocusDeckStudy.app
+extension="$bundle/Contents/Library/SystemExtensions/dev.stanislav.focusdeck.study.filter.systemextension"
+mkdir -p "$bundle/Contents/MacOS" "$extension/Contents/MacOS"
+cp build/StudyHost "$bundle/Contents/MacOS/StudyHost"
+cp build/StudyFilter "$extension/Contents/MacOS/StudyFilter"
+cp Packaging/Host-Info.plist "$bundle/Contents/Info.plist"
+sed "s/TEAM_ID/$team_id/g" Packaging/Filter-Info.plist > "$extension/Contents/Info.plist"
+plutil -lint "$bundle/Contents/Info.plist" "$extension/Contents/Info.plist" Packaging/Host.entitlements Packaging/Filter.entitlements
+printf '%s\n' 'Unsigned review bundle assembled. No signing, installation or activation performed.'

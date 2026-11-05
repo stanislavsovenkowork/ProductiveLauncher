@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "scope": "Isolated test-only manifest and synthetic agent/socket/ledger, local loopback page; no personal Chrome profile, registration, tabs or system network changes.",
+  "result": "PASS: signed synthetic agent with single QA localhost domain and zero app targets; synthetic native host pin checked; original manifest privately backed up; OFF refused while synthetic window open; explicit synthetic exit followed by OFF restored byte-identical manifest; agent and loopback server stopped.",
+  "cleanup": "Own process/socket absent; own scope start/end confirmed.",
+  "sha256": {
+    "prepare": "0418b40cdaf0c0be9d9b2cec53a162d7c653eebb3a836d8a737f752fb086e375",
+    "supervisor": "18d6700acb1ee532db9222dcf7993d46455a12af91d98716cc38381ad44a621e",
+    "synthetic_agent": "6f000edd8d039f4729ef3fb4af291c83dea37f03b2c251b6fabbc7b97760b7d2",
+    "synthetic_host": "ffaf8e706fbdbbed9c423ad9e29e2584f27137ebbba12428f80b552e1d462543",
+    "client": "a038f33bd4cff29a41cf6c1d5e31670be511e0f334fe06ef281e5ca4fb1c00b4",
+    "wrapper": "2d8333ced8199d342033eb0c903ea92fbae396a6c130c67827a2a8255b5ed55f",
+    "original_test_manifest": "5031f221c9cf2819062c7b1bdc9250e815d65ce136cb46e830133c52803c2e75",
+    "restored_test_manifest": "5031f221c9cf2819062c7b1bdc9250e815d65ce136cb46e830133c52803c2e75"
+  },
+  "limitations": "Isolated manifest only; main Chrome interaction, unexpected supervisor death and subsequent manual recovery are not demonstrated."
+}

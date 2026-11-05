@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-02",
+  "scope": "Scoped, unique synthetic user LaunchAgent, socket and ledger; no production service, personal ledger, UI or network changes.",
+  "result": "PASS: actual absent job classified absent; simulated launchctl error 113 with permission denied yields launchctl_unknown for status/install and creates no job or socket; full install, active-update denial, chrome-host conflict, update, schedule/ledger preservation, failed-start rollback and uninstall passed.",
+  "cleanup": "Own synthetic service, process and socket absent; scope ended.",
+  "sha256": {
+    "manager_source": "8f2db1f8cf955298b383aab20bd24e8424252057efac0718c62d7d1b7114d5bb",
+    "test_scenario": "5a7fdc3587c751fc35d45cca19db967cb69272ecba1cd29e283c942f09cb39bc",
+    "manager_binary": "685fdcb6ff11cd9adb0d349d8d55f751887460f7b64f88d293ad664148683a4a",
+    "agent1": "c20bc2e5bb6f90cf6ae73706362647e2fcc5c75fcb57bc4e47174eca4c6e1b73",
+    "agent2": "6cbd363913d31e3f69ca8c9e5d33ee5a3930cc4b4ce16717c59fb8d4636e55b7",
+    "fake_launchctl": "ba5113f31733f8d278253d44706c5f3157cec7f57328cd05951b7413b7494e82"
+  },
+  "limitations": "Absent-service classifier based on observed macOS launchctl response; other OS/localization variants fail closed. Production UI, forced kill, stale socket and reboot remain unverified."
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-03",
+  "scope": "Model and local signed synthetic IPC peers only; no privileged service, personal data, network changes or production ledger.",
+  "result": "PASS: no relief, rest remains restricted, fixed 3600s exit across serialized reload and wall-clock changes, earlier natural expiry, identity and immutable record validation, unknown-clock nonterminal fail-safe and terminal admin recovery model; bounded newline IPC with same-socket UID/CDHash, wrong UID/hash and timeout.",
+  "sha256": {
+    "model": "601876b81e8931b975f4f5bbddb2920341f0db8bebcdc652260fa1a32deff529",
+    "client": "eba05ac6f59918e41b37f447342a19b3e38153bc1a22b740765212b7785ff6ee",
+    "presentation": "87fdfd3ebccdef12901cd44ac77b731084aa22de2d837bb845bbee1ac4044b02",
+    "model_tests": "0c6a2572088e583cb2839ba4e4014977d8f0c3abe87017b3083745891e004a48",
+    "ipc_tests": "79cc3ba90c7df8496d410c62852fbb7067fc3cb11137f4a36c2113364c6590d7",
+    "fake_server": "ffab72097c72edd8f2f51b01b4cf0c0bad2a05bde96496b579801827c1dff43d",
+    "test_runner": "6952bc6afd11e56554991967ce09b61669fe8b59b84c6221dee2d821cfaedece"
+  },
+  "limitations": "No real root daemon, live app termination, website/network restriction, sleep, reboot, service restart, real admin recovery or production integration tested. Fake requirement validator is synthetic; real root must validate signature requirements. A single early fake IPC attempt failed due an overlong temporary socket path and was corrected."
+}

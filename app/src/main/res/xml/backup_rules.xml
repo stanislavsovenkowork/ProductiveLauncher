@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- A task/session proof and an alarm receipt are valid only on this device. -->
+    <exclude domain="sharedpref" path="ritual-lock-ownership.xml" />
+    <exclude domain="sharedpref" path="guard-wake-receipts.xml" />
+        <exclude domain="sharedpref" path="harness-uploader.xml" />
+        <exclude domain="sharedpref" path="protection-window.xml" />
+        <exclude domain="file" path="harness/" />
+</full-backup-content>

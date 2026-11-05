@@ -1,0 +1,16 @@
+# Root-authoritative recurrence: integration blocker
+
+Status: OFF. This is a migration plan, not an installed service or proof of enforcement.
+
+The existing candidate trust (`root-config.json` and `ready.json`) approves exactly one `approvedWindow`. `CandidateDiskState.matches` binds its ID, local date and deadlines to that window. Both the production daemon and the independent online/offline recovery require that binding. Merely replacing the current window on a later date would invalidate these checks; keeping a second recurring ledger would create competing state and could reissue a daily budget. The existing `RecurringLedgerCandidate` is an isolated prototype and must not be wired in as a second ledger.
+
+A safe integration requires a single coordinated migration:
+
+1. A new, explicitly approved trust format carries the immutable schedule revision, Minsk weekdays and local start/end, selected signing requirements, budget, grant and exit delay. `ready.json` binds the exact new trust digest. Existing one-window installs must never be silently migrated.
+2. A new version of the existing authoritative ledger stores that digest, immutable schedule revision, latest issued local date, complete current or terminal window, remaining budget, and a clock/boot anchor together in one atomically committed record. The installer creates and fsyncs the complete initial record before its ready marker. Daemon holds its exclusive lock; missing, partial or mismatched files mean unknown/refuse, never a new budget.
+3. With a reliable same-boot clock, the daemon may issue at most one deterministic instance for an approved local date and persist/fsync it before answering status or enforcing. Within that date, restart, retry, lost replies, early exit and configuration reload recover the same record. A different date may receive a new budget only after the previous window is terminal; an edit must not replace an active window.
+4. On boot change or contradictory wall/uptime observations, report clock unknown and do not create a new instance. Do not claim enforcement continues; keep the independent administrator recovery available, which writes a terminal tombstone into the same ledger. A clock-revalidation or explicit administrative re-enrolment flow is separately required; neither can silently reset today's budget. Root administrator bypass remains possible.
+5. Update daemon validation, authenticated status/adoption, UI display, installer, online and offline recovery together for the new schema. Do not publish UI-local policies or return a granted relief before the authoritative write is durable. Failed fsync, interrupted rename or ambiguous ACK means unknown until recovery from the committed state.
+6. Test in private temporary directories with fake clock and authority: first day, same-day restart and duplicate, lost ACK, consumed budget, exit tombstone, new day, changed schedule during active window, corruption/missing ledger, reboot, forward/backward clock jumps, unavailable backend and independent recovery. Then separately test the real helper and lifecycle; fake tests cannot establish root persistence or launchd behavior.
+
+No production recurrence, network modifications, root installation or personal-app enforcement was performed as part of this note.

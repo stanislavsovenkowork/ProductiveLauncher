@@ -1,0 +1,19 @@
+{
+  "baseWorkSeconds" : 1500,
+  "expiryFromStartSeconds" : 1800,
+  "maxProtectionSeconds" : 1800,
+  "observedWorkSeconds" : 1500,
+  "pauseSeconds" : 300,
+  "remainingWorkSeconds" : 0,
+  "restrictedAt" : {
+    "599" : true,
+    "600" : false,
+    "899" : false,
+    "900" : true,
+    "1500" : true,
+    "1799" : true,
+    "1800" : false
+  },
+  "schemaVersion" : 1,
+  "secondPauseAccepted" : false
+}

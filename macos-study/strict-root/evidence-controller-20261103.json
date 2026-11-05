@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-03",
+  "scope": "Strict model, local synthetic IPC peers and UI-facing controller; no production state, personal targets or network changes.",
+  "result": "PASS run.sh: strict model, bounded peer-authenticated IPC, controller fresh discovery and immutable-plan verification including mismatch replies.",
+  "files_sha256": {
+    "macos-study/Sources/StrictRootWindow.swift": "601876b81e8931b975f4f5bbddb2920341f0db8bebcdc652260fa1a32deff529",
+    "macos-study/Sources/StrictRootIPC.swift": "15f165f13edc7e0bbfa5c770ff7b92c29cc87864e29e280c9dc3662d0db38826",
+    "macos-study/Sources/StrictRootPresentation.swift": "87fdfd3ebccdef12901cd44ac77b731084aa22de2d837bb845bbee1ac4044b02",
+    "macos-study/Sources/StrictRootController.swift": "99e549c8e1dc2af1ee475421999a581c8a3113f5b49ab6a0b48084bd66b1b846",
+    "macos-study/strict-root/tests/StrictRootQAClient.swift": "c07164e357648411961674500c8b25573068a2b0a1eaa92610e70b1168f300d2",
+    "macos-study/strict-root/tests/StrictRootControllerTests.swift": "dec5c587fe800c9a51db58b242043d4dcc9d9d584d35e1d19d028ff5e7651faa",
+    "macos-study/strict-root/tests/run.sh": "f00d516e6743d417e4029ae43c52d8ab5459c5253e1ade3dc321ab4f0a0eb13b",
+    "macos-study/strict-root/tests/build-qa-client.sh": "ea5ffcfa4d5e2f3af6352ca74e2d10a6f53686d173cb22a4a841fdb40e37a5bd"
+  },
+  "qa_client": {
+    "sha256": "08ffa65b82d0466b1c21a62bb272db85fb42b63a9fd2143a7edb0d57c99c4fc1",
+    "cdhash": "fbdacfd7884548ebce34cfd7eb5eb48f9c7c3671"
+  },
+  "limitations": "Real root daemon, app enforcement, sleep/reboot, actual administrator recovery and production UI integration not established by these tests. Fixture binding awaits isolated live proof."
+}

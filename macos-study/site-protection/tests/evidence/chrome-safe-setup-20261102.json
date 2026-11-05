@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-02",
+  "scope": "Scoped isolated headless Chrome profiles and synthetic local pages and agent. No personal tabs, profiles, system network changes or audio-output changes.",
+  "unit_result": "PASS: install defaults off without tab query/injection; enable queries only selected domain patterns; disable unregisters scripts; exact and subdomain boundaries and protected exclusions.",
+  "chrome_result": "PASS: both legacy exact and new subdomain policies; disabled setup with no registered content scripts, diagnostics for host+agent and host-only unknown, explicit enable/disable, selected already-open tab injection, relief/return/exit, fail-open, local media and allowed pages.",
+  "cleanup": "Test Chrome and synthetic agent stopped; own scope closed; no personal Chrome registration.",
+  "screenshot": "chrome-safe-setup-20261102.png",
+  "sha256": {
+    "native_host": "b7c1a53641db46639d5ec038b6b40107793f43f286e5adc9ae9f68fbd1239c2f",
+    "native_host_source": "f6dc716522314b52c7c97be23abdaed4a2dce5873d3e1a35c69ec50f134a8eae",
+    "agent": "06d4f952e592d1934bd576ff3540722d6bf5b58bb82c97eec9364d844542f85c",
+    "client": "46adb1853f917dc58b8437e7fa43682a61526869e1154ce9ae6e5fde87efbc34",
+    "manifest": "3cbf939da67b67455f8b988c226840cbd96a387f094b03f5619ceb775c1a8452",
+    "worker": "9e0a67916abbc72fb31ce9ea0a214f5ba2172659a1e3dacddb70de863525fa8a",
+    "domain_policy": "9373ed7d9ff4dbd7b97073c539bd6b16d653add0fa72fbc3b3f06205be8220fe",
+    "content": "49aadf96d268c17c3e339685ded5167bc19b8af8836ff3c1443820ac5ee538f5",
+    "popup": "11819b3c157c20aeeb9577995c75ffdf3e9088b32cb47f3c99675416b6d0dc91",
+    "popup_js": "9b17ddc8c8bd17ca75f592827ff0eb6f56593fbe11e0af0421ed4b7a55b33dc2",
+    "diagnostics": "e7da06c2d3a12f869c74501ae9dd80923876aa7e3c7a476824604ba37ed49a4b",
+    "diagnostics_js": "52ce60474706434356ebf1c45807e738890ec5c5c672a39f0c4f2f6c61298293",
+    "setup_test": "08f914f9b116fce91548f52775c55d99ab1a34e840251d7c3d9a0b41ea9218f5",
+    "scenario": "d870e281689676d5a43bd989b72c8ab8cc8fc0fdc873b6f05f7125dc3b35ddb6",
+    "run": "a34706c38939fc0a7a611c2e68875ae0e301e6231fc470c212a8a5059b5a20cc",
+    "window_policy": "72c6eac99c390c525f485da41bd24ef9854d378ab418dae2048f2cbfd8b36b99",
+    "screenshot": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58"
+  },
+  "limitations": "Tested only in isolated headless profile and synthetic policy. No real installation, personal tabs, real protected infrastructure or physical audio tested. Chrome registration may lag policy change; other media and browser profiles remain uncovered."
+}

@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:focusdeck:event:1",
+  "title": "FocusDeck event v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "eventId",
+    "sessionId",
+    "occurredAt",
+    "source",
+    "category",
+    "type",
+    "evidence",
+    "metrics"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "eventId": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "sessionId": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid"
+    },
+    "occurredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "enum": [
+        "mac",
+        "android",
+        "movebreak"
+      ]
+    },
+    "category": {
+      "enum": [
+        "work",
+        "study",
+        null
+      ]
+    },
+    "type": {
+      "enum": [
+        "started",
+        "paused",
+        "resumed",
+        "completed",
+        "stopped",
+        "missed",
+        "disabled",
+        "uninstalled",
+        "heartbeat",
+        "health",
+        "maintenance"
+      ]
+    },
+    "evidence": {
+      "enum": [
+        "timer",
+        "activity",
+        "self_report",
+        "verified",
+        "unknown"
+      ]
+    },
+    "startedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "endedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "focusSeconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "distractionSeconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maintenanceSeconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "outcome": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "taskRef": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deviceId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coverage": {
+      "enum": [
+        "complete",
+        "partial",
+        "missing",
+        null
+      ]
+    }
+  },
+  "additionalProperties": true
+}

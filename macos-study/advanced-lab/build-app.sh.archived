@@ -1,0 +1,38 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+./build.sh
+bundle=build/FocusDeck.app
+mkdir -p "$bundle/Contents/MacOS" "$bundle/Contents/Resources"
+cp build/FocusDeck "$bundle/Contents/MacOS/FocusDeck"
+cp build/BrowserWorker "$bundle/Contents/Resources/BrowserWorker"
+root_resources="$bundle/Contents/Resources/RootGuard"
+mkdir -p "$root_resources/build" "$root_resources/Packaging" "$root_resources/config"
+cp build/FocusDeckRootGuard build/FocusDeckGuardAdmin "$root_resources/build/"
+cp Packaging/dev.stanislav.focusdeck.guard.plist "$root_resources/Packaging/"
+python3 generate-root-policy.py config/study.json config/hosts-aliases.json "$root_resources/config/study.json"
+cp install-root-guard.sh "$root_resources/"
+cp ../shared/session-policy-v1.json "$bundle/Contents/Resources/session-policy-v1.json"
+cp config/study.json "$bundle/Contents/Resources/study.json"
+cat > "$bundle/Contents/Info.plist" <<'PLIST'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleIdentifier</key><string>dev.stanislav.focusdeck.mac</string>
+<key>CFBundleExecutable</key><string>FocusDeck</string>
+<key>CFBundleName</key><string>FocusDeck</string>
+<key>CFBundleDisplayName</key><string>FocusDeck</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleShortVersionString</key><string>0.2</string>
+<key>CFBundleVersion</key><string>2</string>
+<key>LSMinimumSystemVersion</key><string>15.0</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSAppleEventsUsageDescription</key><string>По вашему выбору FocusDeck проверяет адреса вкладок и заменяет отвлекающие страницы пустыми. Адреса не сохраняются и не отправляются.</string>
+</dict></plist>
+PLIST
+plutil -lint "$bundle/Contents/Info.plist"
+# Ad-hoc signature supports local UI. It grants NO NetworkExtension entitlements.
+codesign --force --sign - --options runtime --entitlements Packaging/UI.entitlements "$bundle/Contents/Resources/BrowserWorker"
+codesign --force --sign - --options runtime --entitlements Packaging/UI.entitlements "$bundle"
+codesign --verify --deep --strict "$bundle"
+printf '%s\n' 'Local UI build: macos-study/build/FocusDeck.app (ad-hoc signed, no system restrictions).'

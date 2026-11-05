@@ -1,0 +1,9 @@
+{
+  "id": "focusdeck-panel",
+  "name": "FocusDeck",
+  "version": "0.3.2",
+  "minAppVersion": "1.5.0",
+  "description": "Сегодня, план, цели и дневник — те же разделы, что в лаунчере FocusDeck, поверх тех же заметок.",
+  "author": "Personal workspace",
+  "isDesktopOnly": false
+}

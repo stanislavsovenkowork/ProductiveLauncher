@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "scope": "Scoped isolated headless Chrome, two synthetic policies and local pages; no personal profile, tabs or system network changes.",
+  "unit_result": "PASS: fresh disable guard for active/relief/rest/exit-pending; exit/expiry; pending versus bounded failure; offline recovery with second fresh status; recovered active state refuses.",
+  "chrome_result": "PASS: legacy exact and subdomain modes with real synthetic agent and popup; active/rest/relief/exit-pending refuse disabling; agent loss, delayed explicit recovery and disable after exit; selected tab and fail-open behaviour retained.",
+  "pin": "Native host agent pin matches synthetic signed agent CDHash 16e1b2bde0c8e641aaa9581f545dfe04c6f2cf35.",
+  "cleanup": "Synthetic processes and scopes closed; personal Chrome registration untouched.",
+  "sha256": {
+    "agent": "06d4f952e592d1934bd576ff3540722d6bf5b58bb82c97eec9364d844542f85c",
+    "host": "276ac888f292e8e28ce902089669bd0f2694cb57ec4dd4d7b25aa6f17fa09b07",
+    "client": "44a01fc803ffc2992d6306f0982059417a98960824c02cade0629c4aab878159",
+    "host_source": "a46df395b43b3e599b8f4699e0b0833718e9c45a001547277092f49aa640f2a5",
+    "worker": "a7c3c8457b03e59882b9de299101593f03c94bdc10bae4a175f9ff686f584724",
+    "popup": "119c306451930c50f30b83e27ea7c174633dd2dcc0ff456709ad8be05fdd2d8d",
+    "popup_html": "7600ae2c07378b23f065c42873a4806b9d449e28025dfcb6fa75aa3b3b2ed349",
+    "manifest": "3cbf939da67b67455f8b988c226840cbd96a387f094b03f5619ceb775c1a8452",
+    "domain_policy": "9373ed7d9ff4dbd7b97073c539bd6b16d653add0fa72fbc3b3f06205be8220fe",
+    "content": "49aadf96d268c17c3e339685ded5167bc19b8af8836ff3c1443820ac5ee538f5",
+    "guard_unit": "607cece4ff62e5213c5fe3bf13fa0c48538c5b57ccdd31243fcd104bc979e351",
+    "scenario": "a0e2780a2e8d0803fed8b957f7291b5e699ebb8e6e5d9366676bece93d4948b1",
+    "entry": "39a53191b82502ca07504291c3c3b3c4ea20f7da977ca6a7e12c6dda458f8088",
+    "screenshot": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58"
+  },
+  "limitations": "Expiry and pending timeout checked by fake; Chrome tests exit and actual agent loss. Browser extension can still be disabled through chrome://extensions; production install and personal profile not tested."
+}

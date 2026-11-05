@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-03",
+  "scope": "Scoped synthetic manager jobs, own temporary ledgers and sockets; no production service, user data, UI, network or phone changes.",
+  "latest_result": "PASS: cold install; uninstall then new manager process and install preserving terminal ledger and future schedule; active, relief, rest, exit-pending, clockUnknown and boot mismatch refuse before launch; inactive imminent, inactive already-started and corrupt ledger refuse before launch; foreign plist, occupied socket, loaded synthetic SM job and mismatched host pin rejected; existing update/rollback passed.",
+  "latest_omission": "Current local time was before 15:00, so the full-lifecycle test explicitly skipped recurring-schedule near-boundary and already-started cases. Its generic PASS line includes those words despite the preceding omission message; they were not exercised in the final retest.",
+  "prior_result": "Earlier 2026-11-02 scoped run on the previous manager revision exercised recurring-schedule near-boundary and already-started cases, as well as the remaining pre-start cases; the later revision adds only rechecks of SM job/socket immediately before bootstrap and of SM job after peer status.",
+  "prior_manager_source_sha256": "2bfee3204f02a4f0cbb62606d5f3393a59eae0b5da93232ec7f9b262b9b9c46a",
+  "cleanup": "Own synthetic manager jobs, processes and sockets absent; three latest scope start/end pairs observed.",
+  "production_state": "Existing v5 reports ready/connected; its agent ledger and events files are absent. v5 and production data were not modified.",
+  "limitations": "Final revision not exercised against a simulated SM race between checks or after bootstrap, nor recurring near-boundary/started branches in the final retest. notFound does not prove absence of a dormant registered SM service. Unexpected termination/reboot and true atomicity across competing processes remain unverified.",
+  "sha256": {
+    "manager_source": "235df370c4e80226c393091d9ab33b6f8daf0fa42c5a635916dff6c615a9fd85",
+    "schedule_helper": "ec75ede0916d3bab54dc4890106d73c1a96f5f964a3657d9fb86f990182c4325",
+    "build_script": "0e7a8c60701e5c47af8dcbff05055efc5ce342987e0190e2343063abebf39452",
+    "lifecycle_test": "69648780cda2b7675e8eb028abddc2aefcec43a911aefff82cabf820843b7a36",
+    "conflicts_test": "d4431e6d327a34d75728924a569ffce85231099c6fa17552bf6967dd2bc2a705",
+    "offline_test": "b8b8abd7b7816f0915055bb8d54d28ac212b0d19b7db6cf3e8bd4e649baceae6",
+    "latest_manager_binary": "fa8144a23601ef0c5ab4057c6dc756fc2a7d29ef7819a6d53fbc94027c7ab39f",
+    "prior_manager_binary": "dfc051056b12c2f357878e757b3b5c73dc47f1f49bb859e63f05d3e2bc08a9f6"
+  }
+}

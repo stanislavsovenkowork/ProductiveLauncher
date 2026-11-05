@@ -1,0 +1,65 @@
+{
+  "policyVersion": 2,
+  "name": "independent_calendar_protection_window",
+  "timezone": "Europe/Minsk",
+  "startLocalTimeInclusive": "15:00:00",
+  "windowBoundary": "start_and_end_on_same_local_date_end_exclusive",
+  "windowFields": {
+    "windowId": "UUID unique per explicitly scheduled window",
+    "localDate": "YYYY-MM-DD in Europe/Minsk",
+    "startsAt": "absolute UTC ISO-8601 instant",
+    "endsAt": "absolute UTC ISO-8601 instant, fixed after scheduling",
+    "targetRefs": "array of opaque platform-specific selected target IDs",
+    "reliefBudgetSeconds": "nonnegative integer configured in advance",
+    "reliefMaxGrantSeconds": "positive integer configured in advance",
+    "reliefRemainingSeconds": "persisted nonnegative integer no greater than budget",
+    "reliefUntil": "absolute UTC ISO-8601 instant or null",
+    "state": "inactive | active | limited-relief | rest | exit-pending | exit | expired",
+    "exitCoolingOffSeconds": "positive integer configured before activation; initial value is a hypothesis, not a proven optimum",
+    "exitAvailableAt": "absolute UTC ISO-8601 instant or null, persisted when exit is requested",
+    "stateBeforeExitPending": "active | limited-relief | rest | null; underlying restrictions and relief deadline continue while pending"
+  },
+  "initialHypothesis": {
+    "reliefBudgetSeconds": 300,
+    "reliefMaxGrantSeconds": 300,
+    "status": "configurable_not_a_scientific_norm",
+    "exitCoolingOffSeconds": 15
+  },
+  "transitions": {
+    "inactive": "at startsAt activate selected restrictions if available; end or explicit exit wins",
+    "active": "explicit limited relief, rest, or request full exit; full exit first enters exit-pending; at endsAt expire",
+    "limited-relief": "reserve grant before opening; at reliefUntil restore available restrictions and offer explicit return; explicit early return restores restrictions; full exit first enters exit-pending; at endsAt expire",
+    "rest": "selected feed restrictions remain active; explicit return to active or request full exit (exit-pending); at endsAt expire",
+    "exit": "terminal for this window; release restrictions and preserve task and history",
+    "expired": "terminal for this window; release restrictions and preserve task and history",
+    "exit-pending": "persist exitAvailableAt at request; preserve underlying restrictions, relief deadline and budget; cancel returns to the current underlying state; after exitAvailableAt explicit confirmation enters exit; endsAt expires regardless of pending; emergency/system exemptions remain available"
+  },
+  "grantRule": "grant = min(reliefMaxGrantSeconds, reliefRemainingSeconds, whole_seconds_until_endsAt); grant must be positive; atomically persist remaining minus entire grant and reliefUntil before release; early return does not refund; disclose before grant",
+  "persistence": "persist window and budget independently of timer and task; restart, stop, new task and rest do not replenish budget or extend endsAt; reconstruct reliefUntil and expire on wake; storage failure must not claim enforcement or issue unrecorded grant; the daily consumed relief budget is not reset by schedule edits, schedule replacement, explicit re-enrollment or a new window on the same local date",
+  "clockAndEnforcement": "reconcile absolute instants on wake or clock change, report uncertainty or unavailable permissions and actual enforcement honestly; never infer concentration or claim cross-device synchronization",
+  "events": [
+    "window_started",
+    "relief_started",
+    "relief_ended",
+    "rest_started",
+    "returned",
+    "exit_requested",
+    "exit_cancelled",
+    "window_exited",
+    "window_expired"
+  ],
+  "eventNote": "local lifecycle names only; export through an explicitly versioned compatible event contract, do not silently extend event-v1.schema.json",
+  "legacy": "session-policy-v1 25 to 30 minute protection extension is an independent historical hypothesis; it does not extend or reset this absolute-end window",
+  "recurringSchedule": {
+    "status": "optional_explicit_opt_in",
+    "timezone": "Europe/Minsk",
+    "weekdays": "nonempty set of ISO weekday numbers 1=Monday to 7=Sunday",
+    "startLocalTime": "HH:mm:ss at or after 15:00:00",
+    "endLocalTime": "HH:mm:ss later on the same local date",
+    "targetRefs": "opaque platform-specific selected target IDs",
+    "instance": "the instance is retained across restart and repeated schedule evaluation; consumed relief is stored in a daily ledger by localDate independently of scheduleId; separate explicit re-enrollment after a terminal exit may create a new instance, but cannot restore spent budget",
+    "changeRule": "changes or disablement affect future rules, not an active instance; repeated evaluation cannot create a fresh budget; exit-pending deadline cannot be shortened by schedule edits or new tasks; explicit re-enrollment after exit does not reset spent daily budget",
+    "scope": "local device only; no cross-device synchronization claim"
+  },
+  "exitRule": "requesting full exit persists pending state and exitAvailableAt before displaying the waiting state; require a separate confirmation at or after that instant; relaunch, timer stop, task change, recurring schedule edits and repeated requests cannot shorten the deadline or release restrictions; expiration at endsAt always wins; if relief expires while pending, restore available restrictions; missing permissions/enforcement and OS/admin bypasses must be reported honestly; user may cancel pending; no punishment or unbounded wait"
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "FocusDeck — сайты",
+  "version": "0.1.0",
+  "description": "Визуальное препятствие для выбранных сайтов в окне FocusDeck.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqn5XTqNhtVXm+e9d0JN46l66n26I+JYD4FYKdSJrHMdmbqzP3MBe7yYb+alrFNc5gKGgBdszBgkg0TG+JPLRXB5qs4HoVx/b6dTV6qU/MnMmq8CGzAoJeRc9rHYwq0jDi9AbuDImeit6T43s6UDVHS+x0lRrDQRCUAiQ/EPGgqvL2nkU5hSeAue1e7sAT7wo1jEcCXeoed1fPiLPj70QFfU5z6K6CjOawLDNDBIBq01bkjMCJZIqTvFTxCt2oZ48kQbZqipzNiOsWShZ65qKc+waLGjT2KNlo9vEPy924Vu/Gy3y8upSu1aIALPuWLvrWnNtHtMxU1i5WBozk5ndVwIDAQAB",
+  "permissions": [
+    "nativeMessaging",
+    "scripting",
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_title": "FocusDeck: связь неизвестна",
+    "default_popup": "popup.html"
+  }
+}

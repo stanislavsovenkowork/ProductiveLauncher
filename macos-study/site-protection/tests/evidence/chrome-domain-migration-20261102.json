@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "scope": "One scoped run, two isolated headless Chrome profiles and synthetic ledgers, local .test pages and media; no personal tabs, system network changes or real protected domains.",
+  "unit_result": "PASS: legacy exact vs opt-in subdomains, DNS label boundaries, protected hosts/parents and malformed policies.",
+  "legacy_chrome_result": "PASS: host reported includeSubdomains=false for omitted policy flag; root protected, www/m subdomains and near matches untouched; relief/return/exit and failure handling exercised.",
+  "new_chrome_result": "PASS: host reported includeSubdomains=true; root and www/m subdomains protected, label-boundary near matches untouched; relief/return/exit and failure handling exercised.",
+  "cleanup": "Own test processes terminated; scope ended; no personal Chrome host registration.",
+  "screenshot": "chrome-domain-migration-20261102.png",
+  "sha256": {
+    "synthetic_agent": "06d4f952e592d1934bd576ff3540722d6bf5b58bb82c97eec9364d844542f85c",
+    "native_host": "b7c1a53641db46639d5ec038b6b40107793f43f286e5adc9ae9f68fbd1239c2f",
+    "client": "46adb1853f917dc58b8437e7fa43682a61526869e1154ce9ae6e5fde87efbc34",
+    "native_host_source": "f6dc716522314b52c7c97be23abdaed4a2dce5873d3e1a35c69ec50f134a8eae",
+    "domain_policy": "9373ed7d9ff4dbd7b97073c539bd6b16d653add0fa72fbc3b3f06205be8220fe",
+    "extension_worker": "fe4198b8a1a23501ff561388a1576c16c7a513974a61fdacc92b1d40397d9d45",
+    "extension_manifest": "9a12e3516519b0d2a0ae3c4e640a8a8d531c1bad1384c7808c6e95c8151264da",
+    "extension_content": "723b30d87f2e96a63ca2edc26f5dc354fa26beabd2f980d834027de59a9a7a36",
+    "test_domain_policy": "c2dda8c2d1730fdb11ae7a969912477f4c16c436fd655ced6274a78421c597a1",
+    "test_scenario": "378f2931e1a12834623b5fc1167e6b07e1b131df5428d55a4cd8ede82f8c7006",
+    "test_entry": "a776ebd59579ecae9546238b6531570e27c7541b685db2b0100849ebd34fb737",
+    "window_policy": "72c6eac99c390c525f485da41bd24ef9854d378ab418dae2048f2cbfd8b36b99",
+    "screenshot": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58"
+  },
+  "limitations": "Protected infrastructure names tested as pure matching inputs only, never opened. HTML media state not speaker audio; production installation, private mode, WebAudio and deliberately evasive pages not established."
+}

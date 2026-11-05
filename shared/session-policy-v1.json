@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "sessionMinutes": 25,
+  "pauseSeconds": 300,
+  "pauseLimit": 1,
+  "categories": [
+    "work",
+    "study"
+  ],
+  "timezone": "Europe/Minsk",
+  "workMessagesRequiredAfter": "15:00",
+  "workMessagesRequiredAfterValue": false,
+  "pauseExpiry": "restore_only_available_selected_restrictions_then_offer_explicit_return",
+  "focusAccounting": "exclude_known_pauses_and_unknown_gaps",
+  "fullExit": "explicit_stop_preserves_task_history_and_context",
+  "parameterStatus": "initial_engineering_hypothesis_not_universal_scientific_dose",
+  "maxProtectionWallSeconds": 1800,
+  "pauseGrantExtendsProtectionOnce": true,
+  "workDurationMeaning": "nominal_target_not_hard_accounting_cutoff",
+  "accountingAfterNominal": "continues_only_while_explicitly_running_with_visible_overrun",
+  "protectionAfterExpiry": "off_clearly_visible_no_implicit_extension",
+  "protectionScope": "optional_android_app_gate_only_external_website_protection_separately_configured",
+  "coreRequiresProtection": false
+}

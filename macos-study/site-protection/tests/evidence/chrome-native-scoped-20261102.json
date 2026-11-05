@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-02",
+  "scope": "headless Chrome, isolated temporary profile, synthetic local HTTP pages and test agent; application-level simulated agent failure; no personal tabs or system network changes",
+  "scope_observation": "Own start and end records observed; no matching QA processes remained after return. Direct internal script entry without an open scope rejected before launch.",
+  "result": "PASS: actual Chrome native host, open-tab injection, active, mouse blocking, allowed page, relief and return, expiry, agent failure/recovery, extension removal/reinstallation, exit and page context.",
+  "screenshot": "chrome-barrier-scoped-20261102.png",
+  "sha256": {
+    "synthetic_agent_binary": "4bd0e61a2da89092ba9527f4456fa6cba304d20e3bd3921f77f41494880a594a",
+    "qa_native_host_binary": "ab65189931bfc14555e1a91d38a4de70d70f4ebcf67bb8309d256c1eee138d3f",
+    "qa_client_binary": "2746212d7464d35dacee6ed7502778e9c93d973b97b7a96a61df89f2b0abff8f",
+    "extension_manifest": "05b02d3e1061323917b2581a0035819524536e3afb57dcaf802c2386b1954f3f",
+    "extension_worker": "057d942fe0db986d005e238a1b3d8727c184ae583d9640eedb1dd262f7a27882",
+    "extension_content": "c893a6468565200e0c5fa60eec65f0b06c2e0f2af1d31dfef33ab65115fb2598",
+    "qa_wrapper": "eff08733673a312cb28aaf9803ba5249f9a2b0377329e41ce24abb77cd7c3ada",
+    "qa_entry": "59664d6d784a9e1b42590b898b354b44fc92478ab0a3960d583d7f2967623b66",
+    "qa_scenario": "e65a5106563355c6f0164887f8ce3d54fb745b4b9c73a6328f1e37cb713c282e",
+    "barrier_screenshot": "eba2707fa3aa479959b89410b957113e38a44cb78b490070e35933b2726ac7a2"
+  },
+  "limitations": "Synthetic agent; no installed user service, normal Chrome profile, private browsing, reboot/sleep, CSP coverage, or real-world retention verified."
+}

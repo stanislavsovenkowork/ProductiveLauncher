@@ -1,0 +1,4471 @@
+{
+  "snapshotDate": "2026-11-05",
+  "sourceBaseCommit": "2007e7a74bf8d42c67aa19cd6d83140ffd98b944",
+  "files": [
+    {
+      "path": ".agents/rules/MEMORY.md",
+      "source": "worktree",
+      "sha256": "9ba8a12969ba11d98ebd1df9eff6df6816d83e2b2e42807544aa6d93eaf6d171",
+      "size": 5418
+    },
+    {
+      "path": ".agents/rules/qa-device-etiquette.md",
+      "source": "worktree",
+      "sha256": "3271150a7e3600860f2e925f09c1aabbf6ca5754da24def323e02a192448e81b",
+      "size": 6455
+    },
+    {
+      "path": ".agents/rules/ui-taste-no-filler.md",
+      "source": "worktree",
+      "sha256": "82197627d91bd2c07219be212937938365526928c8db3d4a1881ee0d84b14272",
+      "size": 8392
+    },
+    {
+      "path": ".gitignore",
+      "source": "worktree",
+      "sha256": "9a02cbe4724547395e9fbcb18d0adaaf4bb8b614fa5fa8d3c3b888c0a046b518",
+      "size": 329
+    },
+    {
+      "path": "AGENTS.md",
+      "source": "worktree",
+      "sha256": "6de31f2027343533cb4e9fed972c73a29f618b476aaa85f58e526d90861acfe1",
+      "size": 17136
+    },
+    {
+      "path": "DEVELOPMENT-STATUS.md",
+      "source": "worktree",
+      "sha256": "3bded31331b715ef053b355037a7c5b022c959ed8246cd92ba267471356bbaa8",
+      "size": 50555
+    },
+    {
+      "path": "GEMINI.md",
+      "source": "worktree",
+      "sha256": "6b33bbb3e1be8265e63cea46cd65c0ed52b4147eac8842ec8eeca73be6b35f26",
+      "size": 5243
+    },
+    {
+      "path": "README.md",
+      "source": "worktree",
+      "sha256": "73aab94c83a8bb3a388f40a9e858ed52f337def6f31dc0f01a8aa11394778c6e",
+      "size": 21221
+    },
+    {
+      "path": "RESTORE_LAUNCHER.sh",
+      "source": "worktree",
+      "sha256": "0e676920a63bf19839ccba79a5797f1e601bc676898ef36c819b85a5e8eb10cc",
+      "size": 1820
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "source": "worktree",
+      "sha256": "fe8dccafae0081f19598447a0a3b4c737161323e4a99ed886f3c90f1e02dc10c",
+      "size": 2815
+    },
+    {
+      "path": "app/proguard-rules.pro",
+      "source": "worktree",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "app/src/androidTest/AndroidManifest.xml",
+      "source": "worktree",
+      "sha256": "051dc48a8245fc1d7af63b7d1b239f29ef2fa31ee13e166da5f24fa1217ebb3e",
+      "size": 600
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/LauncherProbeActivity.kt",
+      "source": "worktree",
+      "sha256": "d128a9abc9c46345da965ba82e8daf556a1719c62718812f2fe1fab9cd532417",
+      "size": 525
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/NutritionRetryProbe.kt",
+      "source": "worktree",
+      "sha256": "5590ff8fa62dc454faad5e2abe1374e02ee3b3464e7b6c45b32afd430d8fbf65",
+      "size": 11068
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/ProtectionLedgerProbe.kt",
+      "source": "worktree",
+      "sha256": "8ab6f70fe3ceef13ed5440a4212363e3dcfa94ebff26436c8f49d0319520b0d3",
+      "size": 8273
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/ProtectionSnapshotProbe.kt",
+      "source": "worktree",
+      "sha256": "2c494cbc6d759ecdb059de46e26c4820ed3d4368c0a44917488bc2470bd76981",
+      "size": 1917
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/RoomMigrationProbe.kt",
+      "source": "worktree",
+      "sha256": "f3dd3735bde22f73c1817ac470c5d479eace1f8d4591dbc3028f0885dd57f592",
+      "size": 3748
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/ScheduledProtectionProbe.kt",
+      "source": "worktree",
+      "sha256": "3e4dd2f23b59c86fd0c6f245afbc44f6ed8f1e9babe297096b5750fbd5d7409e",
+      "size": 2754
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/SummarySyncProbe.kt",
+      "source": "worktree",
+      "sha256": "7c0f2d847a50eef825253b722dc5035613fe2b489c82a3020b11e67f3ab602de",
+      "size": 12531
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/TelemetryGrantStatusProbe.kt",
+      "source": "worktree",
+      "sha256": "3ddf64afce247c4634217c862d357f11119ffc9489e5f4e34e79334949835285",
+      "size": 1777
+    },
+    {
+      "path": "app/src/androidTest/java/dev/stanislav/focusdeck/qa/VaultProbeInstrumentation.kt",
+      "source": "worktree",
+      "sha256": "1a472df9bac293fc72bb5032ea43087c91c280f311c86b308030db51e12f6278",
+      "size": 16169
+    },
+    {
+      "path": "app/src/debug/AndroidManifest.xml",
+      "source": "worktree",
+      "sha256": "00a255e21a84e83b5576f70b03b0910f263e6f1d21efede4d4a4d5de0a1fd5ce",
+      "size": 203
+    },
+    {
+      "path": "app/src/debug/java/dev/stanislav/focusdeck/QaScreenControl.kt",
+      "source": "worktree",
+      "sha256": "71f51324fcc29667ea0163b0d7b13c3eb866780a704b2c2c6544243c2ef1163c",
+      "size": 834
+    },
+    {
+      "path": "app/src/debug/java/dev/stanislav/focusdeck/domainfilter/DomainQaActivity.kt",
+      "source": "worktree",
+      "sha256": "84d3b1869055efe90e8f46ec8c266a32ffa643a974f42134722e6d3a8220af69",
+      "size": 6430
+    },
+    {
+      "path": "app/src/debug/java/dev/stanislav/focusdeck/qa/TelemetryQaActivity.kt",
+      "source": "worktree",
+      "sha256": "cf5b7a7814bfaf2c08401914a777095cef363c307a4f693c2a0be2e2dd452926",
+      "size": 5484
+    },
+    {
+      "path": "app/src/debug/java/dev/stanislav/focusdeck/ui/restrictions/GateDiagnostics.kt",
+      "source": "worktree",
+      "sha256": "05c31e7d773aee164d71e9f012c55233755f22917d62ec4addccec2bec76d129",
+      "size": 462
+    },
+    {
+      "path": "app/src/debug/java/dev/stanislav/focusdeck/ui/ritual/RitualClock.kt",
+      "source": "worktree",
+      "sha256": "a6f811f0104a941adbfdff9337ebf2633d370e7675c1af3099c594207ecb462a",
+      "size": 510
+    },
+    {
+      "path": "app/src/debug/res/values/strings.xml",
+      "source": "worktree",
+      "sha256": "2313746d8dddf7c921ea9ba01ee5b2f14acdf4aa17845b41f06d0cc735ca50af",
+      "size": 114
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "source": "worktree",
+      "sha256": "2a349a1e6e0888e37c2d5ddaefe5d3ec19ca98fe97f8d9bd8e89bc4a73986a08",
+      "size": 4651
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/FocusDeckApp.kt",
+      "source": "worktree",
+      "sha256": "7ac85c0eb17e6cfa20316793f9915c948d15ec909c4fa6295992a3743d3c5967",
+      "size": 9492
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/MainActivity.kt",
+      "source": "worktree",
+      "sha256": "e23a46b7d93b04b433570d34fed5e760e6bf2e35ee1bd5143f5f16fa8eb718e5",
+      "size": 12647
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/Converters.kt",
+      "source": "worktree",
+      "sha256": "fc879f3e0cf675a26ede8de0fbff6be3d017d5d0defe5b37a0de5b0157ef5f12",
+      "size": 266
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/FocusBlock.kt",
+      "source": "worktree",
+      "sha256": "007a077fdd3d4783261092493d495ef270ff34e1d38ed5d41565016d0f8c3a2c",
+      "size": 1652
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/FocusBlockDao.kt",
+      "source": "worktree",
+      "sha256": "d2feb333fd5a9d916d9e477c37632217991b60019b62896abc51f0acf5c6a9b9",
+      "size": 1101
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/FocusDeckDatabase.kt",
+      "source": "worktree",
+      "sha256": "23d2af265e0f8548312b9fe61c619b43ec3f2c3ff9f3a5f759d56d6522e7cda8",
+      "size": 3255
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/Meal.kt",
+      "source": "worktree",
+      "sha256": "73af943fd7bf1e26524980280e8e893314766341d7f21e63fa703a7797308863",
+      "size": 385
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/MealDao.kt",
+      "source": "worktree",
+      "sha256": "0fb7dba0e851376ce5e5a5c74b0aca27b15633636ff418a1fadf153f24266e76",
+      "size": 2109
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/WeightDao.kt",
+      "source": "worktree",
+      "sha256": "8695a773a918eb08c84b732e0c3696be3d1a6fb47e3a4d4eaaabb0cebcff8b9d",
+      "size": 1434
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/db/WeightEntry.kt",
+      "source": "worktree",
+      "sha256": "2973c52aec37e8da9b0d3667a8f8275a129d348103feec63d69f841414b2ec08",
+      "size": 294
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeDraftCodec.kt",
+      "source": "worktree",
+      "sha256": "c60c1b7eaba815b453ad32108536013e567d09b51496832eae6f249d6b38e236",
+      "size": 2563
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeEntry.kt",
+      "source": "worktree",
+      "sha256": "ff08b708d5d12ef674d6271f5133efc1d1b5394196089f212562e6aad936b672",
+      "size": 8918
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeHierarchy.kt",
+      "source": "worktree",
+      "sha256": "b2b0665cbd542f830926595830c008390121c6b2a4bed04630c77bf0a72ad19a",
+      "size": 4443
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeNoteCodec.kt",
+      "source": "worktree",
+      "sha256": "d7901f1867b10a2a8213ad4c3fd6032c81fe613ba0938e45f656db739ff1b809",
+      "size": 10865
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeProgress.kt",
+      "source": "worktree",
+      "sha256": "7e97e97f2a6d3ed6cf75028d87252530435d30a0f40b53c6c817252831bc62e4",
+      "size": 17112
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeRepository.kt",
+      "source": "worktree",
+      "sha256": "a6f8c4ddbd47af8a885e89a229212fca729f5a0c314343da07b816ba4d0e1ed3",
+      "size": 16035
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/life/LifeRules.kt",
+      "source": "worktree",
+      "sha256": "dfd09ad1c7f1656d0b44edd2e6533afe4ff18af33f9d2f204f1b28d21963061f",
+      "size": 15403
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/network/DnsPacketInspection.kt",
+      "source": "worktree",
+      "sha256": "941052ec93aba4c9fea9dad52864207115b8f3a6bff5c44941a95f799dd2552b",
+      "size": 2048
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/network/DnsReply.kt",
+      "source": "worktree",
+      "sha256": "388426e5a4e621f33787cdfa3998e333fcb8ce16b8820b7622d667aa7b2a90c1",
+      "size": 2715
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/AppsRepository.kt",
+      "source": "worktree",
+      "sha256": "5d92384656d42495ff68670e760243ffbee2ffe0455ce3b1365b164df6b4d0b3",
+      "size": 1861
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/FocusBlockRepository.kt",
+      "source": "worktree",
+      "sha256": "2d8b887b1a8cad164525af9227f72fd9e0d61afbeba04f1f97743a88723fd5bb",
+      "size": 1232
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/FocusEventExporter.kt",
+      "source": "worktree",
+      "sha256": "97398aea12743c81d9c0b7b8f18d5a01d511acd0133c7af11ebcf44af5be560e",
+      "size": 5200
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/FocusTime.kt",
+      "source": "worktree",
+      "sha256": "3edc4c41e2a8c0be20e4703405c91196570139567cb008abbdfe7e52b2b10a9e",
+      "size": 1072
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/HarnessTransport.kt",
+      "source": "worktree",
+      "sha256": "3c618ac98fa738f1e690a7d299f2c6e9769bdb7e7702f5a9260a2fd7c769c5a7",
+      "size": 2040
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/HarnessUploader.kt",
+      "source": "worktree",
+      "sha256": "303a23c7df97e5bf4f939bf2a73f35a0582c9350cc3c9e7a5288aae5d2e47af6",
+      "size": 9154
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/NutritionRepository.kt",
+      "source": "worktree",
+      "sha256": "740a7c0bc1159ae5ad5a16adb07a0216bd219245db378c3cf18a262484914b60",
+      "size": 2460
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/SessionAudit.kt",
+      "source": "worktree",
+      "sha256": "f207dea01af12c91377c5da39716d90cd5564e6aab5208d9fef9ad41f5c792ae",
+      "size": 5809
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/repo/UsageStatsRepository.kt",
+      "source": "worktree",
+      "sha256": "264c62a9fbc142d5a67f1f9636ee1fa7e29babc0bc4f590a300cb21067496987",
+      "size": 3981
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/CrossDeviceReview.kt",
+      "source": "worktree",
+      "sha256": "eba2643c984df37069ed894374dd8039e39dc6c7ae8e941e3ba345591e50f1b4",
+      "size": 2593
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/FrozenProjectionStore.kt",
+      "source": "worktree",
+      "sha256": "2098becd15d62e3f6b8ea2f05152a57c0da57c4c7ee049b3e43057aedeb26dd5",
+      "size": 2453
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/ImmutableOutbox.kt",
+      "source": "worktree",
+      "sha256": "69d0fa94757a53777c5ddbc93d0dbefe58274c32da692ce182d3b258e1e59c46",
+      "size": 5325
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/SafBatchPublisher.kt",
+      "source": "worktree",
+      "sha256": "ae071c1ed4acb09994c5cb95f7d417358a5ac73f69369b117f8e1982025e101b",
+      "size": 3384
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/SafTelemetryReader.kt",
+      "source": "worktree",
+      "sha256": "02d81ca5b7b2a02a0e162562fc8089eed4c47de78e14eb825b955a8983c40f00",
+      "size": 2981
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/SelectedTelemetryTree.kt",
+      "source": "worktree",
+      "sha256": "dc563ebed9759d29a2b736eb5659bac668e1213276fd8900e661fdb93d338729",
+      "size": 911
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/TelemetrySnapshotCodec.kt",
+      "source": "worktree",
+      "sha256": "5f72b5b930d00408d3458a7985dd103c79b09a1dcc4d316702111fa9c6233051",
+      "size": 5556
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/TelemetrySyncClient.kt",
+      "source": "worktree",
+      "sha256": "8878467e14742b96f46ae49a72050cacfe920990914a12422b87c82e940e5368",
+      "size": 9366
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/sync/TelemetrySyncJobService.kt",
+      "source": "worktree",
+      "sha256": "bc2fe673131eb246ec6c4879a2fdfd0db1a77afc34815179f58c0bafc786a1e5",
+      "size": 1015
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/vault/DailyNote.kt",
+      "source": "worktree",
+      "sha256": "689e535f921b2ae14c8ef5d4f9aaef182cd7be113e8d6c6ec1059af0d5487208",
+      "size": 2259
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/vault/DailyNoteParser.kt",
+      "source": "worktree",
+      "sha256": "e1058695bbc2ea8326e76f3992cf58abd2aeaf531f1a11ff2287720fadc87969",
+      "size": 27029
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/vault/VaultDayStore.kt",
+      "source": "worktree",
+      "sha256": "5c829571dd635e0a7875f2b76fbbb9c26a76a0ed2beae386ff84dd47e744e6eb",
+      "size": 20919
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/data/vault/VaultRepository.kt",
+      "source": "worktree",
+      "sha256": "8528bfe199d92a13a4e0da16b82809bcf825e628c29a787107d890f7595df486",
+      "size": 15094
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DnsTunnelCodec.kt",
+      "source": "worktree",
+      "sha256": "d3910e0eb113f22b0fff806fc55cf0cfd8e6861ff33d80e76a4411a9a3762528",
+      "size": 3166
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainFilterController.kt",
+      "source": "worktree",
+      "sha256": "7869c1bb5b2a26086f496d8cfff04cc6e4593272623a2f42213d1d5eddcdce24",
+      "size": 15072
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainFilterVpnService.kt",
+      "source": "worktree",
+      "sha256": "fd15028865cd219641e5504137dcf7ffa502e27bcf0a8972d3da6fdb7f51d533",
+      "size": 16301
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainPolicy.kt",
+      "source": "worktree",
+      "sha256": "6155802acca199695aa1ba5774766ae6ae1cb3e783cb0eee51ac0648f01f5fa3",
+      "size": 4083
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainSafety.kt",
+      "source": "worktree",
+      "sha256": "e8fe9ae610eee6469b26c65f5e739f6f1c276116bebd0c8ab7eb321304b5ad15",
+      "size": 1264
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainSettingsPanel.kt",
+      "source": "worktree",
+      "sha256": "a97ff48dec64f3b05549974366f054cd1cfb3e1aa3480fc7f87dc4fccc0e35a8",
+      "size": 10344
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainSetup.kt",
+      "source": "worktree",
+      "sha256": "807693585b3a1c9d885b0fcb0ab2a2d9b575fd70a15b18924bf5647d6c883d1a",
+      "size": 1705
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainSetupStore.kt",
+      "source": "worktree",
+      "sha256": "e90f0517ebaf5cb52291db68d2e9bfa96e5cbb4bf20f767b4fb9daae29dd6920",
+      "size": 1559
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/domainfilter/DomainWindowGuard.kt",
+      "source": "worktree",
+      "sha256": "0c4c55e6b6c6d160c829edb153832e45d6c6ccead96493689d81dcb91103ad99",
+      "size": 1481
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/apps/AppsScreen.kt",
+      "source": "worktree",
+      "sha256": "29d90a3d70fa9bf287b3a8a99ab618263d75c34b8b7b2ea3d5888a2955f4b96d",
+      "size": 9828
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/apps/AppsViewModel.kt",
+      "source": "worktree",
+      "sha256": "65db4b7f8d361ac0b18e50839269f296a959a372f316ddee85369da6122c3dcb",
+      "size": 5486
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/apps/LauncherRestrictionPolicy.kt",
+      "source": "worktree",
+      "sha256": "2fcfcec2e7706db4a850fd7738906ba935521bda5a409b51b149589d82025f11",
+      "size": 1039
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/apps/SafetyExemptions.kt",
+      "source": "worktree",
+      "sha256": "548bf16570fc459d2f4e83f9d706133f80dba0afa0b5bb92b337cdd501d84d3c",
+      "size": 1604
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/components/DayStrip.kt",
+      "source": "worktree",
+      "sha256": "eb809d7f92d4ee6b4fd0ca2ae708536aa53a919a7cdb88c52fd1d0977fbcedfc",
+      "size": 9305
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/components/DayTape.kt",
+      "source": "worktree",
+      "sha256": "6a4f0ee775e3cd884998a53a165e201d2b053b9be78728d9c9badb5bb7c9d153",
+      "size": 6424
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/components/FocusControls.kt",
+      "source": "worktree",
+      "sha256": "09dbb5d542595700b4c843a7d6726b9b6f21e14fafcf991e08bef65f250d2432",
+      "size": 13727
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/components/MetricTile.kt",
+      "source": "worktree",
+      "sha256": "c8861ac765842b79442ae2a492939948f55abccf95b16f68a08dae904ae1452a",
+      "size": 2082
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/components/UpcomingStrip.kt",
+      "source": "worktree",
+      "sha256": "645652dc387194cddd8070248beee15833b91a8d217e1d0459c2f92c8d35de82",
+      "size": 9065
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/home/BreakReminder.kt",
+      "source": "worktree",
+      "sha256": "5495406fc33b76bb6d2f5befa8b592068feab67a0e59f21cb9705f7dc68d974d",
+      "size": 5158
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/home/HomeScreen.kt",
+      "source": "worktree",
+      "sha256": "ef08c7073b132f43f4bb45008bf4447b5b5d45e2697fec94e8064385a4abb39b",
+      "size": 69933
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/home/HomeViewModel.kt",
+      "source": "worktree",
+      "sha256": "5cbdb67f04f8cd0cba8543a6427bbf57646332bccdd06e95321d0b4ea6858f5e",
+      "size": 48994
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/home/ProtectionTimeInput.kt",
+      "source": "worktree",
+      "sha256": "1d8f5106897ad416cb5bf6a3337c946ec407525895ba7df9d2e3edc565543cad",
+      "size": 244
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/home/SummaryRetryQueue.kt",
+      "source": "worktree",
+      "sha256": "a1f1942e0e134b27de228a77deca1d7771b43784a2e74fc9cfa34b3eea5ed872",
+      "size": 2394
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/home/WorkMessagesPolicy.kt",
+      "source": "worktree",
+      "sha256": "d2fa5688dd8531205827d817d149c58feb6eb562317c36c2691e383c6fa0ca60",
+      "size": 354
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/journal/DayStatsViewModel.kt",
+      "source": "worktree",
+      "sha256": "efbf8e172956c298657853a1e8901a2c0ffdb9d06f515886ac116c93f6a47a6b",
+      "size": 3300
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/journal/JournalScreen.kt",
+      "source": "worktree",
+      "sha256": "1c054642a455a3190c113ca8a2448c9c3298b4d49eb5ab75bdbf5bf3ee38f153",
+      "size": 20960
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/journal/JournalViewModel.kt",
+      "source": "worktree",
+      "sha256": "d41dc50fef7a934af86cc83e788622776480f615b2ddd427321b567c01bf3571",
+      "size": 23776
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeDetail.kt",
+      "source": "worktree",
+      "sha256": "aac59c74a99fb11cb7e2be1bcd16c538ecf2235042c8663fc90127ced6ef7139",
+      "size": 51376
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeEditor.kt",
+      "source": "worktree",
+      "sha256": "e67ff78739209d6ae8d5e771725e8ebdaae7e9d69e081a0f371c98f636b81bcb",
+      "size": 16773
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeFlow.kt",
+      "source": "worktree",
+      "sha256": "77b02de272c1892fa19eb96ffde367878172577f2fef50a5c9c7e20aa9ec23e0",
+      "size": 18507
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeHistory.kt",
+      "source": "worktree",
+      "sha256": "bfe28e6828f1d7454d4283ede98cc68e35af9bd8459f34888cb7176ae72df85c",
+      "size": 8423
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeHomeCard.kt",
+      "source": "worktree",
+      "sha256": "65b099f1a7360a1f4a3a619d7d367973d36d4e979af182e8bbc33ec4c7d403f4",
+      "size": 5536
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeOverview.kt",
+      "source": "worktree",
+      "sha256": "53dc93bcba9eed63a1cded66edecc1ff242163be5d56cf2b247025e31b763810",
+      "size": 41178
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeScreen.kt",
+      "source": "worktree",
+      "sha256": "1af14c2ddbb9f4878d7d8247c39ae3c728599952e9abefe4a8604af20323898f",
+      "size": 23333
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeViewModel.kt",
+      "source": "worktree",
+      "sha256": "60f7c9e6f242903d4e6f5628e0b8224d071dc69a603c1f4a127f49293d5a5a09",
+      "size": 32268
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeVisuals.kt",
+      "source": "worktree",
+      "sha256": "5b6a3c9c7405f20d414eb2c25fa864af9273c86a6d9fd213e9ff64d8e82246c1",
+      "size": 24791
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/life/LifeWizard.kt",
+      "source": "worktree",
+      "sha256": "b905f90845e2bb364ad5e1f6f60cb9a3079a558d77d99cf7c5ff9e8489e3cb57",
+      "size": 31512
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/nutrition/NutritionScreen.kt",
+      "source": "worktree",
+      "sha256": "427e5c393548a50348539d1fb16f7c6f6d31bf7ca7a0b40d5475017a6b2c2730",
+      "size": 28570
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/nutrition/NutritionViewModel.kt",
+      "source": "worktree",
+      "sha256": "7c4f8a01766375d7cbbb9c92aea744bd168f64998591a082941a1d9fb8158f8b",
+      "size": 26000
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/DayTimeline.kt",
+      "source": "worktree",
+      "sha256": "4535d25cd2a50b6dfdf70646924380ffcca0a15d6e65ba1aba25fe3db570a381",
+      "size": 21491
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/PlanningScreen.kt",
+      "source": "worktree",
+      "sha256": "d15ffb04e5e72b8cd061f010f57f19c6ceb04a9efd8ec23a3c7c12a9d99a98f7",
+      "size": 13768
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/PlanningViewModel.kt",
+      "source": "worktree",
+      "sha256": "b5907dfc24b94a5b4dd8b976c5db58ced35406fde723476307b3ac5d7e7ee58d",
+      "size": 14052
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/ProjectPicker.kt",
+      "source": "worktree",
+      "sha256": "00d52ec770030c3a6cab1675acfc21d59ca5c7e824c60dce5490169e77a4e2f7",
+      "size": 10173
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/TimelineBlock.kt",
+      "source": "worktree",
+      "sha256": "8c4d36006ea319705cc040475559dee59e131df1d0a5a32c9814ad2c909513ed",
+      "size": 19512
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/TimelineDragState.kt",
+      "source": "worktree",
+      "sha256": "c6edcd9b438c370d28e08291a93abd83e7edc2f230486d32e8787be1ed1a0519",
+      "size": 7026
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/TimelineModel.kt",
+      "source": "worktree",
+      "sha256": "8ad1e652ba450b1cd49e887e594f51924c705d9eccd7c18ae0afc9f08062f767",
+      "size": 9103
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/planning/UnscheduledSheet.kt",
+      "source": "worktree",
+      "sha256": "ae8b5c7bfab1dc3405d969707f7d553574e605f01b6d24054d17c25a71ba0ad6",
+      "size": 37780
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/AppGateService.kt",
+      "source": "worktree",
+      "sha256": "60b36a454b11622c69bd8076394557576ebbf1c0e59e78a13be594c9acd6779c",
+      "size": 4610
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/AppGateStatus.kt",
+      "source": "worktree",
+      "sha256": "d2291257a52e46f7b757382ca8a1d60b8aadb2c7f370b874e9956538fa522dde",
+      "size": 399
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/GuardWakeClient.kt",
+      "source": "worktree",
+      "sha256": "1dc1dace85df76a5e1d10e6551147de2d260d419f1b1a82f7e29babb1a00acd3",
+      "size": 3154
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/GuardWakeReceipt.kt",
+      "source": "worktree",
+      "sha256": "0d318eb78d9af2385bb251a14ea033b06b83430462c5e5722c722c0904a48b83",
+      "size": 943
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/LockOwnership.kt",
+      "source": "worktree",
+      "sha256": "9ec82f633d39d659bf5027331eff657bd2530a843bcbbd3f45337f2dcb749205",
+      "size": 511
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/ProtectionWindow.kt",
+      "source": "worktree",
+      "sha256": "897fa1dfa5a6c26c6b9d83ad9c96adfeb1c3c52c6d45bb16af1e5acec4b2d1ce",
+      "size": 27145
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/RestrictionController.kt",
+      "source": "worktree",
+      "sha256": "600e6b609e7197e307b4fd0b832df4a09ac416120036f7638b63d6b0ef292401",
+      "size": 2115
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/restrictions/RitualRestrictionHost.kt",
+      "source": "worktree",
+      "sha256": "4a0262fa118a11a270da03b99c503f621c60510cdf750ca9608eb4874045f3ec",
+      "size": 6053
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/ritual/RitualDraft.kt",
+      "source": "worktree",
+      "sha256": "40f3fe52f9f0cdf4e3202273d265ff1657c53e0363e18feb8770d2cef59f218a",
+      "size": 2086
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/ritual/RitualEngine.kt",
+      "source": "worktree",
+      "sha256": "4c7b630b40aaad725face3e4571144716456c4bcc41fff823de1fdef63687706",
+      "size": 10949
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/ritual/RitualScreen.kt",
+      "source": "worktree",
+      "sha256": "709d48377cda77a55e0aa4630a772b475501100478792a624bdd6907116129a1",
+      "size": 49515
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/ritual/RitualViewModel.kt",
+      "source": "worktree",
+      "sha256": "cfb8fa82a8e124468e03d2b444ee761efc949470171af1f6ddcc12fbd004e87a",
+      "size": 31225
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/root/RootScreen.kt",
+      "source": "worktree",
+      "sha256": "580dc56cce5f75e6111df8f17874bd897e33dd237e37415d37501f8fad5c3981",
+      "size": 25816
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/settings/VaultSettingsScreen.kt",
+      "source": "worktree",
+      "sha256": "46923b67ac6b6ec288c0e5f707e9755bc0a34290b911437f7f636bd74f36c1fb",
+      "size": 14404
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/settings/VaultSettingsViewModel.kt",
+      "source": "worktree",
+      "sha256": "e20892592814ae90cd1472949eef3142d4d584e0bca140fa4e5b3c00cc0ab788",
+      "size": 4120
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/theme/FocusDeckColors.kt",
+      "source": "worktree",
+      "sha256": "29d55a4bcd22bcdb8a554703f40c9eaa1d251d110aff469b0f2ae4ebf9198acd",
+      "size": 9547
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/theme/Fonts.kt",
+      "source": "worktree",
+      "sha256": "1e0c3592b9707e150a7ef3d7f80fe16596e7b3bca45baeb2fc932bdd49d3c6aa",
+      "size": 2335
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/theme/Shapes.kt",
+      "source": "worktree",
+      "sha256": "7699bc62878fd6c1b005875691ab9f0cd6483cea32beb34e1f7982557ec70d2e",
+      "size": 1136
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/theme/TabularNums.kt",
+      "source": "worktree",
+      "sha256": "9aa3eaa2a3c7bdfa8536a4dc589951b7797b0e71db8645292f81060af915b846",
+      "size": 388
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/theme/Theme.kt",
+      "source": "worktree",
+      "sha256": "c9c4be7874790393f31faf60d1bbcb2a5765dae24ba4f8675087318eca99e3fd",
+      "size": 2670
+    },
+    {
+      "path": "app/src/main/java/dev/stanislav/focusdeck/ui/theme/Type.kt",
+      "source": "worktree",
+      "sha256": "f89ad2cbee3d2c5c0d80cc6a157a59c966b49eb2f0056d98efb9c65122582c65",
+      "size": 3148
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+      "source": "worktree",
+      "sha256": "e3ff5b1cee28b1ec81f57fdcc1537d1cbb461a248ba7dc900269f3f27fd41f2d",
+      "size": 330
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "source": "worktree",
+      "sha256": "f579350c46861fe196231c7dd6e78f43f37c9339676f350f935818ef0dad1bee",
+      "size": 364
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "source": "worktree",
+      "sha256": "1c832bf194d8eecd439a92bcced0df144c9f566b934b3d7865e983d8ee8dbdeb",
+      "size": 273
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "source": "worktree",
+      "sha256": "9407faed686f9a7afccd47496bdd06fe24cb58e60c44b38065f21840847e4e42",
+      "size": 467
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "source": "worktree",
+      "sha256": "79ca4ac4c8926c8bdb4e115a68d27b22d8632ee4fa550ea0ccc339c8edae64d1",
+      "size": 453
+    },
+    {
+      "path": "app/src/main/res/xml/app_gate_service.xml",
+      "source": "worktree",
+      "sha256": "077e2ff7c45f67ca2ba7725ed604a3e06167f9e48b499593fa8f0572cdfe6a9d",
+      "size": 379
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "source": "worktree",
+      "sha256": "3ac21e05fc1dbea0dce57df9480453a80749f5dd7dc7b397002df89570e57dc8",
+      "size": 493
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "source": "worktree",
+      "sha256": "97fa1751924769935e685042f5d791cfaedc83bbeeb62fe9f365f02e3b1377df",
+      "size": 834
+    },
+    {
+      "path": "app/src/main/res/xml/network_security_config.xml",
+      "source": "worktree",
+      "sha256": "355040bde7e74f93c4ab0adbf8208ac331ae84f6448beb494a977217672f8a13",
+      "size": 281
+    },
+    {
+      "path": "app/src/release/java/dev/stanislav/focusdeck/QaScreenControl.kt",
+      "source": "worktree",
+      "sha256": "138dc19ccf8545f67f7aa48a4a74848be321b933e97c061f7dfb209dda6287d4",
+      "size": 158
+    },
+    {
+      "path": "app/src/release/java/dev/stanislav/focusdeck/ui/restrictions/GateDiagnostics.kt",
+      "source": "worktree",
+      "sha256": "900e67ed9c0b29a948f7a673046783fef34e775fd5e01ff435a2a6596af4dece",
+      "size": 210
+    },
+    {
+      "path": "app/src/release/java/dev/stanislav/focusdeck/ui/ritual/RitualClock.kt",
+      "source": "worktree",
+      "sha256": "b016883582b484db5cd024077694f52a004cac24e29f538ad7acacb608a03268",
+      "size": 279
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/db/MealInsertSafetyTest.kt",
+      "source": "worktree",
+      "sha256": "68437b253859b62587bc989513443523dfe88c5b0a75ff00a95a95d0deee9e83",
+      "size": 3102
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/life/LifeCompletionMergeTest.kt",
+      "source": "worktree",
+      "sha256": "3216cbb6e0e9fcfc96721879959733e6e09490af7d0a078ccd5d91478625dcab",
+      "size": 6820
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/life/LifeEvidenceTest.kt",
+      "source": "worktree",
+      "sha256": "2771394a818067d7d072983547440b0fec48fb71de334f1c3d3e5d5157eebfb9",
+      "size": 5156
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/life/LifeHierarchyTest.kt",
+      "source": "worktree",
+      "sha256": "a6e6eb0630761f214845fe6ab53c67a5ef302e749c8709007fc56c2e277c22ed",
+      "size": 11649
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/life/LifeNoteCodecTest.kt",
+      "source": "worktree",
+      "sha256": "6d38980e4b178bfcf3a41d1f94788be5ed447e9ff0a379a1993a74e143e5c88b",
+      "size": 6224
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/life/LifeProgressTest.kt",
+      "source": "worktree",
+      "sha256": "9db101389b83899ca6bc6d1de9fd386d9c9a4a4a08a9d7c3a7858cd2bbe21167",
+      "size": 5420
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/life/LifeRulesTest.kt",
+      "source": "worktree",
+      "sha256": "0029de49b18794f086e5a0a488071f9424c6d9c20a4eefac5824f8a85df4dac8",
+      "size": 14162
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/network/DnsPacketInspectionTest.kt",
+      "source": "worktree",
+      "sha256": "44bb4b9260aacecedcba99046abd641e14879ff6c1d6051e0cc5dc28303b1619",
+      "size": 1404
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/network/DnsReplyTest.kt",
+      "source": "worktree",
+      "sha256": "0796ec7cedb0376235c347aacc2129a8aebd3ac1c21783981ec8955b4016a52c",
+      "size": 2769
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/repo/FocusEventExporterTest.kt",
+      "source": "worktree",
+      "sha256": "7aee8f3bcd4d5f59511c0a92bd20f987c45b765582d0cef05f16819609d52d83",
+      "size": 4051
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/repo/FocusTimeTest.kt",
+      "source": "worktree",
+      "sha256": "ea427125feb966f3031cf3d74f42fc5e8997d04ca9010989bdd11813bce002fd",
+      "size": 1814
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/repo/HarnessBatchTest.kt",
+      "source": "worktree",
+      "sha256": "6c708c2d14450a386a26531b8b739363a6ab1b107727cb76101d96ecc65b14d5",
+      "size": 1270
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/repo/HarnessTransportTest.kt",
+      "source": "worktree",
+      "sha256": "a8bef5d35336250e250f9720c521d792f20a4d242273ef5e3f2c235bd1c5c809",
+      "size": 3803
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/repo/SessionAuditTest.kt",
+      "source": "worktree",
+      "sha256": "a5beb6c2e008ba8351dfc0eb961936377d4da96890d1a9427c3b5bb0ce13ee01",
+      "size": 2187
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/sync/CrossDeviceReviewTest.kt",
+      "source": "worktree",
+      "sha256": "8a3d5d580f2568b18ba0bd9eece6ccd0fc6eda69f796193829dc2b55f59b6ef2",
+      "size": 1306
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/sync/FrozenProjectionStoreTest.kt",
+      "source": "worktree",
+      "sha256": "78d44302ff9c135d65588430da96208eb8447d20ee86988fad600f1a1622323c",
+      "size": 2435
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/sync/ImmutableOutboxTest.kt",
+      "source": "worktree",
+      "sha256": "7ad28dcbae6177f435a0a8943f42bc26a354df30bc2c37048e6284fb37f0f831",
+      "size": 2905
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/vault/DailyNoteEditTest.kt",
+      "source": "worktree",
+      "sha256": "cef14d16a82a18cfe275c7f1c620b6ed47aa44e8ace4b548f7d85aea707c18b1",
+      "size": 13021
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/vault/DailyNoteParserTest.kt",
+      "source": "worktree",
+      "sha256": "8fdbf38c8c4a2d5507533d3888ebf02441ed5fa6181b93dfa52ef1943c042a57",
+      "size": 8625
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/vault/JournalWriteSafetyTest.kt",
+      "source": "worktree",
+      "sha256": "58959e10cb8106e5313dbd25234bf71290c20bf13600d0779b36c4751d48ba34",
+      "size": 9374
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/vault/LifeTaskLinksTest.kt",
+      "source": "worktree",
+      "sha256": "f7f24e878082d7dbcdb79b47ab3f5971e7cf92decaff2b676e7b1e8b7b222cd2",
+      "size": 3597
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/data/vault/TaskNoteLinkTest.kt",
+      "source": "worktree",
+      "sha256": "64ca7573b76a014f0e831b1f76ecd8abbee34affa5cd7d632ca9cd9b747860d6",
+      "size": 2870
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/domainfilter/DnsTunnelCodecTest.kt",
+      "source": "worktree",
+      "sha256": "fd8e94ca1e7b53b7306163112aa4df3d5f0357e05c6b7bdae1075c751daa8686",
+      "size": 3466
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/domainfilter/DomainPolicyTest.kt",
+      "source": "worktree",
+      "sha256": "8e7993c8e1dee18b87e4ffc5e8dd1071bb19751a02cb3609f824318af70293ad",
+      "size": 3390
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/domainfilter/DomainSetupTest.kt",
+      "source": "worktree",
+      "sha256": "99c76e15902ff6851c5ac6f4b7361b1f7e8d0acb6404ece62521fd33ca318c66",
+      "size": 1789
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/domainfilter/DomainWindowGuardTest.kt",
+      "source": "worktree",
+      "sha256": "b8bfd9c861a24433caf921d7ca18a5d1b2a9efe31cf742b6052cb4e453c995bb",
+      "size": 2286
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/apps/LauncherRestrictionPolicyTest.kt",
+      "source": "worktree",
+      "sha256": "25723360ac1a3f5fdaa0404b2596e297b8c588709cc0c376dc659e36b6934dd4",
+      "size": 2124
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/home/FocusTaskBindingTest.kt",
+      "source": "worktree",
+      "sha256": "c82908d684d0d98443c7aef3761ebc03347ec0f51032b72b6aef3c157dbbff86",
+      "size": 6671
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/home/NextUpTest.kt",
+      "source": "worktree",
+      "sha256": "5134a99e8442208d47db5db7c2f947d098861660e0bbf45593da7deec52cf830",
+      "size": 4217
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/home/ProtectionTimeInputTest.kt",
+      "source": "worktree",
+      "sha256": "9b870d54f524fa3cb4cdc2649478cd7db317d96d3a43c94b1a35f24cc77c0268",
+      "size": 483
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/home/SummaryRetryQueueTest.kt",
+      "source": "worktree",
+      "sha256": "2c28c006dac731b3d3752900cf4c6cc8b319384c0a411d68c7476423567005a4",
+      "size": 4239
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/home/WorkMessagesPolicyTest.kt",
+      "source": "worktree",
+      "sha256": "1951d17b142c656da3584454f835dbcbda728b016679cc6191e7644a85151d99",
+      "size": 445
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/journal/JournalConflictResolutionTest.kt",
+      "source": "worktree",
+      "sha256": "1614b71ac1ad1f025785b5bc69d9adcc6e9b50b136dd0da31f7fb1d4e2883a9f",
+      "size": 5210
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/journal/JournalEditorSafetyTest.kt",
+      "source": "worktree",
+      "sha256": "510560b0089d7aa6683c98a6512e9f0b0dd6ee9f32d32edd98d094d7455a6be6",
+      "size": 5152
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/life/LifeEditorValidationTest.kt",
+      "source": "worktree",
+      "sha256": "aeb113e21f8e14e4933e799fc3937eb3d7c38a7bf7f0e581d137a33217aaf038",
+      "size": 1963
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/nutrition/NutritionWriteSafetyTest.kt",
+      "source": "worktree",
+      "sha256": "3aa750c1a7da9fca6784bf9b634fd862c69003899498953af81519af6258008e",
+      "size": 3042
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/nutrition/WeightReservationTest.kt",
+      "source": "worktree",
+      "sha256": "7c4cd7147c97a50d2dbb0f5f69ec2f13585d7157c0ba5da2a63cf90ecb7f49bb",
+      "size": 1307
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/planning/PlanningSuggestionsTest.kt",
+      "source": "worktree",
+      "sha256": "a3aa5b1fb92b7798239079a8e00aabccfbbf2c5f9ca6de0aca82de087ef5321f",
+      "size": 1367
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/planning/TaskToneTest.kt",
+      "source": "worktree",
+      "sha256": "9773c57c7f5dbad7bbad103a4a4bf7f082d8156b184026bdf969f4f215c90119",
+      "size": 2713
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/planning/TimelineCreationTest.kt",
+      "source": "worktree",
+      "sha256": "aff599a889f952129fea84540e5f2a4a51bf83b61d0018a6e742d0bb6a05abfd",
+      "size": 1811
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/planning/TimelineLanesTest.kt",
+      "source": "worktree",
+      "sha256": "77b2bd5f483777263deb6d9b78bb782c05bed63daa4fe54941aab18cb1d11469",
+      "size": 3796
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/restrictions/AppGateStatusTest.kt",
+      "source": "worktree",
+      "sha256": "45e09f861fd60c93262d2745cea525f7e3aef9d4863a8ffbe3d492978e305688",
+      "size": 623
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/restrictions/GuardWakeReceiptTest.kt",
+      "source": "worktree",
+      "sha256": "24bb910320756b27c9e13d1f219812b308a575222e80e2ea4d987054c6c7ca05",
+      "size": 1241
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/restrictions/LockOwnershipTest.kt",
+      "source": "worktree",
+      "sha256": "be1b3c58c1fa317dc939b1bc158234ec8a07b0f1fa6326749ba7f9a8543cb7ff",
+      "size": 778
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/restrictions/ProtectionWindowTest.kt",
+      "source": "worktree",
+      "sha256": "aabb31bc443900007cc01ee14ec04d5a40d97629f898cace23bd7ecfc9e80c73",
+      "size": 14020
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/restrictions/RestrictionControllerTest.kt",
+      "source": "worktree",
+      "sha256": "df3aef76804f8dae50947bb96d693397869022b048ff5bd5757e590d33a9d69c",
+      "size": 4020
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/ritual/RitualDraftTest.kt",
+      "source": "worktree",
+      "sha256": "41d76a38007405058473048cfa90e42dcaafd6ccb5220e4aa4856d442a21132a",
+      "size": 2867
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/ritual/RitualEngineTest.kt",
+      "source": "worktree",
+      "sha256": "6744773fe689ec2883fc7f76cda33dc6cb3e6e8c66391810e98be98a709ebdf4",
+      "size": 10986
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/ritual/RitualFlowTest.kt",
+      "source": "worktree",
+      "sha256": "6d9a69e2819988c2dde7ccacae5babc0bb9b8c06a8f0e190066c0371ccece598",
+      "size": 4652
+    },
+    {
+      "path": "app/src/test/java/dev/stanislav/focusdeck/ui/ritual/RitualRequirementsTest.kt",
+      "source": "worktree",
+      "sha256": "99d882911e4614fd01584769f8f1ff504e9cdea4202a5e97694d1e632676b0aa",
+      "size": 4185
+    },
+    {
+      "path": "app/src/test/python/test_focus_block_migration.py",
+      "source": "worktree",
+      "sha256": "12a6f2f453d56834b878fbc1493da5f9dd382cb644d9d8f4b01c0f87186064d5",
+      "size": 7365
+    },
+    {
+      "path": "app/src/testDebug/java/dev/stanislav/focusdeck/QaScreenControlTest.kt",
+      "source": "worktree",
+      "sha256": "849602e2d03a405061ded0157b7c7667c20011b057fc2cde75e5b6c9c5d821c4",
+      "size": 643
+    },
+    {
+      "path": "app/src/testDebug/java/dev/stanislav/focusdeck/ui/restrictions/GateDiagnosticsTest.kt",
+      "source": "worktree",
+      "sha256": "81d5abe9f3257ec34f6253e4d294e77fbff94ad55b3ac703b4f694b45ab35007",
+      "size": 461
+    },
+    {
+      "path": "architecture-workboard/.gitignore",
+      "source": "desktop",
+      "sha256": "cde5c74a3b051c1b9aeb40275c99ae639319e4aa638b73a5dcbb40a71a9e1321",
+      "size": 69
+    },
+    {
+      "path": "architecture-workboard/README.md",
+      "source": "desktop",
+      "sha256": "e6c9a4d537ed91231db313e0d80a71dc0dc070cdac7450842941fcc5326cc0fa",
+      "size": 13636
+    },
+    {
+      "path": "architecture-workboard/docs/architecture-graph-design.md",
+      "source": "desktop",
+      "sha256": "3db150aa7a5ec9e24042ff14d508fbc7465578a19814d32f166bac506a63e5dc",
+      "size": 9836
+    },
+    {
+      "path": "architecture-workboard/index.html",
+      "source": "desktop",
+      "sha256": "983a4f5ce8f8efeb23a19ddfc2addef01da2a9b5ef8fbe0e4d40f79f3e77df5e",
+      "size": 529
+    },
+    {
+      "path": "architecture-workboard/package-lock.json",
+      "source": "desktop",
+      "sha256": "698f3ebf93b714e919834d907d3f4cd5536a4998bb4ae0b648f988ee0289d294",
+      "size": 47024
+    },
+    {
+      "path": "architecture-workboard/package.json",
+      "source": "desktop",
+      "sha256": "79ad2fa5f8487dd9357298924b786d9a4f85f129de64952d4c5907af0bd2eeb1",
+      "size": 721
+    },
+    {
+      "path": "architecture-workboard/prototype/app.js",
+      "source": "desktop",
+      "sha256": "a1271678ed8278d7869c44a5f269c9b7b06aef925be1dd4cdb8d6aa9f21d3df6",
+      "size": 24696
+    },
+    {
+      "path": "architecture-workboard/prototype/index.html",
+      "source": "desktop",
+      "sha256": "c10451088f35d84417727250821fb757a3f5f834339c9244f2b00932db992832",
+      "size": 3786
+    },
+    {
+      "path": "architecture-workboard/prototype/style.css",
+      "source": "desktop",
+      "sha256": "b1fbd17b43ec38b392d8cbe942cb8416eb3c421a0566daf4547661db0e8aaf86",
+      "size": 11933
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Checkout/CheckoutController.cs",
+      "source": "desktop",
+      "sha256": "a3039e996c3090979e1380ce8b12845d9f9cd43141a761ec94842764ba622ea9",
+      "size": 396
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Checkout/CheckoutService.cs",
+      "source": "desktop",
+      "sha256": "420f57befe4ab628b636f5c4f6698a6ad366fc1231b9558d67d11717fe41e245",
+      "size": 1320
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Checkout/PaymentGateway.cs",
+      "source": "desktop",
+      "sha256": "faaf5e37b9d25b48794418ddf4f8063a712ba3d61af5f65a59705123327d944e",
+      "size": 551
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Checkout/Repositories.cs",
+      "source": "desktop",
+      "sha256": "9eb105db809c6d5bf38b8d7588f0ed83024ac1591f6432eeea996ba2c22e6350",
+      "size": 985
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Commerce.csproj",
+      "source": "desktop",
+      "sha256": "bb495f5e098a066f1eb8bd079e45ea8dacf3c74182286968a664e56fb8267818",
+      "size": 183
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Identity/IdentityService.cs",
+      "source": "desktop",
+      "sha256": "cc17cfbb2755c04ba6e61ed61ab25c8c0ef40fead635bf157697c1c04427b262",
+      "size": 317
+    },
+    {
+      "path": "architecture-workboard/samples/Commerce/Notifications/NotificationService.cs",
+      "source": "desktop",
+      "sha256": "d49166eb1a0657f908e9b9daa78935c851bc4eaa1652e45b6e9035bfcaecef94",
+      "size": 359
+    },
+    {
+      "path": "architecture-workboard/scripts/start.mjs",
+      "source": "desktop",
+      "sha256": "70808b1c1c239911325c5705e776296ec3d22d13be8a4c73b9bad6a9c6753ba1",
+      "size": 1324
+    },
+    {
+      "path": "architecture-workboard/server/Analyzer.cs",
+      "source": "desktop",
+      "sha256": "846497d6454b55fb0e862320bdd1f1a67271dad2fb2c6c6024d623558a366795",
+      "size": 10133
+    },
+    {
+      "path": "architecture-workboard/server/Atlas.Server.csproj",
+      "source": "desktop",
+      "sha256": "1b5121d0dece097b0c9ce1c1e571511c4c20c6446268a1a0257d06c20fdc3519",
+      "size": 574
+    },
+    {
+      "path": "architecture-workboard/server/AtlasMetadata.cs",
+      "source": "desktop",
+      "sha256": "51e272b5faf1d49e5b0f24ad3da42320604c8cd07247237cc8c405a672948a75",
+      "size": 3586
+    },
+    {
+      "path": "architecture-workboard/server/GitReader.cs",
+      "source": "desktop",
+      "sha256": "309ae16ad0018d9bae1d294844c46a10b910a3c5a74c25676a601f391863a7e5",
+      "size": 4190
+    },
+    {
+      "path": "architecture-workboard/server/Models.cs",
+      "source": "desktop",
+      "sha256": "13a1888efdc587582fa6c00cfe513c2aa1808dea216ef9166676839af7da8b36",
+      "size": 2682
+    },
+    {
+      "path": "architecture-workboard/server/PreviewBuilder.cs",
+      "source": "desktop",
+      "sha256": "7233cd281d7fc632aba002e4010c157bfd5afd0d1bc6305a6e5db2d5639a8c57",
+      "size": 4115
+    },
+    {
+      "path": "architecture-workboard/server/Program.cs",
+      "source": "desktop",
+      "sha256": "cc30c206406d0f095312af46f9031f13a030d3ee5f9e59f23d98b0b20b0b3a83",
+      "size": 4150
+    },
+    {
+      "path": "architecture-workboard/server/ProjectFacts.cs",
+      "source": "desktop",
+      "sha256": "62f7ee91276f768ce9d1086925af3db6b3d7bce3ae03cadd4e50c917094f68f6",
+      "size": 2567
+    },
+    {
+      "path": "architecture-workboard/server/WorkspaceService.cs",
+      "source": "desktop",
+      "sha256": "25a4fd9a4a7c6aa43122eb77c738d6f97d6d493b882d149ef0d4d766af23d112",
+      "size": 9684
+    },
+    {
+      "path": "architecture-workboard/src/App.jsx",
+      "source": "desktop",
+      "sha256": "27fafa363485d56b973fd146921daeebcd6045f9efc323e97a9fe5d8ea9c24c0",
+      "size": 47200
+    },
+    {
+      "path": "architecture-workboard/src/Cards.jsx",
+      "source": "desktop",
+      "sha256": "35d14456e54b78d54be174ad3f8cb55ba744a11c2fd36846859dbcbdab99068d",
+      "size": 7349
+    },
+    {
+      "path": "architecture-workboard/src/CodePanel.jsx",
+      "source": "desktop",
+      "sha256": "f5f295deac1b0360ce795e4b77f6bb0f6d2ec6cf757710b2bec080267b5ea2eb",
+      "size": 8332
+    },
+    {
+      "path": "architecture-workboard/src/architecture-layout.js",
+      "source": "desktop",
+      "sha256": "f684d3379b7d3e4041067babad2313070398890934c25c2160339fdee914294b",
+      "size": 4069
+    },
+    {
+      "path": "architecture-workboard/src/architecture.js",
+      "source": "desktop",
+      "sha256": "17ed76d845488f64336df6c6aea6f5e05ae781f6fa9728748c23efc9234649ee",
+      "size": 11898
+    },
+    {
+      "path": "architecture-workboard/src/architecture.worker.js",
+      "source": "desktop",
+      "sha256": "c149bb47115bfe38c1105752906aeebe82a78ba9536ce043ad051b8f6fdf6702",
+      "size": 533
+    },
+    {
+      "path": "architecture-workboard/src/graph.js",
+      "source": "desktop",
+      "sha256": "bfbff8f35490bedeb81dd587ff95203f4de4e38cf456557ed7b47a0e5d5845b1",
+      "size": 2599
+    },
+    {
+      "path": "architecture-workboard/src/main.jsx",
+      "source": "desktop",
+      "sha256": "34bdaadc81ae90cff1e0d8d19ed3494c421a31e92645d0e82306da57d403f451",
+      "size": 310
+    },
+    {
+      "path": "architecture-workboard/src/pipelines.js",
+      "source": "desktop",
+      "sha256": "09bcbcb5bb8f5f1483d346002366330fd58bf44185ced32697bfb570e04158e1",
+      "size": 5860
+    },
+    {
+      "path": "architecture-workboard/src/routing.js",
+      "source": "desktop",
+      "sha256": "99b1605d105d3a4b7ffb9fdce47d713b60be0d69d4276ee8182db3e760d4d67c",
+      "size": 3504
+    },
+    {
+      "path": "architecture-workboard/src/sequence-colors.js",
+      "source": "desktop",
+      "sha256": "bdddf87bf8ab9471041d0400b73afc67c7f1477355941e7468845b0c0d0bcf74",
+      "size": 1064
+    },
+    {
+      "path": "architecture-workboard/src/style.css",
+      "source": "desktop",
+      "sha256": "8eb8c15fcd5fdba46b027c56d822aca8e5b028984a8817342c8dd95c533c21b1",
+      "size": 21425
+    },
+    {
+      "path": "architecture-workboard/src/zone-layout.js",
+      "source": "desktop",
+      "sha256": "d3085e21cc883263cfb0ca5f04f1bc3dcfffc71a0daa9877cf03518e2b08e935",
+      "size": 8074
+    },
+    {
+      "path": "architecture-workboard/src/zones.js",
+      "source": "desktop",
+      "sha256": "e39180a8c1218bf924d30e700c749c4d222b9dad82b528d72c7edd6c95cd6175",
+      "size": 6054
+    },
+    {
+      "path": "architecture-workboard/tests/architecture.test.mjs",
+      "source": "desktop",
+      "sha256": "dff5a3bc6bdb293732c3c299f320cdbad653fea353cea52214dfe9b5b4ec5781",
+      "size": 5982
+    },
+    {
+      "path": "architecture-workboard/tests/graph.test.mjs",
+      "source": "desktop",
+      "sha256": "fcac02cb6f42fe5ba36edf88e11ae3e1768a6becd618844cb18951d9d2928c10",
+      "size": 3006
+    },
+    {
+      "path": "architecture-workboard/tests/integration.test.mjs",
+      "source": "desktop",
+      "sha256": "9eabd8780f161dbae3651bb69b2df6e903a37f332529608ecf4842b09c8ef4d6",
+      "size": 5469
+    },
+    {
+      "path": "architecture-workboard/tests/pipelines.test.mjs",
+      "source": "desktop",
+      "sha256": "826af1c4bfe2fcc7393a41d9a9c288bd560b9100f948f67ff1495f585a1070b8",
+      "size": 4109
+    },
+    {
+      "path": "architecture-workboard/tests/sequence-colors.test.mjs",
+      "source": "desktop",
+      "sha256": "d4411d675e79f7c8801f05db4919cd93f0ee981e778d28bc29b20b843fcdbee3",
+      "size": 1376
+    },
+    {
+      "path": "architecture-workboard/tests/zones.test.mjs",
+      "source": "desktop",
+      "sha256": "f92cd342f373ab5790a3ffde144c5aa345895a18933996c320beb8e0a8b9547e",
+      "size": 7328
+    },
+    {
+      "path": "architecture-workboard/vite.config.js",
+      "source": "desktop",
+      "sha256": "df6f4029172d5d9df43d8c124789b3f362b90b3e3c14cffc26a3ffc41344fac6",
+      "size": 186
+    },
+    {
+      "path": "build.gradle.kts",
+      "source": "worktree",
+      "sha256": "2465cc5f101e7f1a1101c6bc5ab5ba8511b22b7e4f79b12369fa2faf708f01a5",
+      "size": 159
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "source": "worktree",
+      "sha256": "fc4467fcc35e0fb914aade1642bd857b0b07ddeba1b63bea532f887bcb77ff36",
+      "size": 18797
+    },
+    {
+      "path": "docs/ANDROID-V2-QA.md",
+      "source": "worktree",
+      "sha256": "edf9547a8ab832f1c9479b0c256d412ee0eba1de3e9f2ac2fd2bb222fdc2add8",
+      "size": 10679
+    },
+    {
+      "path": "docs/BEHAVIOR-EVIDENCE.md",
+      "source": "worktree",
+      "sha256": "58c7852f20a33c5e230fe2f3a89ccb14290a898c5ca8aae722e2f2a10ee4ae6c",
+      "size": 30981
+    },
+    {
+      "path": "docs/CORE-VALIDATION.md",
+      "source": "worktree",
+      "sha256": "47eb3010ba1cc3e1b530b91217a3f4fb0a603fe96c3a7df0e93933693c6337bd",
+      "size": 8296
+    },
+    {
+      "path": "docs/DEVELOPMENT-LOG.md",
+      "source": "worktree",
+      "sha256": "bdf68ba6f286fd3e7cbe125f7418d1d2d486767d9e089595bc13960d4f07a3d3",
+      "size": 30661
+    },
+    {
+      "path": "docs/EVIDENCE-TO-DESIGN.md",
+      "source": "worktree",
+      "sha256": "08541bfba244c5850e1ce8724a00ac29bb733da18b3722ab0dbc0a515c0e918a",
+      "size": 4752
+    },
+    {
+      "path": "docs/HANDOFF-2026-09-29.md",
+      "source": "worktree",
+      "sha256": "756e2dfa071a3f04bb106bbe2d54bb10a4c552a43762d06566d97024d9a429c7",
+      "size": 12830
+    },
+    {
+      "path": "docs/HANDOFF-NOW.md",
+      "source": "worktree",
+      "sha256": "64f4ebadd4d7a3f177f5f9b1e337d6831a2fcb577d191c2f2e922276ac019693",
+      "size": 3112
+    },
+    {
+      "path": "docs/IMPLEMENTATION-LOG.md",
+      "source": "worktree",
+      "sha256": "d500d2694470bdd80ff57c5c84b87a24b5c5627888ba73b8ece34b3ce44eac25",
+      "size": 53280
+    },
+    {
+      "path": "docs/INSTALL-AND-RECOVERY.md",
+      "source": "worktree",
+      "sha256": "9650a5b328a7b495a7ce922e600ad205453e54f9bdbf734da8c8a9bf0d1e0994",
+      "size": 7789
+    },
+    {
+      "path": "docs/LIFE-UI-2026-09-29.md",
+      "source": "worktree",
+      "sha256": "cf18f3907d226998f8ebddb51180aa649e315fdc6f92c913c7964536e6ae57e8",
+      "size": 10166
+    },
+    {
+      "path": "docs/MAC-BROWSER-STABILITY-20261105.md",
+      "source": "worktree",
+      "sha256": "0bdf75cedea56ed57adb1d37e42f5522f1a472210ae4be3906ac8d0bc6b51a4e",
+      "size": 6884
+    },
+    {
+      "path": "docs/MAC-MVP-RESULT-20261104.md",
+      "source": "worktree",
+      "sha256": "2eb210c20ecc0e82de9fb763886623e3565d667191103c78f25b19adb05ba548",
+      "size": 7644
+    },
+    {
+      "path": "docs/MAC-MVP-STATUS-20261104.md",
+      "source": "worktree",
+      "sha256": "be1bb19ec86fd3b3b13b7f6fb487a5081973f1262e2590ed716e3a41a8b7d569",
+      "size": 9070
+    },
+    {
+      "path": "docs/MAC-PROXY-RECOVERY-20261105.md",
+      "source": "worktree",
+      "sha256": "b3a55ada55316a4c5100f5d1339de445c4cc10e494b843a447fea30a938ebd51",
+      "size": 6755
+    },
+    {
+      "path": "docs/MAC-REBOOT-CHECKPOINT-20261104.md",
+      "source": "worktree",
+      "sha256": "f153583bae828ea2abde94dc486e48289db1084cb084dc845199cac1a2cc50af",
+      "size": 3789
+    },
+    {
+      "path": "docs/NAVIGATION-2026-09-29.md",
+      "source": "worktree",
+      "sha256": "4fac852b0e8a42ebb2e65ae86a2c115b0ed1bbe43ee9e44f17b86a5426dafdd2",
+      "size": 19360
+    },
+    {
+      "path": "docs/OBSIDIAN-PANEL-0.2-2026-09-29.md",
+      "source": "worktree",
+      "sha256": "653cc934c874db3efd807a045438bc00564344ee939ceacda0ac83f4c3680710",
+      "size": 8479
+    },
+    {
+      "path": "docs/PILOT-PROTOCOL.md",
+      "source": "worktree",
+      "sha256": "c70eff093c3d457d8b2814c5e907a3d14f5accde0d261308aff54bb9cee7b477",
+      "size": 8762
+    },
+    {
+      "path": "docs/PLANNING-CREATE-2026-09-29.md",
+      "source": "worktree",
+      "sha256": "1376815cfb60f2a6fa7a9d54e32a50baae45befc0dd403a54e49155c49e63e8b",
+      "size": 6345
+    },
+    {
+      "path": "docs/PRODUCT-INCREMENTS.md",
+      "source": "worktree",
+      "sha256": "2194d630f00901d740d13d4ef41c045a03c89631a76d42655c21e29454cb2f3f",
+      "size": 37544
+    },
+    {
+      "path": "docs/PROJECT-CONTEXT.md",
+      "source": "worktree",
+      "sha256": "36e8148e99d0bfc17842711dac41f439f64462de887997a7463b1e707aa5309b",
+      "size": 16837
+    },
+    {
+      "path": "docs/README.md",
+      "source": "worktree",
+      "sha256": "b7cfcb5e0a3a14e0fc26bcdf50fddbd3f23b679d95f9cfb06edf876106efc8b6",
+      "size": 8941
+    },
+    {
+      "path": "docs/RELEASE-1.1.0.md",
+      "source": "worktree",
+      "sha256": "e41a1d460cbf5559195078d1783a29319f6aace76ff0f51eac7844a730419ee0",
+      "size": 14133
+    },
+    {
+      "path": "docs/ROOT-QA-EVIDENCE.md",
+      "source": "worktree",
+      "sha256": "ccf7e054bec4a103c2292f624e44c45c0354c411f8c934bd352037044203886e",
+      "size": 6000
+    },
+    {
+      "path": "docs/SEAMLESS-SYNC-20261104.md",
+      "source": "worktree",
+      "sha256": "c86d1438978d24a05b8f2af45ff47ac2241a20d9c8af16d147c0462d0cdd972a",
+      "size": 7261
+    },
+    {
+      "path": "docs/SYSTEM-OVERVIEW.md",
+      "source": "worktree",
+      "sha256": "b46b04cf5d44f753dd63d4455bff938936e549a93816132485a2c54ccb0b0410",
+      "size": 5074
+    },
+    {
+      "path": "docs/UI-DENSITY-2026-09-29.md",
+      "source": "worktree",
+      "sha256": "dd419ac00347c3ee7c80730ab7f6b247ecb8b2a5782228c37e4768c295eaf744",
+      "size": 5798
+    },
+    {
+      "path": "docs/android-domains.md",
+      "source": "worktree",
+      "sha256": "31df6370747d3a0689b0ddcaaf26af366c52f4c50b4303f98f671ffbb2028daf",
+      "size": 23764
+    },
+    {
+      "path": "docs/android-harness.md",
+      "source": "worktree",
+      "sha256": "432964ff6b0fd83a6c81152c08b6b5937febfe3270812fe4ed1bf1492c1482c8",
+      "size": 11780
+    },
+    {
+      "path": "docs/android-restrictions-audit.md",
+      "source": "worktree",
+      "sha256": "1d51beb5b589415dc69e8bae9f8f0dfe13a9e02ca59082b29789ff65428f5b0f",
+      "size": 22447
+    },
+    {
+      "path": "docs/automatic-sync.md",
+      "source": "worktree",
+      "sha256": "9d8376fc192e57c82e3ec242c9c113f19c295e5b61689df21577e148a431cfdb",
+      "size": 13060
+    },
+    {
+      "path": "docs/discipline-ritual.md",
+      "source": "worktree",
+      "sha256": "19686b0bb351ca7b174ef54f88e8122114f0dcc298b2c64212eab3b1d3546e98",
+      "size": 16413
+    },
+    {
+      "path": "docs/harness-metrics.md",
+      "source": "worktree",
+      "sha256": "371b7ff03657936e268b4ee392198b53b113c61e29340914bf71ac2b9be57832",
+      "size": 35571
+    },
+    {
+      "path": "docs/journal-ui-acceptance.md",
+      "source": "worktree",
+      "sha256": "7562dfa7343926bfe7ba216a81f8d8e5501723d6185be3b31cbac8725b66be03",
+      "size": 4118
+    },
+    {
+      "path": "docs/life-integration-final-review.md",
+      "source": "worktree",
+      "sha256": "cb0138814750f16f9f9ac1c05df3a8978e48599728f7eb47064032642e0c01d7",
+      "size": 5122
+    },
+    {
+      "path": "docs/life-parent-links-review.md",
+      "source": "worktree",
+      "sha256": "5c0ef1ac6e62ae589fc3c26f8b3629f1ea7a6d0c2e80ea7ce3aa1286e919bff7",
+      "size": 6845
+    },
+    {
+      "path": "docs/life-ritual-audit.md",
+      "source": "worktree",
+      "sha256": "2dfbc2699830f76ce3b6671297447464ea199ed1f11832c680b94d960f64e73a",
+      "size": 27926
+    },
+    {
+      "path": "docs/life-ritual-draft-review.md",
+      "source": "worktree",
+      "sha256": "8b18f1463e9db7b454af6da2957606bbbc3e6b8a7494ba71945f7eecb31bc848",
+      "size": 7212
+    },
+    {
+      "path": "docs/life-ritual-readiness-review.md",
+      "source": "worktree",
+      "sha256": "0d06eaa42b12a5e3cf2efe34d48a0c78ca2f2f884788df448a7e4ef71b8a6523",
+      "size": 7349
+    },
+    {
+      "path": "docs/life-system-evidence.md",
+      "source": "worktree",
+      "sha256": "ccd864c6a5030e8203d662b4c251ba184989ac9b33ec0bcd98bf1f2b64d6f1ae",
+      "size": 34532
+    },
+    {
+      "path": "docs/life-system-guide.md",
+      "source": "worktree",
+      "sha256": "d04390cdd3a79a5f268c7d5f42e7ed6a6b049752bd6710604ce48f9b5efdea80",
+      "size": 17167
+    },
+    {
+      "path": "docs/life-system-principles.md",
+      "source": "worktree",
+      "sha256": "c4625c99d7452ec7a6a87f69227f0f784239bc0f3bd8a25642ff24ecca28786a",
+      "size": 5836
+    },
+    {
+      "path": "docs/life-system-rituals.md",
+      "source": "worktree",
+      "sha256": "9f612ac830c8bbe47a84933353a428041e24ad6aa9fc48381a8980dacc80351a",
+      "size": 6330
+    },
+    {
+      "path": "docs/life-system-rules-review.md",
+      "source": "worktree",
+      "sha256": "aeeaf02f00d8f817c7dce217a2552da9507b0c713e832a36535040ae8e187466",
+      "size": 7336
+    },
+    {
+      "path": "docs/life-system-science-review.md",
+      "source": "worktree",
+      "sha256": "6d5302a053c55a44723862cee17b5542890ecd98065e1da7c273454473f1eba0",
+      "size": 33031
+    },
+    {
+      "path": "docs/life-system-ux.md",
+      "source": "worktree",
+      "sha256": "8089a0559350f492f359ec127a3d5a9dcb7b8881e7f3fd1f326a614aa65dc0e6",
+      "size": 63013
+    },
+    {
+      "path": "docs/life-system-worklog.md",
+      "source": "worktree",
+      "sha256": "973884890bc4771ecdc848f08f3e91a7e102b0315ca297cdcd403f6f64cf125c",
+      "size": 18026
+    },
+    {
+      "path": "docs/release-1.1.0/goal-card-final.png",
+      "source": "desktop",
+      "sha256": "e67535d2ac82f4dbf736c72d925b1ff22ec0872bb756ed1ca9810b61f68b1277",
+      "size": 159883
+    },
+    {
+      "path": "docs/release-1.1.0/index.html",
+      "source": "desktop",
+      "sha256": "aa370facb562ed3ffbc372a6491c2d660e925c5f8addce8330a21636d16c9b07",
+      "size": 3291
+    },
+    {
+      "path": "docs/release-1.1.0/journal-conflict-final.png",
+      "source": "desktop",
+      "sha256": "c10570ab5dfee6a72cd3ce4d2fed3b1bbe3ac6c470533f0811cf7d73ca3009cc",
+      "size": 190718
+    },
+    {
+      "path": "docs/release-1.1.0/ritual-final-before-food.png",
+      "source": "desktop",
+      "sha256": "ccfb1df50156005872ebfe0c14e5b881bfcd6f3d4bf8f687d145a18f44e1fbba",
+      "size": 198234
+    },
+    {
+      "path": "docs/ritual-ui-acceptance.md",
+      "source": "worktree",
+      "sha256": "c9269aa18da4c461dd62b440f63dae1394b0e4f9e08b6d7ea21f28172cafc362",
+      "size": 8057
+    },
+    {
+      "path": "gradle.properties",
+      "source": "worktree",
+      "sha256": "b5948d2cae56b10f0556660fca9477e8a1750ccc86b39c8780aafcb1e63f5691",
+      "size": 185
+    },
+    {
+      "path": "gradle/libs.versions.toml",
+      "source": "worktree",
+      "sha256": "20f39ab296541a0790c1bdc1a1084a573ab0b95de4f77a2f418e949cc89d2719",
+      "size": 1746
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "source": "worktree",
+      "sha256": "7a9ce74cff467ca1bf60a4fcd9f05185acceda4d0f382434d393e17864262c5d",
+      "size": 47505
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "source": "worktree",
+      "sha256": "9edbaf00e02fb3e283499d0053f8b846fae30dd73ee83c3b01966d749a071414",
+      "size": 281
+    },
+    {
+      "path": "gradlew",
+      "source": "worktree",
+      "sha256": "a5a5c199ba02189ae8c46a334223371a20599d9c298ef65e7540ede4a3f72d59",
+      "size": 8656
+    },
+    {
+      "path": "gradlew.bat",
+      "source": "worktree",
+      "sha256": "d539676c48b596afda64c963ec8f7ee56c7b3fe7e3b81d1dbe2d1a1e3dd9e9f8",
+      "size": 2848
+    },
+    {
+      "path": "guard/.gitignore",
+      "source": "desktop",
+      "sha256": "dae669029eee7f497e8a201991a5292e994f03487c79f6f964d02779f25f2bba",
+      "size": 33
+    },
+    {
+      "path": "guard/INTEGRATION.md",
+      "source": "desktop",
+      "sha256": "b860128e2c311ca71f94e3d10eda5a28bf47928ccb6b010e40611ce5e0bbd85c",
+      "size": 17482
+    },
+    {
+      "path": "guard/README.md",
+      "source": "desktop",
+      "sha256": "afda980fcf02893241ac31a2fabd534e4e40e7ac47c1c511680974bd3bbb01f4",
+      "size": 29776
+    },
+    {
+      "path": "guard/RECOVERY.md",
+      "source": "desktop",
+      "sha256": "7e839133b2c19791513aa4b417546aa1ed385f6d0231c73faa088992c96a72ad",
+      "size": 8121
+    },
+    {
+      "path": "guard/SCHEDULING.md",
+      "source": "desktop",
+      "sha256": "c3978812e93cea6fc5e6d0ecd135d18822dfb10a17aacfdb4db235a7f8743316",
+      "size": 22085
+    },
+    {
+      "path": "guard/VERIFICATION.md",
+      "source": "desktop",
+      "sha256": "f875bab2467dac148491d4a084314205c1be2c4fefbae84a2a1a22878fa50ebd",
+      "size": 10079
+    },
+    {
+      "path": "guard/build.gradle.kts",
+      "source": "worktree",
+      "sha256": "2c1a583c9c7c2ad3498bf14e736b106d19d6fab145436e8cfd43c88e0909dd14",
+      "size": 1535
+    },
+    {
+      "path": "guard/gradle.properties",
+      "source": "desktop",
+      "sha256": "5d299d9f662c4577e61c6b56ffd3aa7de6747229472590d98eaa5a2775aec129",
+      "size": 75
+    },
+    {
+      "path": "guard/settings.gradle.kts",
+      "source": "desktop",
+      "sha256": "902aab0987cc2fe117ecc8853595853ce21f97e59d0f874287c46452222dc44d",
+      "size": 333
+    },
+    {
+      "path": "guard/src/main/AndroidManifest.xml",
+      "source": "worktree",
+      "sha256": "218be2f1c115f4d2db9a0ef61c702c2e784cca4cc78132bedf210e85e09f11fd",
+      "size": 3780
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/AdbRecoveryReceiver.java",
+      "source": "worktree",
+      "sha256": "66762d41ffe53a402ccd217daf187ebb1fbfa3dcfe82ca941b1a6838324bf7a8",
+      "size": 1862
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/AndroidGuardPlatform.java",
+      "source": "worktree",
+      "sha256": "70fcefa7a9718daba2db621d03837f275087fe78c9e88fa3028d400f1b36df9c",
+      "size": 3318
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/AndroidJournalStore.java",
+      "source": "worktree",
+      "sha256": "fdd01144260f96218f18e1cacf73f89b5af052d7279267a78039bee2dde3148a",
+      "size": 1737
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/AndroidWakeScheduler.java",
+      "source": "worktree",
+      "sha256": "76b90519212d19b01ff1eae8405092388a03c59edb770f53dc60409a1205871a",
+      "size": 8131
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardActivity.java",
+      "source": "worktree",
+      "sha256": "4a3172ddc47e35a838875f050e702cd4324a60746cb27c1ae323d434efe0b203",
+      "size": 7367
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardAdminReceiver.java",
+      "source": "worktree",
+      "sha256": "4aa613f7e6c3402aeb6291b471ef1f99065f4a45cdf0562171ea4c6012279dc3",
+      "size": 553
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardCommands.java",
+      "source": "worktree",
+      "sha256": "0580c2d7b9f645a2b9938095794c3468833292c57ba9638e81a72db7fc9bf308",
+      "size": 922
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardController.java",
+      "source": "worktree",
+      "sha256": "684ae8b641114b7c303d34183f3e3628486900a444c7270199307f6610de51cc",
+      "size": 9862
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardPolicyReceiver.java",
+      "source": "worktree",
+      "sha256": "6b2975bf9e539a4933636a03f98c32e7f4df7069b93ec39c3c78f4e72ea20219",
+      "size": 1242
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardRuntime.java",
+      "source": "worktree",
+      "sha256": "33109b1cd6a88d6ca8bdcaa591ff1639933d790848fa10ac040d61f93633f628",
+      "size": 1432
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/GuardScheduleReceiver.java",
+      "source": "worktree",
+      "sha256": "55a7e7ebd9e8e96a6acc02eac4664e66bbcddfcc4482044537c2f9d349835953",
+      "size": 1707
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/JournalCodec.java",
+      "source": "worktree",
+      "sha256": "5ed074ed05b8a3ec8b34d762f647283f6e5275055c9b3b1233cfedcca85996eb",
+      "size": 1917
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/WakeRequestReceiver.java",
+      "source": "worktree",
+      "sha256": "fc8dfec22ab3226d8cb05abeb71d3b3cdae6d7529eb250e2b3057495a0379266",
+      "size": 2198
+    },
+    {
+      "path": "guard/src/main/java/dev/stanislav/focusdeck/guard/WakeScheduler.java",
+      "source": "worktree",
+      "sha256": "f7e27a3e1b4546d00bfb7d75dd95681b783855f030acb891655ea9de7c135450",
+      "size": 9940
+    },
+    {
+      "path": "guard/src/main/res/drawable/guard_icon.xml",
+      "source": "worktree",
+      "sha256": "3f5989d968af66acf54ce9415c996453e8c8b44060ea1342c85aa2c34ba725ca",
+      "size": 397
+    },
+    {
+      "path": "guard/src/main/res/xml/guard_admin.xml",
+      "source": "worktree",
+      "sha256": "cb421177f92d1d4d86a3909f80315396ff317aa801522507661c5ae71ef5ff6c",
+      "size": 151
+    },
+    {
+      "path": "guard/src/main/res/xml/no_data_extraction.xml",
+      "source": "worktree",
+      "sha256": "cb029b35db0e976c087100424e16e14a6256b46962398887520e51508c3b5842",
+      "size": 1050
+    },
+    {
+      "path": "guard/src/test/java/dev/stanislav/focusdeck/guard/GuardControllerTest.java",
+      "source": "worktree",
+      "sha256": "98a8063ff99e0ea6a9de1a2287412d83a953266eed926fdfecfaaea397f40c20",
+      "size": 18144
+    },
+    {
+      "path": "guard/src/test/java/dev/stanislav/focusdeck/guard/JournalCodecTest.java",
+      "source": "worktree",
+      "sha256": "0c4bb4eccfeaa6c8788d82ed70d8633c6e8187574bf1315c4c3486095d86b25f",
+      "size": 1883
+    },
+    {
+      "path": "guard/src/test/java/dev/stanislav/focusdeck/guard/ManifestBoundaryTest.java",
+      "source": "worktree",
+      "sha256": "f45e4082da21f96644cd21b6cde61dbe8d4e48d2bafdc196613abc4e35aff4a2",
+      "size": 4908
+    },
+    {
+      "path": "guard/src/test/java/dev/stanislav/focusdeck/guard/WakeSchedulerTest.java",
+      "source": "worktree",
+      "sha256": "3cf7d93dc0a6eeb4869983de507144610285c69c370ad199afeeab6c221fafa6",
+      "size": 18418
+    },
+    {
+      "path": "harness/.gitignore",
+      "source": "worktree",
+      "sha256": "fa8edf6f566aa7012e3c5df6ed6c611b300bfbdeb75baa939e2927d841200291",
+      "size": 33
+    },
+    {
+      "path": "harness/control.py",
+      "source": "worktree",
+      "sha256": "855f228138c99eb3fed7d8f739ce15da5b1c2d08cb9a7335af8f7529d9d3a274",
+      "size": 6935
+    },
+    {
+      "path": "harness/metrics.py",
+      "source": "worktree",
+      "sha256": "687d9374c8e081303e7d920743b1a69fa9f806379731922122874469ed562627",
+      "size": 22727
+    },
+    {
+      "path": "harness/native/ContextCore.swift",
+      "source": "worktree",
+      "sha256": "565a39ce4b26c25da3d341bd85da8eb0d3fc3ab453ee6e73b5faca86859530e1",
+      "size": 4727
+    },
+    {
+      "path": "harness/native/ContextTests.swift",
+      "source": "worktree",
+      "sha256": "663680112fb36cf6a8a8847f4056ebad112fce178bba1d75542c4b52ccf8117c",
+      "size": 3316
+    },
+    {
+      "path": "harness/native/ObserverMain.swift",
+      "source": "worktree",
+      "sha256": "d1c338ee011ccbe426ec29621dd562bf79ffc3bdb9bd8354f0f50000531b5ec0",
+      "size": 5238
+    },
+    {
+      "path": "harness/native/RECOVERY-NOTIFICATION-CANDIDATE.md",
+      "source": "worktree",
+      "sha256": "03b630dd424a4d8fedf97d5b6c9e3763f7f4817bf9c0ca1304e504ec51ae9dd5",
+      "size": 4970
+    },
+    {
+      "path": "harness/native/RecoveryNotificationHost.swift",
+      "source": "worktree",
+      "sha256": "4bcfe1b7dd92d7ddbc03216538036a9b2997f4eae1646ea0aade155a2bd93ff1",
+      "size": 6060
+    },
+    {
+      "path": "harness/native/build-recovery-host.sh",
+      "source": "worktree",
+      "sha256": "00753f1f4e8f9f71be2f3ec5e82b667b1fb034441c538fb954aac48e32e24d2b",
+      "size": 1180
+    },
+    {
+      "path": "harness/native/build.sh",
+      "source": "worktree",
+      "sha256": "673c82f2023530eb559d5178fcfc0436651e70a952156ee9309ffda7acb0b350",
+      "size": 339
+    },
+    {
+      "path": "harness/native/control.py",
+      "source": "worktree",
+      "sha256": "cd121f2ecf847889892f107dd793cdf432c3b27a179ab1f14941f15d42ba6a47",
+      "size": 6087
+    },
+    {
+      "path": "harness/policy_journal.py",
+      "source": "worktree",
+      "sha256": "8c981bfd7f908a572959a29c4b452adbf20c75c0883482ef64e4aaee7c7e8df8",
+      "size": 5979
+    },
+    {
+      "path": "harness/qa_scope.py",
+      "source": "worktree",
+      "sha256": "56e53dc23e6acf577c8468ef5e1e6f13e2e118db187392c21328eebbaccea650",
+      "size": 2385
+    },
+    {
+      "path": "harness/receiver.py",
+      "source": "worktree",
+      "sha256": "81d355effc788c6b1d23eec01022682c5325c1c501f2ffbdb9b5c8a690e88827",
+      "size": 24161
+    },
+    {
+      "path": "harness/recovery.py",
+      "source": "worktree",
+      "sha256": "237fed628202081070cd0f2d67f8ed57a0591b6f8d263508c22d7d8aa10346a2",
+      "size": 8014
+    },
+    {
+      "path": "harness/recovery_reminder.py",
+      "source": "worktree",
+      "sha256": "3efb345aec43e7dcd4fe4426b9ba8f5dc110a08f4553fb69f71d0b0231d589e4",
+      "size": 9262
+    },
+    {
+      "path": "harness/scheduler.py",
+      "source": "worktree",
+      "sha256": "f5d3d047b0565937e1f2a6bdf95e2f488a6cc68b7475645316b831ccecfb1eef",
+      "size": 34808
+    },
+    {
+      "path": "harness/tests/test_control.py",
+      "source": "worktree",
+      "sha256": "fcfcaaa2b7b559695d3c9d8eb942031b5080f6fc35aaf7293fa6dcd9a7432e49",
+      "size": 3303
+    },
+    {
+      "path": "harness/tests/test_metrics.py",
+      "source": "worktree",
+      "sha256": "291cc011a1d5f9687789d997f19744ca3642142e2c97de138bd49e642fbbdd70",
+      "size": 10499
+    },
+    {
+      "path": "harness/tests/test_observer_control.py",
+      "source": "worktree",
+      "sha256": "bee8756fc350c40f5e20c3cc6ac75df704b9bc045b096f1847335d61010f3019",
+      "size": 2308
+    },
+    {
+      "path": "harness/tests/test_policy_journal.py",
+      "source": "worktree",
+      "sha256": "5165eab7e449ccacc3f13ae1bafb19c153f74c2920edcec8926c0e7f40f407ac",
+      "size": 2970
+    },
+    {
+      "path": "harness/tests/test_qa_scope.py",
+      "source": "worktree",
+      "sha256": "8029d572623aae7c6b07a6e5ecbd07c3f1e6e080f9aa34ce1013f460c3c40c56",
+      "size": 6355
+    },
+    {
+      "path": "harness/tests/test_receiver.py",
+      "source": "worktree",
+      "sha256": "83564173b306f4379d2162a6f92eac4b0927285e06acaea8772d7c75d57a92b2",
+      "size": 11000
+    },
+    {
+      "path": "harness/tests/test_recovery.py",
+      "source": "worktree",
+      "sha256": "07b2ff5f8a029f7b644955edf64bf652e1233da14d6ea4d459bed8200f39f56c",
+      "size": 5313
+    },
+    {
+      "path": "harness/tests/test_recovery_reminder.py",
+      "source": "worktree",
+      "sha256": "181b373b0f06ff6be859103ad57c78d5d0664ac041f1c5dba6605be188aaadb7",
+      "size": 9661
+    },
+    {
+      "path": "harness/tests/test_scheduler.py",
+      "source": "worktree",
+      "sha256": "924e6fbd74b12648914de3d4acc8de1f235f9b59b8d3bbb8f30f172defd54e93",
+      "size": 20546
+    },
+    {
+      "path": "harness/tests/test_vault_events.py",
+      "source": "worktree",
+      "sha256": "ff0633cf06a6ab3fd2ac6d38144e4e3fe56ce7744aaac3098a3f9b0db7a13569",
+      "size": 6934
+    },
+    {
+      "path": "harness/vault_events.py",
+      "source": "worktree",
+      "sha256": "be00ad8c19e7973500048bc8ecde3fc2e9bf293a801910c98fcab32bf55fecec",
+      "size": 6700
+    },
+    {
+      "path": "integration/fixtures/README.md",
+      "source": "worktree",
+      "sha256": "a8f2b05a0cf96bc49cd87beef987d6ace415fb7da256d4ceb11f0b8af2f24a04",
+      "size": 6412
+    },
+    {
+      "path": "integration/fixtures/android-protection-window.json",
+      "source": "worktree",
+      "sha256": "9622e8c20cf869f61c2e34fd7b8ea26adfd1a9b03da0d1c654871ddd46954de0",
+      "size": 248
+    },
+    {
+      "path": "integration/fixtures/android-session.jsonl",
+      "source": "worktree",
+      "sha256": "a665e0972e860788db2e41ef81d076d03ffc9573735c03f5386f08e2ca24d128",
+      "size": 1495
+    },
+    {
+      "path": "integration/fixtures/mac-protection-window.json",
+      "source": "worktree",
+      "sha256": "55263efd6a317be3ec68041b51b3f6193d28ae86143841375c67d89fdb3d5eb3",
+      "size": 398
+    },
+    {
+      "path": "integration/fixtures/mac-session.jsonl",
+      "source": "worktree",
+      "sha256": "206cbafcdf7a841d2ace98ff4228e40a1214e3db9e4f13cd6643deecad7bed09",
+      "size": 1747
+    },
+    {
+      "path": "integration/fixtures/pixel-device-qa-session.jsonl",
+      "source": "worktree",
+      "sha256": "6f73b2231620f4fa5efc0a56694646ba15c305aa0d8cf79a30da511d664bd8d4",
+      "size": 2230
+    },
+    {
+      "path": "integration/lab/ProtectionBoundaryFixture.swift",
+      "source": "worktree",
+      "sha256": "b464cd0f3c0b9fa397b79557a0963ecd8e0c9d6e8d4d5536e79a287f85784f54",
+      "size": 3223
+    },
+    {
+      "path": "integration/lab/README.md",
+      "source": "worktree",
+      "sha256": "de7708ab5089ffc3758a461c2a5d6c420d340b63822cf183adeb08e5e8f19ce2",
+      "size": 5950
+    },
+    {
+      "path": "integration/lab/check_protection_boundary.py",
+      "source": "worktree",
+      "sha256": "45bf375ea7f1077833fcc2a17fd6f59f33f5564f37e014dd4a8df64e5d36d583",
+      "size": 1981
+    },
+    {
+      "path": "integration/lab/test_legacy_protection_boundary.py",
+      "source": "worktree",
+      "sha256": "f835d9065581f0ceb8a12ba96745b61a6f43d365ad93d5ea336494ff6e8157cb",
+      "size": 811
+    },
+    {
+      "path": "integration/swift/ObsidianTaskCatalogTests.swift",
+      "source": "worktree",
+      "sha256": "7ff3bb3c600287285e0048229a2bdff4a554e331b11ef7cdd92abac1ad350efe",
+      "size": 1425
+    },
+    {
+      "path": "integration/tests/test_end_to_end.py",
+      "source": "worktree",
+      "sha256": "84416fd1af90e6246d88db0b2eaa3aee3b314cf398a90f0a506338c133f60411",
+      "size": 5127
+    },
+    {
+      "path": "macos-study/.gitignore",
+      "source": "worktree",
+      "sha256": "7be81449e2f75e2dc83c2bf1c77a75c9b033e8587328351406a22a48c6f35559",
+      "size": 75
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.icns",
+      "source": "worktree",
+      "sha256": "ee9287a231e3b205994b39968ed020b2d248dfe18c3d1e19b231285f4f1f6789",
+      "size": 1751638
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_128x128.png",
+      "source": "worktree",
+      "sha256": "209b20711924d070a833fd736fd5112c703a925a8f0edbae9a5fdf5fc2a79953",
+      "size": 17905
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_128x128@2x.png",
+      "source": "worktree",
+      "sha256": "1cbc3d081317c43db9b397c2898489254e5dc15bf68ac289c6e9905623676188",
+      "size": 63437
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_16x16.png",
+      "source": "worktree",
+      "sha256": "653f810ce06977931c517bb2479ab954a496c162998fcb37daa29ddaab8f6139",
+      "size": 790
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_16x16@2x.png",
+      "source": "worktree",
+      "sha256": "f8b374349a3a9fa6ddfcf1f2361da3de356d0c097368322055e20aa67239f530",
+      "size": 1855
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_256x256.png",
+      "source": "worktree",
+      "sha256": "1cbc3d081317c43db9b397c2898489254e5dc15bf68ac289c6e9905623676188",
+      "size": 63437
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_256x256@2x.png",
+      "source": "worktree",
+      "sha256": "52de5ef3e96c5444ab565386970885c0695c990f708580aeb34b3be36ab664e9",
+      "size": 258742
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_32x32.png",
+      "source": "worktree",
+      "sha256": "f8b374349a3a9fa6ddfcf1f2361da3de356d0c097368322055e20aa67239f530",
+      "size": 1855
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_32x32@2x.png",
+      "source": "worktree",
+      "sha256": "7bc421df739ab27ea945a508ddb7e35bf0c6ad476c650e0d44cd49ec88112d24",
+      "size": 5540
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_512x512.png",
+      "source": "worktree",
+      "sha256": "52de5ef3e96c5444ab565386970885c0695c990f708580aeb34b3be36ab664e9",
+      "size": 258742
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/AppIcon.iconset/icon_512x512@2x.png",
+      "source": "worktree",
+      "sha256": "304441b8476b3f56d4834473b2612514226c2ff0233c386523dc1a8d4fb15187",
+      "size": 1078062
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/FocusDeck-generated-20261103.png",
+      "source": "worktree",
+      "sha256": "d070a10d3fb49843620c391c8fefa3f9f68afda58e586f8635feb82bdbe55ae4",
+      "size": 1633227
+    },
+    {
+      "path": "macos-study/Assets/AppIcon/generation-prompt.txt",
+      "source": "worktree",
+      "sha256": "6d375b2a7cdd014e44a5d64f9c14167967c59d2d3613a155f004ca9bcbd45ab2",
+      "size": 1470
+    },
+    {
+      "path": "macos-study/Assets/CodexAppearance/source.json",
+      "source": "worktree",
+      "sha256": "51f825c3afa98444271342152a8ec9fbde973fc19bb88996766993365c8430be",
+      "size": 5333
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/app-window.svg",
+      "source": "worktree",
+      "sha256": "ec46a362b8f9ef9fbf129f500c6c5693e29e78e525340ed4d26f560bfc9d0b20",
+      "size": 287
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/arrow-right.svg",
+      "source": "worktree",
+      "sha256": "5ef7bff660a5f2a3473a78d8356600e6acba073f0819ac2a0a3b120c2da90714",
+      "size": 247
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/book-open.svg",
+      "source": "worktree",
+      "sha256": "9a1bc57f92db7c836ae81a07be656062b14a163643b4387345a779fd90f9db4e",
+      "size": 344
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/bookmark.svg",
+      "source": "worktree",
+      "sha256": "3caa52f616b679fdcd3c970f636c7e3041366cb010fa10a02add53018c849cc8",
+      "size": 267
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/briefcase-business.svg",
+      "source": "worktree",
+      "sha256": "59da77a945f9ed2d14b29bee8a62b057c7e93657c2dbcfd0fff5f899255c118c",
+      "size": 346
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/calendar-days.svg",
+      "source": "worktree",
+      "sha256": "6759c90bc1ab2068c1961715ce9d5ffd1b079583fc7500febaefc0847249c984",
+      "size": 418
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/camera.svg",
+      "source": "worktree",
+      "sha256": "514cdcd991d7e7002fed788e5fead8ac6dfeea118c6bdb838ca720cec359d223",
+      "size": 362
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/chart-no-axes-combined.svg",
+      "source": "worktree",
+      "sha256": "147cf0d6699a0da000d785b42f7e8dcc3a3e440dd73b193945e2febbce55d660",
+      "size": 363
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/check.svg",
+      "source": "worktree",
+      "sha256": "9402e06b9660d6439b7b0f9e73043a5394656e18d7b57b6d4fc3ad2ba638eb25",
+      "size": 209
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/circle-check.svg",
+      "source": "worktree",
+      "sha256": "3ddfb13a656a66d8cf4d62e0fb4bba3c6f64b90ca95587907c9b521fc8c460b3",
+      "size": 239
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/circle-minus.svg",
+      "source": "worktree",
+      "sha256": "acf52ea2712825d8c0b04f03f7370a0eae94a9bd23af6bb65744ac736cbc30e4",
+      "size": 233
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/circle.svg",
+      "source": "worktree",
+      "sha256": "fd336e5655d3e986c01acc4d770b79696172b83b1eaa9d5ce95e0795c5366f06",
+      "size": 214
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/clock-3.svg",
+      "source": "worktree",
+      "sha256": "171c7e1f9e0563993f79ed1d5323f005d4e8c2735591eb977ebe9f992a666bb3",
+      "size": 253
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/corner-up-left.svg",
+      "source": "worktree",
+      "sha256": "a9d54afee285d5d1ae7912fa1a9a89f522619399eeffd212decf588903708a8c",
+      "size": 252
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/crosshair.svg",
+      "source": "worktree",
+      "sha256": "eca51d0b5fd0819b5c63bd79678ddbc9eae2d1bf8c79494f10f6dcb2173bd281",
+      "size": 366
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/file-down.svg",
+      "source": "worktree",
+      "sha256": "f9afd03b0164b2240ef299353944d948577aeff97a90aeade806254378526ed7",
+      "size": 333
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/globe.svg",
+      "source": "worktree",
+      "sha256": "e9ef8869fff8521218091d038c7d1d703997a57bee530c8f83c891c72ef754e5",
+      "size": 372
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/hard-drive.svg",
+      "source": "worktree",
+      "sha256": "bfb44af016a1b29626117f5bd9628799f17e911a3a4e403ba0dc86411fb6fa21",
+      "size": 318
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/hourglass.svg",
+      "source": "worktree",
+      "sha256": "57f68eaab9bf11315c6e443668aa551907a8ce21aa8f460e6cdaaae15691c1c4",
+      "size": 390
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/info.svg",
+      "source": "worktree",
+      "sha256": "694712dde0eb7b35d01e6685a910276d9c59d5219383fdac61bf9a3b149453ac",
+      "size": 256
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/layers-2.svg",
+      "source": "worktree",
+      "sha256": "c487dea3386a0ae75b6a7a3c1687d51e48f8208c3d3286f19044397260016962",
+      "size": 398
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/layout-grid.svg",
+      "source": "worktree",
+      "sha256": "7712e5737322c89decc1bd331a973daf0a1ae74727cce1a20c72f51092adf35d",
+      "size": 374
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/link.svg",
+      "source": "worktree",
+      "sha256": "1656871a557d2deb439f41d232b654d710fc51ccda96f712e7275ba5580cdc36",
+      "size": 323
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/lock-keyhole.svg",
+      "source": "worktree",
+      "sha256": "322d34c285b851499d18b6281e85afecd90b887f6800f84c55f11c3311b5091b",
+      "size": 299
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/music-2.svg",
+      "source": "worktree",
+      "sha256": "151766aaa5a35daaec63ffd3782e01a50c6cd1fb7bd39c540ed83e99fb3bf040",
+      "size": 236
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/play.svg",
+      "source": "worktree",
+      "sha256": "58fc5590fc838048c3ab796d0f596d25afd5b4d7ee9e1a1e5e11f0fa3fef96c5",
+      "size": 309
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/plus.svg",
+      "source": "worktree",
+      "sha256": "ec494f19a936cffd1c9042bcb63f27b425f5f8e9cb6ab1b06ce287e2d7d22344",
+      "size": 222
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/shield-check.svg",
+      "source": "worktree",
+      "sha256": "46bc6768dabddf84ac5f6df01f44dc47f3907cc4be593d44da49eeeb99de93a9",
+      "size": 522
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/sliders-horizontal.svg",
+      "source": "worktree",
+      "sha256": "f823120433ea71cdfe814e42dc201114cde2164d50b1e118e6806e8ef2dfd39a",
+      "size": 521
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/sources.json",
+      "source": "worktree",
+      "sha256": "f9fb69991e1867ca32648ec9f80607bf8625ffafacda4072465c8e0defaaf1d7",
+      "size": 1682
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/symbol-map.json",
+      "source": "worktree",
+      "sha256": "3339fc0c98d6eb3f45ec83b699513ad1aa1d4ccd9b92c883dd6717f59e57c20e",
+      "size": 1232
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/timer.svg",
+      "source": "worktree",
+      "sha256": "72af1999928253180cf7cf727bc7bd2220abc1b2c0feabb669026047a87221e6",
+      "size": 354
+    },
+    {
+      "path": "macos-study/Assets/CodexIcons/x.svg",
+      "source": "worktree",
+      "sha256": "0a46d82b243b784e98ce8a96f1279daf03a14d370ae0c4d17ea9c0206d418800",
+      "size": 640
+    },
+    {
+      "path": "macos-study/README.md",
+      "source": "worktree",
+      "sha256": "e151de388629e33056a78be0247a6ba51ba6a93e007051cb6fb0eb05cb1726ce",
+      "size": 14604
+    },
+    {
+      "path": "macos-study/Sources/CalendarServiceControl.swift",
+      "source": "worktree",
+      "sha256": "f85eadd3cef89f77c2d1a73b430a03628297e831182c34f74a9e3da230436299",
+      "size": 11788
+    },
+    {
+      "path": "macos-study/Sources/CodexAppearance.swift",
+      "source": "worktree",
+      "sha256": "ea4ab782078d0d93a7cea8b727158c278cb626bfc2627003bf83ac6b77b1ee32",
+      "size": 2763
+    },
+    {
+      "path": "macos-study/Sources/DailyReport.swift",
+      "source": "worktree",
+      "sha256": "618013f601b435cfa8f2f9077b07967e43b33309fe5c32679f3801eba8fb28e6",
+      "size": 9744
+    },
+    {
+      "path": "macos-study/Sources/DeckWorkspaceView.swift",
+      "source": "worktree",
+      "sha256": "0cc094a339b4c8fa02d59355869491aa3b1502484b7a361d9facf3c8390e93b2",
+      "size": 29538
+    },
+    {
+      "path": "macos-study/Sources/ExternalProtection.swift",
+      "source": "worktree",
+      "sha256": "aa5c1717a4221c7219bf0dbde688391419ff7464d600d8699e8784368e0880d0",
+      "size": 659
+    },
+    {
+      "path": "macos-study/Sources/FocusDeckApp.swift",
+      "source": "worktree",
+      "sha256": "7af30e9d4440d0af44a2936f4a197d1bd50f76560eedf740c09484542e666dda",
+      "size": 116525
+    },
+    {
+      "path": "macos-study/Sources/FocusShortcutsBridge.swift",
+      "source": "worktree",
+      "sha256": "c8ff64237affead62b2cd1cd7339d046dd6ac0da4e38f12835128ab7ca6d31a7",
+      "size": 7715
+    },
+    {
+      "path": "macos-study/Sources/LocalCollectionControl.swift",
+      "source": "worktree",
+      "sha256": "4e29b8613b1a6a5f6272bf6e55b424d9352079e91d9ea5c85eb1a26c8cdc8a6d",
+      "size": 2302
+    },
+    {
+      "path": "macos-study/Sources/LocalReceiver.swift",
+      "source": "worktree",
+      "sha256": "a3c82f4cc25abb36aef38c00934813066ac89c7d927b4162139211a912b61a02",
+      "size": 5342
+    },
+    {
+      "path": "macos-study/Sources/ProtectionTarget.swift",
+      "source": "worktree",
+      "sha256": "ab8b10d746291d062b27c6f95ac7588bc4cdd8877c176a0066bd610a83cc77be",
+      "size": 2386
+    },
+    {
+      "path": "macos-study/Sources/RecoveryControl.swift",
+      "source": "worktree",
+      "sha256": "a89500b9671bc2eb3afabd771b766cbfa6ce047bd10cb99a959107c32ffd43f1",
+      "size": 10070
+    },
+    {
+      "path": "macos-study/Sources/SessionState.swift",
+      "source": "worktree",
+      "sha256": "eecaa8c945e08b9e47eea57c4d2b3964190cc02548da0336424fb7b4c7c8289b",
+      "size": 7693
+    },
+    {
+      "path": "macos-study/Sources/StrictRootController.swift",
+      "source": "worktree",
+      "sha256": "99e549c8e1dc2af1ee475421999a581c8a3113f5b49ab6a0b48084bd66b1b846",
+      "size": 3987
+    },
+    {
+      "path": "macos-study/Sources/StrictRootIPC.swift",
+      "source": "worktree",
+      "sha256": "15f165f13edc7e0bbfa5c770ff7b92c29cc87864e29e280c9dc3662d0db38826",
+      "size": 2997
+    },
+    {
+      "path": "macos-study/Sources/StrictRootPresentation.swift",
+      "source": "worktree",
+      "sha256": "87fdfd3ebccdef12901cd44ac77b731084aa22de2d837bb845bbee1ac4044b02",
+      "size": 3911
+    },
+    {
+      "path": "macos-study/Sources/StrictRootWindow.swift",
+      "source": "worktree",
+      "sha256": "601876b81e8931b975f4f5bbddb2920341f0db8bebcdc652260fa1a32deff529",
+      "size": 12173
+    },
+    {
+      "path": "macos-study/Sources/SystemProtectionProtocol.swift",
+      "source": "worktree",
+      "sha256": "c475b5989c2e73e06a0ec9afd54a73f4047b17747a46f1f9c1dc27bb87004e43",
+      "size": 3037
+    },
+    {
+      "path": "macos-study/Sources/SystemProtectionView.swift",
+      "source": "worktree",
+      "sha256": "a79d095e037b80100c73043bb4468f06ef7f1e58a583b4531591ed9b30c2d1b6",
+      "size": 35116
+    },
+    {
+      "path": "macos-study/Sources/WindowGuardV2.swift",
+      "source": "worktree",
+      "sha256": "f0a8839dc45f7656f3db3955e4b022d27f9775302bf107fad64abb4844a0d381",
+      "size": 8588
+    },
+    {
+      "path": "macos-study/Sources/WindowPolicy.swift",
+      "source": "worktree",
+      "sha256": "d57c7544ee7106286e64439c41249116beae0548e406b9edf02683ddacc46019",
+      "size": 13579
+    },
+    {
+      "path": "macos-study/advanced-lab/EXPERIMENT-HISTORY.md",
+      "source": "worktree",
+      "sha256": "bc14044b4b20cf435ebf156b9c5e603edd818b1deaa222747297696076d6c929",
+      "size": 17536
+    },
+    {
+      "path": "macos-study/advanced-lab/FixtureAuthorization.applescript",
+      "source": "worktree",
+      "sha256": "526cbd53b0857f6163e406081e507d55b592088447c2737360beb7624ae882b5",
+      "size": 1052
+    },
+    {
+      "path": "macos-study/advanced-lab/FocusDeckApp-prototype.swift",
+      "source": "worktree",
+      "sha256": "65828bd2557846922139b26349b80bbfe196aa1472ab73b9d07747ad81932707",
+      "size": 31419
+    },
+    {
+      "path": "macos-study/advanced-lab/Packaging/Filter-Info.plist",
+      "source": "worktree",
+      "sha256": "f8ea07bbf2667b8b0770df200786fe63ebb2432374da45d36638fc277778022f",
+      "size": 851
+    },
+    {
+      "path": "macos-study/advanced-lab/Packaging/Filter.entitlements",
+      "source": "worktree",
+      "sha256": "a9f7d8c9f77ae2f5611db6a298ae7371bef93aa646d493bb93f349d7f93c25cd",
+      "size": 365
+    },
+    {
+      "path": "macos-study/advanced-lab/Packaging/Host-Info.plist",
+      "source": "worktree",
+      "sha256": "3caa82b6e9db7a4ec32ab34f06bcb1ef2324001a54861a0f8a385e534473077d",
+      "size": 760
+    },
+    {
+      "path": "macos-study/advanced-lab/Packaging/Host.entitlements",
+      "source": "worktree",
+      "sha256": "403f4629adfd42a55ad65afe9ddaf95e1e2ea989962ef49a589a1a432b9c7c84",
+      "size": 379
+    },
+    {
+      "path": "macos-study/advanced-lab/Packaging/UI.entitlements",
+      "source": "worktree",
+      "sha256": "1aa386b08a27a8eb2bcc0ee7fc95b0e273470ea0c215e99567493a36620280e3",
+      "size": 245
+    },
+    {
+      "path": "macos-study/advanced-lab/Packaging/dev.stanislav.focusdeck.guard.plist",
+      "source": "worktree",
+      "sha256": "ba719244034b6e8988d2080c0917982c61136add876201fa4e4f7e3cbe12e2bf",
+      "size": 590
+    },
+    {
+      "path": "macos-study/advanced-lab/README.md",
+      "source": "worktree",
+      "sha256": "384e64910befb380468477993ad218e114c1c85ef3e6c30ca7848f0296c658d0",
+      "size": 6711
+    },
+    {
+      "path": "macos-study/advanced-lab/RECURRING-INTEGRATION-BLOCKER.md",
+      "source": "worktree",
+      "sha256": "f366ce3e4c7871c6fcfa5e4cdeb46ae8adfd64285cb8da9dfc43105e0f01e9fc",
+      "size": 3290
+    },
+    {
+      "path": "macos-study/advanced-lab/SM-CALENDAR-FIXTURE-STATUS.md",
+      "source": "worktree",
+      "sha256": "7835995e9e797962f66ca22d98878a1882ae8c80a0aec146bee7ca482e86a25a",
+      "size": 4060
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/AppGuard.swift",
+      "source": "worktree",
+      "sha256": "80f0a46e73e851aad320b219e6ff1e2ee5fe50be353261a6e3f3f1dc2da0f856",
+      "size": 3575
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/BrowserControl.swift",
+      "source": "worktree",
+      "sha256": "ce9470c7d72d46a1b18c7e93b41c66dd1109f984317bc3b453ce5476918b77bb",
+      "size": 3906
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/BrowserCoordinator.swift",
+      "source": "worktree",
+      "sha256": "381038307ce0f20dc7e042d7a96dbb9489ad12dc11c8ec8ee35715b7aed325d3",
+      "size": 3368
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/BrowserWorker.swift",
+      "source": "worktree",
+      "sha256": "20a98608ec698f79fd10cb7ba17de79891a2291cecaaee1717198224e7e8cd50",
+      "size": 568
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/CandidateDiskState.swift",
+      "source": "worktree",
+      "sha256": "ed6c1d4547bafc5a9f47e25704d4e473e22cf2c41bdb3f5bd15aa7d59bc1b31a",
+      "size": 3883
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/FilterMain.swift",
+      "source": "worktree",
+      "sha256": "edccbe596ec04afa8ac2a3ad2e8c8ba5b15d6745262c7fc7265b42aba77b590e",
+      "size": 169
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/FixtureDirectAuthorization.c",
+      "source": "worktree",
+      "sha256": "5915f76b02ae41cde1013836c0672852ff34f8ec829df143ce8debd99ff1471b",
+      "size": 4524
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/HostController.swift",
+      "source": "worktree",
+      "sha256": "b9973e587f5c51c2d716b1a98800400aceb964c3f5e1ab80b6433d3ca6a5db6b",
+      "size": 5461
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/HostMain.swift",
+      "source": "worktree",
+      "sha256": "c708cafc6c350997ddb908d618b1d9b56e4bb54a4df6e343ab1255c7d936d3b1",
+      "size": 2212
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/HostsGate.swift",
+      "source": "worktree",
+      "sha256": "65aa47c6182a7bac1a2b2537cc5bf9022ed311aa16825cb7b4b708b47df5123c",
+      "size": 5915
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/PrivilegedAppGuard.swift",
+      "source": "worktree",
+      "sha256": "452a7fff701e5f2c3714a678aa9b5f2a778ee068683b3f2efdab0c06899a11eb",
+      "size": 8471
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/ProcessSignatureRequirement.swift",
+      "source": "worktree",
+      "sha256": "9ccf23c6df842f22580b688f2519e634846677732f0fb6753080ee9f974b6ca1",
+      "size": 2262
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RecurringLedgerCandidate.swift",
+      "source": "worktree",
+      "sha256": "8711f7a5b9c6de245741fd8abf75fdf3b281ab056dbdffcd6a2a08db843a58c1",
+      "size": 8084
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootCommandCore.swift",
+      "source": "worktree",
+      "sha256": "e13694cf43be86545a882a44efbfa0c8c04e6f3c5c39cd0f452f6e75dab5f250",
+      "size": 4891
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootDeadlineLedger.swift",
+      "source": "worktree",
+      "sha256": "e4104e97cb0d173e0051b9709a6840762c361bc30a6becd013a23d67cad3ad39",
+      "size": 2756
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootFixtureApp.swift",
+      "source": "worktree",
+      "sha256": "f0a6c4804919ea45f3391636425e7429cabc073d8b0ad5b1ee40dcc056c39e7c",
+      "size": 8103
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootFixtureControl.swift",
+      "source": "worktree",
+      "sha256": "87327d2d478915eb96a8fd36fb5b67cbe572165b593718a2d2ba5de864d58325",
+      "size": 3011
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootFixtureControllerApp.swift",
+      "source": "worktree",
+      "sha256": "d7638b2f9da91d260daa908a649c041dbb0ff82c3a90be6d7cca4f5d1e93aba0",
+      "size": 7531
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootFixtureSeed.swift",
+      "source": "worktree",
+      "sha256": "265786021ff994be1d8f37fda1f8648af8997d3c54071191963009fb01207dee",
+      "size": 1769
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootFixtureStopCore.swift",
+      "source": "worktree",
+      "sha256": "247a2b27cbe4693a8ec70e469c3e2f70eec8c2ac9afec01b5b761b184f6950db",
+      "size": 262
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootGuardAdmin.swift",
+      "source": "worktree",
+      "sha256": "eb1ddbdef2ab7ef9b330e178d378cc0876cadad0b1908d95dfc2585fd46e135b",
+      "size": 4084
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootGuardCore.swift",
+      "source": "worktree",
+      "sha256": "06b7e11b0c0a04e652d9ac0a25ffa22bcb37a113a990bbe05c89523dd8309fe4",
+      "size": 10163
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootGuardMain.swift",
+      "source": "worktree",
+      "sha256": "1ca41c6989b43f3105aa00a9777e4f0d89ac30df8d385791236eea58e97ae8ef",
+      "size": 6015
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/RootSocket.swift",
+      "source": "worktree",
+      "sha256": "beb4ba706cce20387098c47bbb1a558d8e81c55a3fb24de0ed01070ebf1a9bd5",
+      "size": 7702
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/SMCalendarCleanupDaemon.swift",
+      "source": "worktree",
+      "sha256": "a6b354fb282662aba5398f4314e39a94003ec1083a4aef87f9a793ff047b16c4",
+      "size": 2433
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/SMCalendarFixtureCleanup.swift",
+      "source": "worktree",
+      "sha256": "abd41eb7bf7e0ec1eeb65be23ee22fb536f6ddc2cdb2bd22c8ba32d88615694c",
+      "size": 2051
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/SMCalendarFixtureDaemon.swift",
+      "source": "worktree",
+      "sha256": "18a0fbda22820c30e6d99935e35b3852ffcb42c2e17835cbd4938fde8afcbff7",
+      "size": 9060
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/StudyFilter.swift",
+      "source": "worktree",
+      "sha256": "7d67168677d476714cda9be2a74d1178a825c9f7b5aeb9c2a637734650d7c5fe",
+      "size": 3611
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/StudyPolicy.swift",
+      "source": "worktree",
+      "sha256": "cdf7adf7ca80ff33933797b33b0f575db0f6790a2b31cbeb8b71d0a9cbeb10d0",
+      "size": 3299
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/UserCalendarFixtureAgent.swift",
+      "source": "worktree",
+      "sha256": "ada8b5f31dfca41b4bbbdfc357070816dfc73eb83c4c153a83fa25bac29660e6",
+      "size": 8114
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/UserProtectionAgent.swift",
+      "source": "worktree",
+      "sha256": "24f057a02fa108d4130c312f9d32b743dbde43e52371207cb15756668953208c",
+      "size": 13195
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/UserProtectionLedger.swift",
+      "source": "worktree",
+      "sha256": "966e66e0c7b2a02c8d2cecca4ca09fb082aaa757ad08d3a75aa78f3b4a40dad5",
+      "size": 7406
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/UserProtectionQACleanup.swift",
+      "source": "worktree",
+      "sha256": "5ac831516064aad81c7af384cb4076c4770fe47f8416437ad2031e626287c5be",
+      "size": 1763
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowCandidateEnrollmentGate.swift",
+      "source": "worktree",
+      "sha256": "f7eb567bef72ce2dc8cf42cd127b58938b8995f67a590a66dbe4070702754e71",
+      "size": 345
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowCandidateRecover.swift",
+      "source": "worktree",
+      "sha256": "925ef38ddcd4d5990e8d356730452768eee1ed072c75436b3d7a130db79ab310",
+      "size": 4665
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowCandidateRecoveryCore.swift",
+      "source": "worktree",
+      "sha256": "aa879fcf0d3eb10d7c69fe46a6e058329eb75d9f6eda0f2408d6db9437cf902b",
+      "size": 464
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowFixtureBounds.swift",
+      "source": "worktree",
+      "sha256": "b14c3de38c4e09af97781dee1466d73bfb726a010e6555bf94f655ed5188a223",
+      "size": 462
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowGuardUIFixture.swift",
+      "source": "worktree",
+      "sha256": "bd3ceb3519380d0d362eb7c4885118afbb52c2adc9e9489f0968a625cad24407",
+      "size": 7016
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowGuardV2Daemon.swift",
+      "source": "worktree",
+      "sha256": "b3ee275f7face9b0e29e77ee99d57a97e30273d1707a67455f868c8a7fc45805",
+      "size": 10875
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowGuardV2ProductionDaemon.swift",
+      "source": "worktree",
+      "sha256": "9077c487fc5bb9814c3ab3d5fed95aef7b29a5db8d807c88981bf9532a18b66d",
+      "size": 14788
+    },
+    {
+      "path": "macos-study/advanced-lab/Sources/WindowGuardV2Transport.swift",
+      "source": "worktree",
+      "sha256": "928259a2be20093abce9dc4f0c84f99c55e78d8019ccbd8738dac874d548f110",
+      "size": 4671
+    },
+    {
+      "path": "macos-study/advanced-lab/USER-AGENT-UPDATE-QA.md",
+      "source": "worktree",
+      "sha256": "fd4a98c83b8ea2f72448353336b2f8692b37fb7bb314a7c66a6dd82dca18f5ea",
+      "size": 4316
+    },
+    {
+      "path": "macos-study/advanced-lab/USER-PROTECTION-CANDIDATE.md",
+      "source": "worktree",
+      "sha256": "36134979b2e13f404f879417842b38b6c83a394da5a59dcb312b4ca40a1ae6e2",
+      "size": 49425
+    },
+    {
+      "path": "macos-study/advanced-lab/V2-FIXTURE-QA.md",
+      "source": "worktree",
+      "sha256": "1d5806fac8b56f76bf615ff333d4990800f75d7fd13a3dfeb043f35cf41d9eeb",
+      "size": 10629
+    },
+    {
+      "path": "macos-study/advanced-lab/V2-PRODUCTION-CANDIDATE.md",
+      "source": "worktree",
+      "sha256": "7a826995fb8df17abd76f67872cb8c79d47156f6a6c9bceadcf2c336f15ffb49",
+      "size": 17619
+    },
+    {
+      "path": "macos-study/advanced-lab/browser-window-spike/README.md",
+      "source": "worktree",
+      "sha256": "5061336a1796af9fd10cea0f9abceed4bf1cd1d6194188a4c9d6fb00019e929d",
+      "size": 4801
+    },
+    {
+      "path": "macos-study/advanced-lab/browser-window-spike/SpikeTests.swift",
+      "source": "worktree",
+      "sha256": "2359ea8b5b40649a84127602fde8c612d2a1222727a83e5ed8b11364e4e67ca3",
+      "size": 3198
+    },
+    {
+      "path": "macos-study/advanced-lab/build-app.sh.archived",
+      "source": "worktree",
+      "sha256": "c77b06c90d3d973b49e2ce003fd888b1464a660876ad554951c108600d54db47",
+      "size": 2382
+    },
+    {
+      "path": "macos-study/advanced-lab/build-root-fixture-app.sh.archived",
+      "source": "worktree",
+      "sha256": "ffec7342189b78b550ece0e866c76b8f9e32e0961f2861c86d0772bc242b039d",
+      "size": 2143
+    },
+    {
+      "path": "macos-study/advanced-lab/build.sh.archived",
+      "source": "worktree",
+      "sha256": "3c22a3258357122a207069d4fd20fc6b22a05ee0658ae25b946301a4524e9804",
+      "size": 5816
+    },
+    {
+      "path": "macos-study/advanced-lab/config/hosts-aliases.json",
+      "source": "worktree",
+      "sha256": "ce9dab07b42f9ee93124ddcef550495fb0fffe9b66c77de642803af464068cde",
+      "size": 775
+    },
+    {
+      "path": "macos-study/advanced-lab/config/study.json",
+      "source": "worktree",
+      "sha256": "ec06aa3ecb7441d851e25882a7d9ad5ac5cbd308f785fd66326189a98626540f",
+      "size": 1234
+    },
+    {
+      "path": "macos-study/advanced-lab/generate-root-policy.py.archived",
+      "source": "worktree",
+      "sha256": "76e573c07be1a9d923b26ef9ff174673c2264010f540fa290144d78b2e949c42",
+      "size": 676
+    },
+    {
+      "path": "macos-study/advanced-lab/install-root-guard.sh.archived",
+      "source": "worktree",
+      "sha256": "e0ad7d15c4ef537318c08ea828dd6215d1c704f3bee890f63985e8cb9f165171",
+      "size": 5096
+    },
+    {
+      "path": "macos-study/advanced-lab/package-unsigned.sh.archived",
+      "source": "worktree",
+      "sha256": "f44b9799064c79a0224c84975ece7de734bb9603f0f65ec174683de8e0ac2bbc",
+      "size": 1128
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-hook-readonly-probe/Probe.c",
+      "source": "worktree",
+      "sha256": "3edd4c821a6493a3629472e4d65aa03140be69e2f2b34449d77697487ed3e4d8",
+      "size": 6024
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-hook-readonly-probe/Probe.h",
+      "source": "worktree",
+      "sha256": "bb629ec45297bd4fd33d44da67396d129825ba79cd4bdb467f7a7f3dbeededd4",
+      "size": 111
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-hook-readonly-probe/ProbeApp.swift",
+      "source": "worktree",
+      "sha256": "4039401838ddb21e24194f122470d470c8732f787f7313fb4e744343501d9256",
+      "size": 2577
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-hook-readonly-probe/README.md",
+      "source": "worktree",
+      "sha256": "948a449b2a68c5f60eef58ad1a5e62a09a298c3a1f7644123ef727b318f891a7",
+      "size": 2401
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-hook-readonly-probe/build.sh",
+      "source": "worktree",
+      "sha256": "de4cff7c4e53c650360aa3764e949d03f33efa2bc0746fe3cbb8734ca0e8f1c7",
+      "size": 1117
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-readonly-probe/Probe.c",
+      "source": "worktree",
+      "sha256": "56541f14c859570d9ac0e6279acd7a1054b96c172d3ac18d0170fd07bc9b881a",
+      "size": 5403
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-readonly-probe/Probe.h",
+      "source": "worktree",
+      "sha256": "7e48ff841bc23b3c705ac60830b44895fd298c2883e300ef861c23efb8b01dd5",
+      "size": 90
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-readonly-probe/ProbeApp.swift",
+      "source": "worktree",
+      "sha256": "9a3c28a490deb1d3cf326a5db5571a57cfa5f6c38d8022e9d6fd0e0dee247a0b",
+      "size": 2299
+    },
+    {
+      "path": "macos-study/advanced-lab/pf-readonly-probe/build.sh",
+      "source": "worktree",
+      "sha256": "006ff39841a3d3a84bc2e16d8a885d9a875bea4c8c144067e07247db32853541",
+      "size": 1097
+    },
+    {
+      "path": "macos-study/advanced-lab/production-candidate-admin.py",
+      "source": "worktree",
+      "sha256": "2f065419ad80a3f9840fb23a4e13925fd35ab546356a70e5e31ec0f55193e19e",
+      "size": 17530
+    },
+    {
+      "path": "macos-study/advanced-lab/return-qa/BoundsTests.swift",
+      "source": "worktree",
+      "sha256": "4942b83a6ea7b96a9c0b8da224ac8d7bd57b82238e979597c405e06e4e770603",
+      "size": 1313
+    },
+    {
+      "path": "macos-study/advanced-lab/return-qa/LedgerTests.swift",
+      "source": "worktree",
+      "sha256": "168db4623dd59ea00c55b7a07943ebb771cf7a4b1a7e90d1873a8bdbf79a3726",
+      "size": 1165
+    },
+    {
+      "path": "macos-study/advanced-lab/return-qa/build.sh",
+      "source": "worktree",
+      "sha256": "10b67adf9fb7cff8a2098b528a47d5d60846f377153bc779eeec32eb20a096bb",
+      "size": 4033
+    },
+    {
+      "path": "macos-study/advanced-lab/root-auth-probe/Probe.c",
+      "source": "worktree",
+      "sha256": "671549ec56940de3335c64d65628d79f68cb9c669e1cb575f3676f33adf39df7",
+      "size": 3158
+    },
+    {
+      "path": "macos-study/advanced-lab/root-auth-probe/Probe.h",
+      "source": "worktree",
+      "sha256": "8a84655e159be64c97ee025eb99296a9da9d6a323b04e1240d8f6174cdfd998f",
+      "size": 32
+    },
+    {
+      "path": "macos-study/advanced-lab/root-auth-probe/ProbeApp.swift",
+      "source": "worktree",
+      "sha256": "3b02b9c86d801f2db6157a1850b5e4a10fbf340162dba665a9fb3fe2015247f1",
+      "size": 1593
+    },
+    {
+      "path": "macos-study/advanced-lab/root-auth-probe/build.sh",
+      "source": "worktree",
+      "sha256": "c9dda5ba861c6fa1d7569dbb8b0e432e5bf38b7d6b2e1ed19c10b7b3c4e94af7",
+      "size": 1103
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/README.md",
+      "source": "worktree",
+      "sha256": "87ecca13389f9224f7cc222c8b180c5d93cff616dd0ea19fd9e167f98e0a8fff",
+      "size": 6178
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/SiteAgentClient.swift",
+      "source": "worktree",
+      "sha256": "6fe3ce922e17ea5c6038161f4adde592d4cfb646c9a5d89cf6e37763e18d07c8",
+      "size": 3527
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/extension/blocked.html",
+      "source": "worktree",
+      "sha256": "aa4a4ab061f531281267777799a3bd79b1823b6d187783cde6f5f7e52c59dc79",
+      "size": 236
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/extension/content.js",
+      "source": "worktree",
+      "sha256": "ef62c6b8797e64eb9c86390a16643a8eb99197592eacddf75a6507aa99f39e15",
+      "size": 1511
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/extension/manifest.json",
+      "source": "worktree",
+      "sha256": "6a297b719c6846a32047a4708bc90710e6b4d8051623a8234c2c274986c5d8c2",
+      "size": 418
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/extension/worker.js",
+      "source": "worktree",
+      "sha256": "d53b0e6512173bf0c5087085afeb4b0a736d6ddb0460f2835b0ce697d472cf86",
+      "size": 1183
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/run.mjs",
+      "source": "worktree",
+      "sha256": "be0bf5e7a9bee0d6039807caa968fc17f63bd27b242b66c882cb7d37deba9124",
+      "size": 7770
+    },
+    {
+      "path": "macos-study/advanced-lab/site-window-qa/run.sh",
+      "source": "worktree",
+      "sha256": "6d0c1e7bb0d524aad21d3d68e813fcd6c9819bebadf868a7c9ded3a48bfd1364",
+      "size": 1358
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/CleanupController.swift",
+      "source": "worktree",
+      "sha256": "280932485c69a0cbf60f63b33029541fec50ac7d1a300f38a18319015a53e9e4",
+      "size": 1942
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/Controller.swift",
+      "source": "worktree",
+      "sha256": "799af6d87c876b7c24d19916085b47bf9932a90c54ae1a1cb507d6094caf9a63",
+      "size": 3332
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/Daemon.swift",
+      "source": "worktree",
+      "sha256": "1d8a6716956afc3feb5d4b46d5e597b6680d0d071ad38b4e515f8cf164b22eaf",
+      "size": 4506
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/FakeBridgeTests.swift",
+      "source": "worktree",
+      "sha256": "1f03bd65eacf05e5739e2afdef0b7e6d671832124227ddaaedc1de6f6756675c",
+      "size": 2506
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/FixtureClient.swift",
+      "source": "worktree",
+      "sha256": "3eea712509ef8160bf1f13f09c1a7b7783d2295971f5dedd77a7fc07ddf59cd3",
+      "size": 2192
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/ModelTests.swift",
+      "source": "worktree",
+      "sha256": "8306aede828652763ff7e79c5da52b6c460bbf6793216b74cdba3e172a49770a",
+      "size": 1218
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/ServiceModel.swift",
+      "source": "worktree",
+      "sha256": "b185af2135f7e871cf94af341e6bd22d61240004d1fbfc22aba2ed04c0095edd",
+      "size": 1301
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/build-calendar-fixture.sh",
+      "source": "worktree",
+      "sha256": "9d29d952bab1ecfc7cdd4955d7f834c0bd2b78422c396c590505853dd0a5723c",
+      "size": 3739
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/build-cleanup-fixture.sh",
+      "source": "worktree",
+      "sha256": "91fe7335c501bca83d37494f9751d50cd6ee98882a1ca12ed3e53df52ab62523",
+      "size": 2359
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/build-user-agent-fixture.sh",
+      "source": "worktree",
+      "sha256": "b70acb371c4bf7189847edfb09af4b9ba7cf380f2b6b7b2112036dad5b07dab2",
+      "size": 3782
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/build-user-main.sh",
+      "source": "worktree",
+      "sha256": "04668613eee1f3a029499e436570fbff2035f5e432e3e95afef68b111cd5ff6f",
+      "size": 5979
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/build.sh",
+      "source": "worktree",
+      "sha256": "41f25bcf62def98eb4a6daae5d3862b4691219f58d7d8c3ad528d8a88d6adb93",
+      "size": 2161
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/test-manual-control.sh",
+      "source": "worktree",
+      "sha256": "11ec066c5e1fba634da89e60123d03bb50168542cfa995edff19971ee7963ae0",
+      "size": 407
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/test-site-agent.sh",
+      "source": "worktree",
+      "sha256": "7812fb097a5356cbf38fa68eed9192b788f63ad2c92ea4ae49fca41dde9cb760",
+      "size": 2956
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/test-site-model.sh",
+      "source": "worktree",
+      "sha256": "f2ba11286170347bc8ba0d4541fca9f7a3858a6d0b90df6ed5b96298976f8af6",
+      "size": 2401
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/test-site-policy.sh",
+      "source": "worktree",
+      "sha256": "a9e31d2518816fa9d2b9abb8a669abe85474ae1ac6e337392841e17ed7c2fb12",
+      "size": 747
+    },
+    {
+      "path": "macos-study/advanced-lab/sm-fixture/test-user-recurrence.sh",
+      "source": "worktree",
+      "sha256": "cd27c9c23973f2e9a0d5153b0e78d28cd2db735e72dc54e431f6aeacfa01f3b6",
+      "size": 2772
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/AuthorityTests.swift",
+      "source": "worktree",
+      "sha256": "3299cb8705232d51e273b2c7134b3eb5d02198a8026311bef4eb0066f22520e1",
+      "size": 4919
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/EnforcerTests.swift",
+      "source": "worktree",
+      "sha256": "32145f1445fb4d02635792da9c88981914af63c128ecaefa34db412141da98a3",
+      "size": 2146
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/FIXTURE-QA-NOT-READY.md",
+      "source": "worktree",
+      "sha256": "9053add3642a1bb286c36c3713c11f84aacc67ae153a2482da055ae091aa3365",
+      "size": 2987
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/FixtureQALauncher.c",
+      "source": "worktree",
+      "sha256": "a57cc5334704bf0114362349dc7133cebe1f91f330e3aac4001a000a679df226",
+      "size": 6682
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/FixtureQALauncher.h",
+      "source": "worktree",
+      "sha256": "a069d6ef5553115031d25ed390871b8a2175b6e81d5ea1e5a697da12f7806428",
+      "size": 32
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/FixtureQALauncher.swift",
+      "source": "worktree",
+      "sha256": "7b56abad511f16d49d6ad00ee89c2d1f1ed1fa379b054d37f3f3d2e2475cd359",
+      "size": 1923
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/FixtureQASupervisor.c",
+      "source": "worktree",
+      "sha256": "2d44aaefeeba1f2b1388bd9b692bf1b73c795f76e6fc7ad5b5e58d10b2c10f06",
+      "size": 5050
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/HostsQA.swift",
+      "source": "worktree",
+      "sha256": "558f38f235e437201e6d7fb2a901ade34a02fb01e931c77be48a11912ef75459",
+      "size": 2556
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/HostsQATests.swift",
+      "source": "worktree",
+      "sha256": "152081dce85cdc3468c401548f2705d0e89d457141f2692a124e54084e561afb",
+      "size": 1462
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/STATUS-20261103.md",
+      "source": "worktree",
+      "sha256": "a9802a4bdd2d9a0cce2b19680fe1c151a9272c9e1d769efa64fc68087128f4a2",
+      "size": 8860
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/StoreTests.swift",
+      "source": "worktree",
+      "sha256": "2c36bc0d4d001029b06acc68f455e0ca585fe78b8da0f1dec78d6f37dd6a479c",
+      "size": 1933
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/StrictAppEnforcer.swift",
+      "source": "worktree",
+      "sha256": "c40e5c21b06d40a045e605d01003f8f197056fe6957263d5584bf3e03ddc98ad",
+      "size": 2341
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/StrictFixtureDaemon.swift",
+      "source": "worktree",
+      "sha256": "48b5267ee448832ff4c55852e7237884d2cded7dd9fd382ce5cd4d3957016bad",
+      "size": 17934
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/StrictRootAuthority.swift",
+      "source": "worktree",
+      "sha256": "5cb38dc71b4657c2a4d2aa55af2a8f6a1e84be5f911074ddefd926d96ecbc6f1",
+      "size": 4374
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/StrictRootStore.swift",
+      "source": "worktree",
+      "sha256": "899385864959d8ea27e141821b29c6c5d2c94ff45830659502455b5022d66976",
+      "size": 4936
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/build-fixture.sh",
+      "source": "worktree",
+      "sha256": "f588112dc97f964b926391c299c5b534003e2b6792bfbec80614a2f82fae4f0a",
+      "size": 1143
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/fixture-qa-bootstrap.sh",
+      "source": "worktree",
+      "sha256": "93e97895c537a1eb0deb2c4bfa08ad328b80ca6ddb1b7f6c04b0e66add95b5be",
+      "size": 4713
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/fixture-qa-driver.py",
+      "source": "worktree",
+      "sha256": "0e40d00713c2c284ce961f2ec69aff42b324bd0bdd228997c893765de1852a78",
+      "size": 4334
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/test-authority.sh",
+      "source": "worktree",
+      "sha256": "04828b1fe41f419c536801f28d8d7fa7a85ba66ae8364c131853e19e56833ff9",
+      "size": 983
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/test-enforcer.sh",
+      "source": "worktree",
+      "sha256": "350b8373a38d874e4da6514b3a9bbd5fc444b09f86bc17f5040338994b770f48",
+      "size": 912
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/test-hosts-qa.sh",
+      "source": "worktree",
+      "sha256": "551235ffcbf61451d7be2b6ac233a580a6577d1e6ee212587b6b53fb2e276cb6",
+      "size": 578
+    },
+    {
+      "path": "macos-study/advanced-lab/strict-root-service/test-store.sh",
+      "source": "worktree",
+      "sha256": "c2598a408527ffdef24804a236e532610b27fc137affb3e60a3930ffaca79ecc",
+      "size": 598
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/BrowserCoordinatorTests.swift",
+      "source": "worktree",
+      "sha256": "40fba001b0866859750c799cc7985ec0ef61d49fa13148754d23c1ae08a35b41",
+      "size": 1229
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/BrowserTests.swift",
+      "source": "worktree",
+      "sha256": "84e1ae64cfa78f3683f763f19e4dddde7eeb76107d42ff386493dc1049b75a8c",
+      "size": 1046
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/CandidateAuthorityTests.swift",
+      "source": "worktree",
+      "sha256": "662970b3913c21b1e466a6a3ea7b87ec838deab33e840516c6117f0362b7efa9",
+      "size": 5967
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/CandidateDiskStateTests.swift",
+      "source": "worktree",
+      "sha256": "5f4f4ae70efe9ba771d2b57456844f61aa276951e3d6304350c835c8e369eda6",
+      "size": 6102
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/CandidateEnrollmentSocketTests.swift",
+      "source": "worktree",
+      "sha256": "cc94bda2c8d3ae3439a236881d68a22c53754b5469bffd73b2fc26795be23621",
+      "size": 7247
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/CandidateUnknownTests.swift",
+      "source": "worktree",
+      "sha256": "2da0ff363428b61bbbc419af9855842d7727ce622fee20c4a63c9cadcd76456f",
+      "size": 3640
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/FixtureDirectAuthorizationTests.c",
+      "source": "worktree",
+      "sha256": "0209d2f34a7e3aca6aed5274b5d64649679467e1d023e88a12d7f9e014e62997",
+      "size": 1728
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/GuardFixture.swift",
+      "source": "worktree",
+      "sha256": "a55ba64c66bc88da337a6ef9b9d1351ae20ca974360d5d89ed327c07dca8b99d",
+      "size": 253
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/HostTests.swift",
+      "source": "worktree",
+      "sha256": "8b5bbaa3c8e8f4b834ee5fe6d6ebd11a0d235b5fcf436aea73f546313fc775db",
+      "size": 3329
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/HostsGateTests.swift",
+      "source": "worktree",
+      "sha256": "d318aafda3d6feb12eeabb57004c8174e391c5c481c1a5c627bd2982503d5407",
+      "size": 1853
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/PolicyTests.swift",
+      "source": "worktree",
+      "sha256": "160efc7bae2743c406979dc56eed8220fddc2e98a386b8017ea75b838d5ba24d",
+      "size": 2418
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RecurringIntegrationGateTests.swift",
+      "source": "worktree",
+      "sha256": "6b2ca067ac7201cf0228c93c4c3a98e1678fc5971bc9ed46d7e3c21813d9062c",
+      "size": 2212
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RecurringLedgerCandidateTests.swift",
+      "source": "worktree",
+      "sha256": "f38d71be94ed2068fdf9fb167bd621872768031e581d3168a9e3568b4c6314c2",
+      "size": 5252
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RootCommandTests.swift",
+      "source": "worktree",
+      "sha256": "e08f703a19a602a9c2c364672156c97a4f3ca0ea56cbc76fc129892a8c63f23d",
+      "size": 3933
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RootFixtureHashTests.swift",
+      "source": "worktree",
+      "sha256": "7b2ff5829d740a193eec75c75c78ea021d270fb35de183419eba5f2c921c08a4",
+      "size": 1534
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RootFixtureStopTests.swift",
+      "source": "worktree",
+      "sha256": "27be874d91e063132377b4a3d2b26519ee1a8e9fa26a870d8dd3d53b89a585e5",
+      "size": 478
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RootGuardTests.swift",
+      "source": "worktree",
+      "sha256": "92ecc7226aaae47ac48c213d4f12fddb97e962af21a2bcf53e104bc938dea45a",
+      "size": 3092
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/RootTransportTests.swift",
+      "source": "worktree",
+      "sha256": "266523ee54af77b109bf8c6e5a1f0b35c5306b5b369cd054a8c30ed3854c9c2c",
+      "size": 2353
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SMCalendarFixtureTests.swift",
+      "source": "worktree",
+      "sha256": "8c87ac4e117fe6d040bc5d07728c0a35941bbbbf0e16c4258db08ea904eafc42",
+      "size": 4701
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SMCalendarIdleCleanupTests.swift",
+      "source": "worktree",
+      "sha256": "28b5588984f1312580e69e3e77843f53bc6a5b4680e1547eeb5396828e72f4f8",
+      "size": 548
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SMCalendarIndependentCleanupTests.swift",
+      "source": "worktree",
+      "sha256": "734cf75bd94040b685ac8f761a8fd4610f85ee9fb513df9e4f71209f235deb8c",
+      "size": 2128
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SMCalendarModelTests.swift",
+      "source": "worktree",
+      "sha256": "519b7428e9ff20b617fbc3f437a126d10d7ff4b140f646ee2cbff03ef1c1ab3e",
+      "size": 2328
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SMFixtureIsolationTests.swift",
+      "source": "worktree",
+      "sha256": "2a44f0d27e5fedfe6b190b491970cfda302c492598e324f7e5ddd7cfaa0a567f",
+      "size": 1162
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SMRelativeArgv.c",
+      "source": "worktree",
+      "sha256": "d6487f5b874699f4a889402f6d4db9ede5157984fd154e16fb546e39ee9bde2a",
+      "size": 335
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SiteDomainModelTests.swift",
+      "source": "worktree",
+      "sha256": "8b90e2966397ddd693fde1d7d603dd75d654831a466bb51bb2ab1520e4a345ab",
+      "size": 10228
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/SiteDomainPolicyTests.swift",
+      "source": "worktree",
+      "sha256": "824a668b23754ae08b6a5cc42ace10d06df9fa4ac9dd2e33eac0b8af2bbd0b1a",
+      "size": 4118
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserAgentExpiryTests.swift",
+      "source": "worktree",
+      "sha256": "ad8f79a51c7b95ba672c22dda65166b9b465b34f84c9d853dd88c7ab6fe7059a",
+      "size": 2005
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserAgentModelTests.swift",
+      "source": "worktree",
+      "sha256": "cdad285f7fe0b472b8a06e1284a2ef9007970a95b835427424f7ccb565c19b16",
+      "size": 3799
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserCalendarFixtureAgentTests.swift",
+      "source": "worktree",
+      "sha256": "131391b4b6d4c9d126191355357123504c6fe87096694137d6006a4cc6e97fce",
+      "size": 3368
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserProtectionActiveModelTests.swift",
+      "source": "worktree",
+      "sha256": "1f6070d46f7613146204aa6834eab87c9b456106241cdb18682d41418c136d48",
+      "size": 3059
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserProtectionAgentTests.swift",
+      "source": "worktree",
+      "sha256": "2e7bf1aa5b2363577963d49b69ccbbc19129dffab1ab9595daa23bfe4f684cd5",
+      "size": 4043
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserProtectionLedgerTests.swift",
+      "source": "worktree",
+      "sha256": "c4e94f0cedd09b8ae181baac70e1e3fa6260407d4a1c5d4ee32eaa7422a35479",
+      "size": 2119
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserProtectionModelTests.swift",
+      "source": "worktree",
+      "sha256": "ac08416eb4b497521d4ba94accf3363e3ee5481c793b6c28edaa180b3b05b481",
+      "size": 2922
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserProtectionQATests.swift",
+      "source": "worktree",
+      "sha256": "60a474101254ed37400f5d40675553cbb9e4b098462be7a3511f4617d5a222fb",
+      "size": 3002
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserRecurrenceAgentTests.swift",
+      "source": "worktree",
+      "sha256": "e5b293beaabe82228e1958b19731d2b4e130ee7cdab573ca8411e2851a1496ba",
+      "size": 5983
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserRecurrenceClockTests.swift",
+      "source": "worktree",
+      "sha256": "6592d1d9f0dec6955f9aa8fb706950facd26d70730731f7b3f0b9d3fe8e11c7f",
+      "size": 2149
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/UserRecurrenceModelTests.swift",
+      "source": "worktree",
+      "sha256": "df9cfa6daea23f5bb555cfdcca06ca275cf3c2ae96e00f1262f5c38549bdb445",
+      "size": 5305
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowCandidateModelTests.swift",
+      "source": "worktree",
+      "sha256": "c0dff5f7b1574d0f4550663cd202127e43932772c4375263637e66da6ccea56f",
+      "size": 4777
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowFixtureBoundsTests.swift",
+      "source": "worktree",
+      "sha256": "f5d31353c7d745c6eb59a2bb0b266df67bed5b518160e9ce04999e720b02a725",
+      "size": 1532
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowGuardProductionCandidateTests.swift",
+      "source": "worktree",
+      "sha256": "c50e6f0949b518d0a6170627d55ca7ebb15bea2101cb119e6c63f0b74f66727c",
+      "size": 5416
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowGuardUIFixtureCleanupTests.swift",
+      "source": "worktree",
+      "sha256": "631f79584cde067236ed52c5a7eebc2cae6a25e1c80c7666029e78455305048d",
+      "size": 858
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowGuardV2ModelIntegrationTests.swift",
+      "source": "worktree",
+      "sha256": "2939e980b6489a163cc41984767431f775a9f007ede60c004d17f2ca33f9ebc7",
+      "size": 5589
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowGuardV2SocketTests.swift",
+      "source": "worktree",
+      "sha256": "30722431089abbf7ff0964ea8822f80b7937899618174c1a77b55828fcc4a181",
+      "size": 3509
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/WindowGuardV2Tests.swift",
+      "source": "worktree",
+      "sha256": "2660332e419e833b52f0be1f738bfd0735b2f2443d7319db09b8173194fbba9a",
+      "size": 3114
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/test_fixture_socket_identity.py",
+      "source": "worktree",
+      "sha256": "0ff1a96e263659b3b77eff7c90b37d9b0fa22567393912c6e33c48c11dd9de70",
+      "size": 1461
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/test_installer.py",
+      "source": "worktree",
+      "sha256": "4b0d5562baa1d38c68822cb8aa321b1f7749e768123dc3d320dcfffb0167e52c",
+      "size": 5823
+    },
+    {
+      "path": "macos-study/advanced-lab/tests/test_production_candidate_admin.py",
+      "source": "worktree",
+      "sha256": "937191f33c0d28a5c4bbc3284490e5fe6f070fa4dc232420685e77690c4872c0",
+      "size": 8891
+    },
+    {
+      "path": "macos-study/advanced-lab/user-launchagent-qa/README.md",
+      "source": "worktree",
+      "sha256": "79f0fe074d924bdbc592e85bd4185f798e74631951022a410a78d50c21961a54",
+      "size": 4055
+    },
+    {
+      "path": "macos-study/advanced-lab/user-launchagent-qa/evidence.json",
+      "source": "worktree",
+      "sha256": "f0757334fc10e07740890f77ea81030cffc29d6ce92af2b728447a5a27dbac7a",
+      "size": 955
+    },
+    {
+      "path": "macos-study/advanced-lab/user-launchagent-qa/run.py",
+      "source": "worktree",
+      "sha256": "097a56f98a834d86ecce31c90c5914981bdf333381107580989fa1664078aaec",
+      "size": 7717
+    },
+    {
+      "path": "macos-study/advanced-lab/v2-fixture-admin.py",
+      "source": "worktree",
+      "sha256": "60616ba4c6d4b724de0b58b22624665a030fe27fc1c9d572f4c8b8aa6f85bf1a",
+      "size": 9734
+    },
+    {
+      "path": "macos-study/build-app.sh",
+      "source": "worktree",
+      "sha256": "5e8a3367f0786d693b8077cbf4cbae99ba2b75ddc2ae8e4c007dbfd8a5ef9d67",
+      "size": 1362
+    },
+    {
+      "path": "macos-study/build-root-fixture-controller.sh",
+      "source": "worktree",
+      "sha256": "fc92168b4c44989ad1da6f37b183df1d780159e753fc2360f67574677bf3dbb7",
+      "size": 2419
+    },
+    {
+      "path": "macos-study/build-system-app.sh",
+      "source": "worktree",
+      "sha256": "b546ee9f7335031384065fda2eb7c231310a816ff62778d4a78e0f8c3c2a5b7f",
+      "size": 2118
+    },
+    {
+      "path": "macos-study/build-v2-fixture.sh",
+      "source": "worktree",
+      "sha256": "d69bf2f7162dc2d5151e21fa46bae503ada5db398b4bbf8b5cd8586cb6547d1c",
+      "size": 2648
+    },
+    {
+      "path": "macos-study/build-v2-production-candidate.sh",
+      "source": "worktree",
+      "sha256": "13933dc0c65fc05beca791f53ff8b9474d109d9f41ac843a693675c75628fc95",
+      "size": 2383
+    },
+    {
+      "path": "macos-study/build.sh",
+      "source": "worktree",
+      "sha256": "dbaf89a9fd25c748da094e16626f88ecf22f410b79d306930660769d0dd5fbc5",
+      "size": 2677
+    },
+    {
+      "path": "macos-study/prepare-review-ui-fixture.sh",
+      "source": "worktree",
+      "sha256": "6bdaaa1838bed985b344af7868424c96543b97bc328e76a565e2af87937703c0",
+      "size": 1875
+    },
+    {
+      "path": "macos-study/root-fixture-authorization.sh",
+      "source": "worktree",
+      "sha256": "1416de74f54c8389d6dd8460917f36ac409355e871d8aef5457bd7d084d8ec7d",
+      "size": 2313
+    },
+    {
+      "path": "macos-study/run-user-qa-scoped.sh",
+      "source": "worktree",
+      "sha256": "b85155924773c2fc2437e0f395eb9b0259cf6304f34cee366c36ba0096a0e66f",
+      "size": 1504
+    },
+    {
+      "path": "macos-study/run-v2-root-fixture-process.sh",
+      "source": "worktree",
+      "sha256": "ce842b91f5c46aefe8cf7babb5f3f2302d710f6f9d3739b5e94958230cd22c71",
+      "size": 1289
+    },
+    {
+      "path": "macos-study/run-v2-root-ui-fixture.sh",
+      "source": "worktree",
+      "sha256": "f1fbc43b7f7bc04df594628bfeaf624ad3f59846699e26325be0abbd807b910b",
+      "size": 2047
+    },
+    {
+      "path": "macos-study/run-v2-ui-fixture.sh",
+      "source": "worktree",
+      "sha256": "414f5670ea3fd291bae67b232c2e7adbe72c1ba4109581a3336caf0bff9dacea",
+      "size": 2130
+    },
+    {
+      "path": "macos-study/site-protection/NativeHost.swift",
+      "source": "worktree",
+      "sha256": "a46df395b43b3e599b8f4699e0b0833718e9c45a001547277092f49aa640f2a5",
+      "size": 6630
+    },
+    {
+      "path": "macos-study/site-protection/README.md",
+      "source": "worktree",
+      "sha256": "880f6b00f43847698fa2b0a0f3f1ad51d82d8113112f7a8d37bd31b75be3b57d",
+      "size": 17631
+    },
+    {
+      "path": "macos-study/site-protection/build-into-app.sh",
+      "source": "worktree",
+      "sha256": "4b76c2a7670198dfabd338cd3824aa7ae6771eb12db7e6c8ff54d99049759163",
+      "size": 1597
+    },
+    {
+      "path": "macos-study/site-protection/extension/content.js",
+      "source": "worktree",
+      "sha256": "49aadf96d268c17c3e339685ded5167bc19b8af8836ff3c1443820ac5ee538f5",
+      "size": 4627
+    },
+    {
+      "path": "macos-study/site-protection/extension/diagnostics.html",
+      "source": "worktree",
+      "sha256": "e7da06c2d3a12f869c74501ae9dd80923876aa7e3c7a476824604ba37ed49a4b",
+      "size": 693
+    },
+    {
+      "path": "macos-study/site-protection/extension/diagnostics.js",
+      "source": "worktree",
+      "sha256": "52ce60474706434356ebf1c45807e738890ec5c5c672a39f0c4f2f6c61298293",
+      "size": 681
+    },
+    {
+      "path": "macos-study/site-protection/extension/domain-policy.js",
+      "source": "worktree",
+      "sha256": "9373ed7d9ff4dbd7b97073c539bd6b16d653add0fa72fbc3b3f06205be8220fe",
+      "size": 1747
+    },
+    {
+      "path": "macos-study/site-protection/extension/manifest.json",
+      "source": "worktree",
+      "sha256": "3cbf939da67b67455f8b988c226840cbd96a387f094b03f5619ceb775c1a8452",
+      "size": 965
+    },
+    {
+      "path": "macos-study/site-protection/extension/popup.html",
+      "source": "worktree",
+      "sha256": "7600ae2c07378b23f065c42873a4806b9d449e28025dfcb6fa75aa3b3b2ed349",
+      "size": 1248
+    },
+    {
+      "path": "macos-study/site-protection/extension/popup.js",
+      "source": "worktree",
+      "sha256": "119c306451930c50f30b83e27ea7c174633dd2dcc0ff456709ad8be05fdd2d8d",
+      "size": 3047
+    },
+    {
+      "path": "macos-study/site-protection/extension/worker.js",
+      "source": "worktree",
+      "sha256": "a7c3c8457b03e59882b9de299101593f03c94bdc10bae4a175f9ff686f584724",
+      "size": 7346
+    },
+    {
+      "path": "macos-study/site-protection/main-chrome-qa/evidence-supervisor-20261102.json",
+      "source": "worktree",
+      "sha256": "91da1d6a0035a4092671a5b3515869fbb27e975b57cdcb3bdf061902ffd083c2",
+      "size": 1474
+    },
+    {
+      "path": "macos-study/site-protection/main-chrome-qa/prepare.sh",
+      "source": "worktree",
+      "sha256": "0418b40cdaf0c0be9d9b2cec53a162d7c653eebb3a836d8a737f752fb086e375",
+      "size": 2907
+    },
+    {
+      "path": "macos-study/site-protection/main-chrome-qa/session.py",
+      "source": "worktree",
+      "sha256": "18d6700acb1ee532db9222dcf7993d46455a12af91d98716cc38381ad44a621e",
+      "size": 8838
+    },
+    {
+      "path": "macos-study/site-protection/manage-host.sh",
+      "source": "worktree",
+      "sha256": "1cf1a4ebbb24160b913030afcf4c6f4e6f1e0da91cc863c8d5962a3a8aaeb1d6",
+      "size": 920
+    },
+    {
+      "path": "macos-study/site-protection/public-key.txt",
+      "source": "worktree",
+      "sha256": "339634a79176c7708ba68cadaa1d0238dcc07a6f4896d13aee8ec8248c4a7f9f",
+      "size": 392
+    },
+    {
+      "path": "macos-study/site-protection/tests/domain-policy.test.cjs",
+      "source": "worktree",
+      "sha256": "c2dda8c2d1730fdb11ae7a969912477f4c16c436fd655ced6274a78421c597a1",
+      "size": 2159
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-barrier-20261102.png",
+      "source": "worktree",
+      "sha256": "eba2707fa3aa479959b89410b957113e38a44cb78b490070e35933b2726ac7a2",
+      "size": 23957
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-barrier-scoped-20261102.png",
+      "source": "worktree",
+      "sha256": "eba2707fa3aa479959b89410b957113e38a44cb78b490070e35933b2726ac7a2",
+      "size": 23957
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-disable-guard-20261102.json",
+      "source": "worktree",
+      "sha256": "414297a5a02a2e0c6cee38c1f2e4d5b8c0ede817790b875cb4805d374887401d",
+      "size": 2252
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-disable-guard-20261102.png",
+      "source": "worktree",
+      "sha256": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58",
+      "size": 32881
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-domain-migration-20261102.json",
+      "source": "worktree",
+      "sha256": "71d39c849f77206e226abba2b3ec5fd1ec05e0583f89e1e668411b56f8614465",
+      "size": 2325
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-domain-migration-20261102.png",
+      "source": "worktree",
+      "sha256": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58",
+      "size": 32881
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-domains-20261102.json",
+      "source": "worktree",
+      "sha256": "b51cfbed4a340fd2f838bc155242c815dcc8a191266999de780f376f90e9e947",
+      "size": 2196
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-domains-20261102.png",
+      "source": "worktree",
+      "sha256": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58",
+      "size": 32881
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-media-20261102.json",
+      "source": "worktree",
+      "sha256": "61a8a7b84058ac1b340dff96bb078284be9fc3f3bcae0969d082fa7ba6a34bab",
+      "size": 1798
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-media-20261102.png",
+      "source": "worktree",
+      "sha256": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58",
+      "size": 32881
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-native-20261102.json",
+      "source": "worktree",
+      "sha256": "54a538ccee05ba0e27abd43c7ce36a7527b27f3178ef4d60041d477b2a432e1e",
+      "size": 1321
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-native-scoped-20261102.json",
+      "source": "worktree",
+      "sha256": "021d33732e956c5e9ec7d30ec75126a3fe21b9f19a7469c007ad3e26ba6bfb09",
+      "size": 1770
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-safe-setup-20261102.json",
+      "source": "worktree",
+      "sha256": "00a1366a0240f36dd0f017d0373740c5b82c2a6fd2ea4a2194748b40a4300760",
+      "size": 2596
+    },
+    {
+      "path": "macos-study/site-protection/tests/evidence/chrome-safe-setup-20261102.png",
+      "source": "worktree",
+      "sha256": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58",
+      "size": 32881
+    },
+    {
+      "path": "macos-study/site-protection/tests/run-scoped.py",
+      "source": "worktree",
+      "sha256": "eff08733673a312cb28aaf9803ba5249f9a2b0377329e41ce24abb77cd7c3ada",
+      "size": 1196
+    },
+    {
+      "path": "macos-study/site-protection/tests/run.mjs",
+      "source": "worktree",
+      "sha256": "a0e2780a2e8d0803fed8b957f7291b5e699ebb8e6e5d9366676bece93d4948b1",
+      "size": 20080
+    },
+    {
+      "path": "macos-study/site-protection/tests/run.sh",
+      "source": "worktree",
+      "sha256": "39a53191b82502ca07504291c3c3b3c4ea20f7da977ca6a7e12c6dda458f8088",
+      "size": 3405
+    },
+    {
+      "path": "macos-study/site-protection/tests/setup-policy.test.cjs",
+      "source": "worktree",
+      "sha256": "607cece4ff62e5213c5fe3bf13fa0c48538c5b57ccdd31243fcd104bc979e351",
+      "size": 4508
+    },
+    {
+      "path": "macos-study/strict-root/evidence-controller-20261103.json",
+      "source": "worktree",
+      "sha256": "142e2816d2a1fb714aa943b71aec0345624348a8ab3910e04f78a73810b27f0f",
+      "size": 1698
+    },
+    {
+      "path": "macos-study/strict-root/evidence-model-20261103.json",
+      "source": "worktree",
+      "sha256": "61ed95c52c224c2533178357267d63259b1eb8a05cffc3d916245bda039e3bb5",
+      "size": 1481
+    },
+    {
+      "path": "macos-study/strict-root/tests/FakeAuthority.swift",
+      "source": "worktree",
+      "sha256": "ffab72097c72edd8f2f51b01b4cf0c0bad2a05bde96496b579801827c1dff43d",
+      "size": 969
+    },
+    {
+      "path": "macos-study/strict-root/tests/StrictRootControllerTests.swift",
+      "source": "worktree",
+      "sha256": "dec5c587fe800c9a51db58b242043d4dcc9d9d584d35e1d19d028ff5e7651faa",
+      "size": 4480
+    },
+    {
+      "path": "macos-study/strict-root/tests/StrictRootIPCTests.swift",
+      "source": "worktree",
+      "sha256": "79cc3ba90c7df8496d410c62852fbb7067fc3cb11137f4a36c2113364c6590d7",
+      "size": 2141
+    },
+    {
+      "path": "macos-study/strict-root/tests/StrictRootQAClient.swift",
+      "source": "worktree",
+      "sha256": "bce45600518cefd33cedce9ab71f9a4954bfc84876444c62b7ae72c62df48879",
+      "size": 5462
+    },
+    {
+      "path": "macos-study/strict-root/tests/StrictRootTests.swift",
+      "source": "worktree",
+      "sha256": "0c6a2572088e583cb2839ba4e4014977d8f0c3abe87017b3083745891e004a48",
+      "size": 8236
+    },
+    {
+      "path": "macos-study/strict-root/tests/build-qa-client.sh",
+      "source": "worktree",
+      "sha256": "ea5ffcfa4d5e2f3af6352ca74e2d10a6f53686d173cb22a4a841fdb40e37a5bd",
+      "size": 1192
+    },
+    {
+      "path": "macos-study/strict-root/tests/run.sh",
+      "source": "worktree",
+      "sha256": "f00d516e6743d417e4029ae43c52d8ab5459c5253e1ade3dc321ab4f0a0eb13b",
+      "size": 1872
+    },
+    {
+      "path": "macos-study/system-protection/BlockedApplications.swift",
+      "source": "worktree",
+      "sha256": "0415acfd1b8dec3fe351b541a56fcd0ee5d67d50e7e4ed24991d763c897b9b83",
+      "size": 3446
+    },
+    {
+      "path": "macos-study/system-protection/BrowserProxy.swift",
+      "source": "worktree",
+      "sha256": "6f53dfcbcb16c9df9f90097dd53ab317a8b44d90f95623316ad20d4f4f4b84fc",
+      "size": 10507
+    },
+    {
+      "path": "macos-study/system-protection/BrowserRuntimePolicy.swift",
+      "source": "worktree",
+      "sha256": "f201cb7906ed00cd819f78c6ca47ce78702627d53ef016377d57d16fcdf04266",
+      "size": 2932
+    },
+    {
+      "path": "macos-study/system-protection/Commitment.swift",
+      "source": "worktree",
+      "sha256": "d5dbb3172a7e7bb94cc9859655eb7cd451fc81e0853a6a3b4f23e7fa8366db6b",
+      "size": 2211
+    },
+    {
+      "path": "macos-study/system-protection/DomainResolver.swift",
+      "source": "worktree",
+      "sha256": "cce3ceda88fcbc9036a143d14371b9524f1d922d15fe11fc3c0b690eb83b0731",
+      "size": 5247
+    },
+    {
+      "path": "macos-study/system-protection/ManagedBrowser.swift",
+      "source": "worktree",
+      "sha256": "55604a68212d086fa68696ad8e6bd269ee91b597e202a1dcf2d9f41729880ad0",
+      "size": 12504
+    },
+    {
+      "path": "macos-study/system-protection/Service.swift",
+      "source": "worktree",
+      "sha256": "a6f59307b8fb38113d75a3c0fe5437627d4131f40339261fa331d9483c23d564",
+      "size": 30531
+    },
+    {
+      "path": "macos-study/system-protection/ServiceCommand.swift",
+      "source": "worktree",
+      "sha256": "ceae2f2bc9f76b7f72dce318002439ef1875891aa2b8fa533a636eb837923ded",
+      "size": 2063
+    },
+    {
+      "path": "macos-study/system-protection/build-service.sh",
+      "source": "worktree",
+      "sha256": "c14b43d7b84359255ebd8b06075806d6aa3730e28507718b26ebd03325fb987c",
+      "size": 1305
+    },
+    {
+      "path": "macos-study/system-protection/tests/CommitmentTests.swift",
+      "source": "worktree",
+      "sha256": "9c7abc28043fd4f5a9111b5a4e8410e32f882e9fd3c420ce41a8f4c86738e6ba",
+      "size": 2334
+    },
+    {
+      "path": "macos-study/system-protection/tests/ManagedBrowserTests.swift",
+      "source": "worktree",
+      "sha256": "07adeed549f7e6dbd4e33c7ba6b0203c286bc5756f815976c1f9ee7e454fdd9e",
+      "size": 3899
+    },
+    {
+      "path": "macos-study/system-protection/tests/ServiceCommandTests.swift",
+      "source": "worktree",
+      "sha256": "553c0ebb68b9043f84972bd2d41b090b0f6c351eae96fc195b93ff93705eee11",
+      "size": 1715
+    },
+    {
+      "path": "macos-study/test-candidate-authority.sh",
+      "source": "worktree",
+      "sha256": "e4004b3c7fed2f95ede811e514a801bf5ac8e989dfe913c7c37861cec5b63691",
+      "size": 1047
+    },
+    {
+      "path": "macos-study/test-candidate-enrollment.sh",
+      "source": "worktree",
+      "sha256": "349aa4df784c7d3abd9ca450cc05c997967b2e9dbf11ad492ad17a500132915f",
+      "size": 1552
+    },
+    {
+      "path": "macos-study/test-protection-targets.sh",
+      "source": "worktree",
+      "sha256": "d927c73b6e8aae652c13ee34d32a78be37a558c78c66f54a4c0aa25cdc4291bd",
+      "size": 1347
+    },
+    {
+      "path": "macos-study/test-recurring-integration-gate.sh",
+      "source": "worktree",
+      "sha256": "2922c0df79d9567d1344c6fd27cfd134e6320e1d2183ff191fc946bc017c44ea",
+      "size": 445
+    },
+    {
+      "path": "macos-study/test-recurring-ledger.sh",
+      "source": "worktree",
+      "sha256": "c534974331a379ef05cc7da22a2d4dfbf27ce3085a93f4b858c3b4e1830cfbfd",
+      "size": 399
+    },
+    {
+      "path": "macos-study/tests/CalendarServiceControlTests.swift",
+      "source": "worktree",
+      "sha256": "144cd32e2c7af2cb36963a70d56f7c26dfc2f2a106e42c2f6d5998b9a1c98289",
+      "size": 1431
+    },
+    {
+      "path": "macos-study/tests/DailyReportTests.swift",
+      "source": "worktree",
+      "sha256": "2358ed41e14013f71e4c4b256d5ec26f1b60b5ed041e193be1b13aee7e1d9a6d",
+      "size": 4457
+    },
+    {
+      "path": "macos-study/tests/FocusBridgeTests.swift",
+      "source": "worktree",
+      "sha256": "2582295e951534ad49929ed4656ff1f8cf0a4efb841dbcd2ccaf40c8777557fe",
+      "size": 2296
+    },
+    {
+      "path": "macos-study/tests/ManualAgentControlTests.swift",
+      "source": "worktree",
+      "sha256": "fc5fcc0807a93b9e2fb2e9025cc46e07b1e8a80f756e67691c69d340c524d085",
+      "size": 4128
+    },
+    {
+      "path": "macos-study/tests/ProtectionTargetTests.swift",
+      "source": "worktree",
+      "sha256": "19c94e09f2f8fdf22059a21e955ec474e1b46a87192f7c5d73436ce26e28ecbd",
+      "size": 1184
+    },
+    {
+      "path": "macos-study/tests/ReceiverClientTests.swift",
+      "source": "worktree",
+      "sha256": "424d64da0992e0b199bca793b35bd7fd41055f8e341687f7c59a86cdb80d9b71",
+      "size": 307
+    },
+    {
+      "path": "macos-study/tests/ReceiverIsolationTests.swift",
+      "source": "worktree",
+      "sha256": "7c9b0cd487bfafc955c67a20d892770026c2df2f58b1b56a93184ce3bfd2d634",
+      "size": 866
+    },
+    {
+      "path": "macos-study/tests/RecoveryControlTests.swift",
+      "source": "worktree",
+      "sha256": "f07a4b3cca869281677f877a18d3413b9df1b384311884a6d19a49d8e9a73e0c",
+      "size": 4502
+    },
+    {
+      "path": "macos-study/tests/SessionModelTests.swift",
+      "source": "worktree",
+      "sha256": "32ff0ec24dd1f49ba778276b9e0e56c6c0afb42091dd03f77268f72b80370471",
+      "size": 2314
+    },
+    {
+      "path": "macos-study/tests/SessionTests.swift",
+      "source": "worktree",
+      "sha256": "3d41364790c479af727023fbace4c67fd6af27ac20c6341ddebeae5781da8b63",
+      "size": 4982
+    },
+    {
+      "path": "macos-study/tests/TaskCompletionTests.swift",
+      "source": "worktree",
+      "sha256": "8e3bbe309fb4d7da3d142b08314459e1dec8eda93d25a55ad99871f81c4fd399",
+      "size": 2294
+    },
+    {
+      "path": "macos-study/tests/WindowPolicyTests.swift",
+      "source": "worktree",
+      "sha256": "dc4f69a50fd968e8e694888fb0f9e310666612b139b7f6ae566f234bd83f3ffd",
+      "size": 4198
+    },
+    {
+      "path": "macos-study/tests/receiver_integration.py",
+      "source": "worktree",
+      "sha256": "084fb58851193de803dafbab4858ce15de8c9468b53e29728e23a1f938fcd5a1",
+      "size": 3114
+    },
+    {
+      "path": "macos-study/tests/smoke.sh",
+      "source": "worktree",
+      "sha256": "554913d669bf3ad6fcb779531205c91c9248c28cdb14b8540a858bf82ac0821c",
+      "size": 584
+    },
+    {
+      "path": "macos-study/user-agent-manager/Manager.swift",
+      "source": "worktree",
+      "sha256": "235df370c4e80226c393091d9ab33b6f8daf0fa42c5a635916dff6c615a9fd85",
+      "size": 22773
+    },
+    {
+      "path": "macos-study/user-agent-manager/README.md",
+      "source": "worktree",
+      "sha256": "ef3ef8ab4a01f92c9a1d665629150326847595e63db523f64245814a96a28225",
+      "size": 12957
+    },
+    {
+      "path": "macos-study/user-agent-manager/ScheduleBoundary.swift",
+      "source": "worktree",
+      "sha256": "ec75ede0916d3bab54dc4890106d73c1a96f5f964a3657d9fb86f990182c4325",
+      "size": 329
+    },
+    {
+      "path": "macos-study/user-agent-manager/build-into-app.sh",
+      "source": "worktree",
+      "sha256": "0e7a8c60701e5c47af8dcbff05055efc5ce342987e0190e2343063abebf39452",
+      "size": 1143
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/ScheduleBoundaryTests.swift",
+      "source": "worktree",
+      "sha256": "9834c99f93b9d044d264126c54f7b92ebb00efc7eff0cf209c907e9945781230",
+      "size": 887
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/conflicts.py",
+      "source": "worktree",
+      "sha256": "d4431e6d327a34d75728924a569ffce85231099c6fa17552bf6967dd2bc2a705",
+      "size": 3414
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/evidence-20261102.json",
+      "source": "worktree",
+      "sha256": "8d9727e9be0d504fd82f90d57c810aec3ac6a2b13e4bbb65eaefa70ec71a7fcc",
+      "size": 1593
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/evidence-launchctl-failclosed-20261102.json",
+      "source": "worktree",
+      "sha256": "aa7ddff75f3ad7688d2469fd96e2f2c7d6d3e20464f4e038f16c2f5bd5197413",
+      "size": 1316
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/evidence-prestart-20261103.json",
+      "source": "worktree",
+      "sha256": "1253e02e63ef8c56c3268ca4120813d7254fc8798fac5c5b80c673e1ef12abff",
+      "size": 2672
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/evidence-schedule-boundary-20261102.json",
+      "source": "worktree",
+      "sha256": "4c85ead4cfcba43d679fc3428797fc51284ef7c0366531054ad60963e8db59ab",
+      "size": 1461
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/near-boundary.py",
+      "source": "worktree",
+      "sha256": "f88674fde6cc5bb424a885a6acae51e9ebf6d9af0a39ab5a0dcae98d0379659c",
+      "size": 5866
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/prestart-offline.py",
+      "source": "worktree",
+      "sha256": "b8b8abd7b7816f0915055bb8d54d28ac212b0d19b7db6cf3e8bd4e649baceae6",
+      "size": 3413
+    },
+    {
+      "path": "macos-study/user-agent-manager/tests/run.py",
+      "source": "worktree",
+      "sha256": "69648780cda2b7675e8eb028abddc2aefcec43a911aefff82cabf820843b7a36",
+      "size": 10944
+    },
+    {
+      "path": "obsidian-plugin/focusdeck-panel/main.js",
+      "source": "worktree",
+      "sha256": "bee9f318531d7092ffaf5a6ec2593029bbc342c214c4ff3a7b5032cfc9178952",
+      "size": 177407
+    },
+    {
+      "path": "obsidian-plugin/focusdeck-panel/manifest.json",
+      "source": "worktree",
+      "sha256": "7ce6f47c0720611f1d66774966dc74b8e3a314f3822c3a3a8ec0af1800f7831e",
+      "size": 345
+    },
+    {
+      "path": "obsidian-plugin/focusdeck-panel/styles.css",
+      "source": "worktree",
+      "sha256": "120388143b8c99d841faf1731769120db99d4eb5c21a92017bfbfb177c45a326",
+      "size": 49326
+    },
+    {
+      "path": "settings.gradle.kts",
+      "source": "worktree",
+      "sha256": "8cf87efc23ce77631c2421491d3187883aaf6dc0883348f348d0c55c3ed945cc",
+      "size": 347
+    },
+    {
+      "path": "shared/ObsidianTaskCatalog.swift",
+      "source": "worktree",
+      "sha256": "1988417d81d2bfa320606939f8c79d8d1b6678947e79da57bb5a9c3ed22a602f",
+      "size": 6354
+    },
+    {
+      "path": "shared/README.md",
+      "source": "worktree",
+      "sha256": "2d62ec827221869fa3e49edafa69956ae4c99e3475150b3db1be1c59d4f7b360",
+      "size": 9766
+    },
+    {
+      "path": "shared/event-v1.schema.json",
+      "source": "worktree",
+      "sha256": "2ef0230bf64021b6ff1fab82fc93cb4f856e3d39d2a908cce6d35a0be43d04ab",
+      "size": 2473
+    },
+    {
+      "path": "shared/session-policy-v1.json",
+      "source": "worktree",
+      "sha256": "8e41caba2843a0b8b6b3dba34d4bec25d46dc486a2f8ccd482b09fbda9335f4b",
+      "size": 1009
+    },
+    {
+      "path": "shared/validate_events.py",
+      "source": "worktree",
+      "sha256": "fb5f4022fe195f307955b1234fd7571e519e923f167339c9febbdf38a66f7529",
+      "size": 3150
+    },
+    {
+      "path": "shared/window-policy-v2.json",
+      "source": "worktree",
+      "sha256": "155f3268d26db0a02babd1ad190a55a3efef2703f9f28c9ca6c1bcc056df4fab",
+      "size": 5566
+    },
+    {
+      "path": "tools/package_preview.py",
+      "source": "worktree",
+      "sha256": "075bd47cb916d41717bed82c33428ad25f7eba224fa9865f2458f283840bf2bd",
+      "size": 5286
+    },
+    {
+      "path": "tools/verify_harness.sh",
+      "source": "worktree",
+      "sha256": "9e4e4c43e6c0ac99f029087b8bbbcf902dc829d0586e35665d7a3586065f8975",
+      "size": 999
+    }
+  ],
+  "note": "Source provenance before documentation consolidation; some navigation/agent instructions updated for publication. Runtime/private data and generated outputs excluded."
+}

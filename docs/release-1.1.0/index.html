@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FocusDeck 1.1 — проверенные экраны</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#000;color:#dce5db}
+*{box-sizing:border-box}body{max-width:1160px;margin:auto;padding:48px 24px 72px}
+h1{font-size:clamp(28px,4vw,44px);font-weight:600;letter-spacing:-.035em;margin:8px 0 20px}
+p{line-height:1.6;max-width:780px;color:#bcc8be}small{color:#a5d6b8;letter-spacing:.04em}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px}
+figure{margin:0}img{display:block;width:100%;border-radius:24px;background:#101711}
+figcaption{padding:18px 4px;font-size:15px;line-height:1.5;color:#bcc8be}strong{display:block;color:#dce5db;margin-bottom:6px;font-weight:600}
+.note{margin-top:28px;padding:20px 24px;border-radius:24px;background:#171d18}
+@media(max-width:760px){.grid{grid-template-columns:1fr;max-width:420px;margin-inline:auto}body{padding-top:28px}}
+</style>
+<small>FOCUSDECK · 1.1.0</small>
+<h1>План, действие и пересмотр</h1>
+<p>Сферы жизни, цели, проекты и решения связаны с ежедневными задачами и заметками Obsidian. Ниже — реальные снимки новой версии с тестовыми данными на Pixel, а не макеты.</p>
+<div class="grid">
+<figure><img src="goal-card-final.png" alt="Карточка цели со сферой жизни, добавлением действия и проектами"><figcaption><strong>Цель и ближайшее действие</strong>Основной следующий шаг виден сразу. Подробности и состояние раскрываются отдельно.</figcaption></figure>
+<figure><img src="ritual-final-before-food.png" alt="Вечерний ритуал с тремя шагами: дневник, питание и план"><figcaption><strong>Завершение дня</strong>Три последовательных шага в общей палитре и сетке. Выполненные требования отмечаются по сохранённым данным.</figcaption></figure>
+<figure><img src="journal-conflict-final.png" alt="Сравнение локального дневника и версии из Obsidian"><figcaption><strong>Сохранность дневника</strong>При внешней правке предлагается сравнение. Повторное изменение файла требует обновить сравнение.</figcaption></figure>
+</div>
+<p class="note">Проверки этих экранов проводились в отдельном временном профиле. Релиз установлен в основной профиль, но финальная визуальная проверка на личных данных ожидает разблокировки телефона. В основном профиле системная шторка и список недавних приложений остаются доступны.</p>
+</html>

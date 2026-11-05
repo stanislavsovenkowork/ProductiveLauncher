@@ -1,0 +1,14 @@
+"""Expand only reviewed explicit aliases whose base is already in selected policy."""
+import json
+from pathlib import Path
+import sys
+policy = json.loads(Path(sys.argv[1]).read_text())
+aliases = json.loads(Path(sys.argv[2]).read_text())
+assert aliases['schemaVersion'] == 1
+selected = set(policy['blocked_domains'])
+for base, names in aliases['aliasesByBase'].items():
+    if base in selected:
+        selected.update(names)
+protected = policy['protected_domains']
+policy['blocked_domains'] = sorted(name for name in selected if not any(name == p or name.endswith('.'+p) for p in protected))
+Path(sys.argv[3]).write_text(json.dumps(policy, ensure_ascii=False, indent=2)+'\n')

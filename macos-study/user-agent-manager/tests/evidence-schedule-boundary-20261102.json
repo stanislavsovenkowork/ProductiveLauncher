@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-02",
+  "scope": "Scoped synthetic user LaunchAgent, own temp socket and ledger; no personal services, data, UI or network changed.",
+  "result": "PASS: terminal exit in today\u2019s already-started recurring interval permits update and uninstall with exact ledger preservation; an upcoming synthetic start within 120 seconds blocks both operations without changing ledger or stopping the agent; deterministic boundary checks cover 0, 1, 120 and above 120 seconds. Full existing lifecycle and rollback test passed.",
+  "cleanup": "Own synthetic manager jobs/processes/sockets absent; QA scope records paired.",
+  "sha256": {
+    "manager_source": "db7ce5d6cf066179a21dc5ad68c71b4d74988423441cd5b88c3437bc23eb4d32",
+    "schedule_helper": "ec75ede0916d3bab54dc4890106d73c1a96f5f964a3657d9fb86f990182c4325",
+    "build_script": "0e7a8c60701e5c47af8dcbff05055efc5ce342987e0190e2343063abebf39452",
+    "boundary_unit": "9834c99f93b9d044d264126c54f7b92ebb00efc7eff0cf209c907e9945781230",
+    "lifecycle_test": "ba9827cf2f447c97414a5d33f2371bfdc712c7581ad8bc614361ed1901693b87",
+    "near_boundary_test": "f88674fde6cc5bb424a885a6acae51e9ebf6d9af0a39ab5a0dcae98d0379659c",
+    "synthetic_manager": "f7ad85237f8df5dc401cb2d042b2f2332adb67836147b3fdba406ef76d0b318a"
+  },
+  "limitations": "Synthetic agent only; live v4 left unchanged. One earlier near-boundary fixture compile failed due duplicate variable and was corrected before passing run."
+}

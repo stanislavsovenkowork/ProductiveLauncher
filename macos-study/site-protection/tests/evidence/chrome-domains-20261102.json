@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-02",
+  "scope": "Isolated scoped headless Chrome, synthetic .test hostnames resolved to local pages only inside the test Chrome process; local synthetic media; no personal tabs or system network changes.",
+  "unit_result": "PASS: root and subdomains; label boundaries, canonical case/trailing dot, protected hosts/parents and malformed policies.",
+  "chrome_result": "PASS: actual Chrome native host, open-tab injection, active, mouse blocking, allowed page, relief and return, expiry, agent failure/recovery, extension removal/reinstallation, exit, synthetic media pause/manual resume, root and www/mobile subdomains, near-match exclusions, frame scope, open shadow, mute preservation and page context.",
+  "cleanup": "Own test processes terminated; own scope ended; no personal Chrome host registration.",
+  "screenshot": "chrome-domains-20261102.png",
+  "sha256": {
+    "synthetic_agent": "1efcc1eb3b0bee811e95cd3be0f882a5cede1b6dc5f33da3b8ec9da2c69f3aba",
+    "native_host": "eddc39cdaaa46b5c9a3f6506becd2beaf565ea6b9799cbda659766f4d2029075",
+    "client": "e259dcbbce3c79d300941cf4ef6d0ccb0c20cdd6aa0864e8ae7ab47ff93f8236",
+    "domain_policy": "b1cb5f452c29095e5c9c8ba4961126631b48ccb3c69e4275ed77a2dc690dca52",
+    "extension_worker": "d2ed3d304c4faedc3bc4d219844acf84506c3dfc8989af2c3056180153e58538",
+    "extension_manifest": "9a12e3516519b0d2a0ae3c4e640a8a8d531c1bad1384c7808c6e95c8151264da",
+    "extension_content": "723b30d87f2e96a63ca2edc26f5dc354fa26beabd2f980d834027de59a9a7a36",
+    "test_domain_policy": "85ace92b87aba519b47ef9de834fa4f77cb4cfde7d6b4c874e775c6c12b54957",
+    "test_scenario": "c3cb902477dc67916dfa307405dcc40085d62101c746e2519e4a2d73c1a8cfb0",
+    "test_entry": "9e54f15441d37b4496f8597af49959bb5deff6b241c1538e5d3cbd3bd44d0114",
+    "window_policy": "0ed4ea989b2fb87837b0701302bdf59ac30650d985e0f0496d0402e5c759a958",
+    "screenshot": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58"
+  },
+  "limitations": "Protected infrastructure names tested as pure matching inputs only, never opened; HTML media state not speaker audio, production install, private mode, WebAudio and deliberately evasive pages not established."
+}

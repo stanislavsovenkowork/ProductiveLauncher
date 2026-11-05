@@ -1,0 +1,40 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")"
+mkdir -p build
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/SessionState.swift Sources/LocalReceiver.swift Sources/LocalCollectionControl.swift Sources/BrowserCoordinator.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/RootSocket.swift Sources/PrivilegedAppGuard.swift ../shared/ObsidianTaskCatalog.swift Sources/FocusDeckApp.swift -framework SwiftUI -framework AppKit -o build/FocusDeck
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 -parse-as-library -module-name FocusDeckStudy \
+  Sources/StudyPolicy.swift Sources/StudyFilter.swift Sources/FilterMain.swift \
+  -framework NetworkExtension -framework Security -o build/StudyFilter
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/HostController.swift Sources/HostMain.swift -framework NetworkExtension -framework SystemExtensions -o build/StudyHost
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/AppGuard.swift -framework AppKit -o build/StudyAppGuard
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift tests/PolicyTests.swift -o build/policy-tests
+./build/policy-tests config/study.json
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/HostController.swift tests/HostTests.swift -framework NetworkExtension -framework SystemExtensions -o build/host-tests
+./build/host-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/SessionState.swift tests/SessionTests.swift -o build/session-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/HostsGate.swift Sources/RootSocket.swift Sources/RootDeadlineLedger.swift Sources/RootGuardMain.swift -framework Security -o build/FocusDeckRootGuard
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 -parse-as-library tests/GuardFixture.swift -o build/GuardFixture
+codesign --force --sign - --identifier dev.stanislav.focusdeck.guard-fixture build/GuardFixture
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift tests/RootGuardTests.swift -framework Security -o build/root-guard-tests
+./build/root-guard-tests "$PWD/build/GuardFixture"
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/HostsGate.swift Sources/RootGuardAdmin.swift -framework Security -o build/FocusDeckGuardAdmin
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/SessionState.swift Sources/LocalReceiver.swift Sources/LocalCollectionControl.swift tests/ReceiverIsolationTests.swift -o build/receiver-isolation-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/BrowserControl.swift tests/BrowserTests.swift -framework AppKit -o build/browser-tests
+./build/browser-tests
+codesign --force --sign - --identifier dev.stanislav.focusdeck.guard build/FocusDeckRootGuard
+codesign --force --sign - --identifier dev.stanislav.focusdeck.guard.admin build/FocusDeckGuardAdmin
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/SessionState.swift Sources/LocalReceiver.swift tests/ReceiverClientTests.swift -o build/receiver-client-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/BrowserControl.swift Sources/BrowserWorker.swift -framework AppKit -o build/BrowserWorker
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 -D SESSION_MODEL_TEST Sources/StudyPolicy.swift Sources/SessionState.swift Sources/LocalReceiver.swift Sources/LocalCollectionControl.swift Sources/BrowserCoordinator.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/RootSocket.swift Sources/PrivilegedAppGuard.swift ../shared/ObsidianTaskCatalog.swift Sources/FocusDeckApp.swift tests/SessionModelTests.swift -framework SwiftUI -framework AppKit -o build/session-model-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/HostsGate.swift tests/HostsGateTests.swift -framework Security -o build/hosts-gate-tests
+./build/hosts-gate-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/RootDeadlineLedger.swift tests/RootCommandTests.swift -framework Security -o build/root-command-tests
+./build/root-command-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/StudyPolicy.swift Sources/RootCommandCore.swift Sources/RootGuardCore.swift Sources/RootSocket.swift tests/RootTransportTests.swift -framework Security -o build/root-transport-tests
+codesign --force --sign - --options runtime --identifier dev.stanislav.focusdeck.transport-fixture build/root-transport-tests
+./build/root-transport-tests
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/BrowserCoordinator.swift tests/BrowserCoordinatorTests.swift -o build/browser-coordinator-tests
+./build/browser-coordinator-tests "$PWD/build/GuardFixture"
+xcrun swiftc -target "$(uname -m)-apple-macos15.0" -swift-version 6 Sources/FocusShortcutsBridge.swift tests/FocusBridgeTests.swift -o build/focus-bridge-tests
+echo 'Compiled/tested with local ad-hoc signatures only. No installation, privileged activation or personal restrictions performed.'

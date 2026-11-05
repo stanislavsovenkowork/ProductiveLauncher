@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-02",
+  "scope": "Scoped headless Chrome, isolated profile, local synthetic WAV and pages, test agent; Chrome process audio output muted; no personal tabs or system network changes.",
+  "result": "PASS: actual Chrome native host, open-tab injection, active, mouse blocking, allowed page, relief and return, expiry, agent failure/recovery, extension removal/reinstallation, exit, synthetic media pause/manual resume, frame scope, open shadow, mute preservation and page context.",
+  "screenshot": "chrome-media-20261102.png",
+  "sha256": {
+    "synthetic_agent": "f1cd354f20cfb4d82a4ecc912fc4d3c34245ed1e532de93847f8fbed2500716b",
+    "native_host": "55d827196cad8b6ab5020d42ba1124e9189ba6d83618ef9490bec954e91e884c",
+    "client": "d9c0c495076400c55a3bcd1aa2d7ffc7a6eb1543c1461aaf2db2f5379980f75b",
+    "extension_manifest": "9a12e3516519b0d2a0ae3c4e640a8a8d531c1bad1384c7808c6e95c8151264da",
+    "extension_worker": "428199cc501f29bc5498fd75c4d6a3b99162b29acdfa5215c0bf0d9ae0cfefa3",
+    "extension_content": "723b30d87f2e96a63ca2edc26f5dc354fa26beabd2f980d834027de59a9a7a36",
+    "extension_popup": "55ba3ecea7b202e5e95671df10a192bae8d4a9549874d228d93de0696aef2239",
+    "qa_wrapper": "eff08733673a312cb28aaf9803ba5249f9a2b0377329e41ce24abb77cd7c3ada",
+    "qa_entry": "59664d6d784a9e1b42590b898b354b44fc92478ab0a3960d583d7f2967623b66",
+    "qa_scenario": "109fe975b96e4183f8907795873d9a87de280be3d46d2a5f94d32016cf07e588",
+    "screenshot": "8ac7c0ff53b23330960070762d02380c93028981536f0968453c8f7db0c94d58"
+  },
+  "limitations": "HTML media element state and muted flag checked, no speaker-level audio capture. WebAudio, closed shadow, detached media, uninjectable frames, production user installation, ordinary profile, sleep/reboot, and intentional bypass not covered."
+}

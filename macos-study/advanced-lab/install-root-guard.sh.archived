@@ -1,0 +1,91 @@
+#!/bin/sh
+# Explicit administrator action. Never called by builds/tests or ordinary startup.
+set -eu
+cd "$(dirname "$0")"
+[ "$(id -u)" = 0 ] || { echo 'Administrator privileges required. No changes made.' >&2; exit 2; }
+label=dev.stanislav.focusdeck.guard
+helper="/Library/PrivilegedHelperTools/$label"
+admin="/Library/PrivilegedHelperTools/$label.admin"
+plist="/Library/LaunchDaemons/$label.plist"
+config_dir='/Library/Application Support/FocusDeckGuard'
+manifest="$config_dir/install.sha256"
+trust="$config_dir/root-config.json"
+check_dir() {
+  [ ! -L "$1" ] && [ -d "$1" ] || return 1
+  [ "$(stat -f %u "$1")" = 0 ] || return 1
+  mode=$(stat -f %Lp "$1"); [ "$((0$mode & 022))" = 0 ]
+}
+check_file() {
+  [ ! -L "$1" ] && [ -f "$1" ] || return 1
+  [ "$(stat -f %u "$1")" = 0 ] || return 1
+  mode=$(stat -f %Lp "$1"); [ "$((0$mode & 022))" = 0 ]
+}
+case "${1:-}" in
+  --install-idle)
+    [ "$#" = 4 ] || { echo 'Usage: --install-idle TARGET_UID ABSOLUTE_UI_BINARY RUNTIME_CDHASH' >&2; exit 2; }
+    caller_uid=$2; ui_binary=$3; runtime_hash=$4
+    case "$caller_uid" in *[!0-9]*|'') exit 2;; esac
+    [ "$caller_uid" -ge 500 ] && id -un "$caller_uid" >/dev/null || exit 2
+    case "$ui_binary" in /*) ;; *) exit 2;; esac
+    [ ! -L "$ui_binary" ] && [ -f "$ui_binary" ] || exit 2
+    codesign --verify --strict "$ui_binary"
+    ui_hash=$(codesign -dv --verbose=4 "$ui_binary" 2>&1 | sed -n 's/^CDHash=//p')
+    [ "${#ui_hash}" = 40 ] && [ "$ui_hash" = "$runtime_hash" ] || { echo "Running UI differs from installed file; quit and reopen the new build." >&2; exit 3; }
+    for target in "$helper" "$admin" "$plist" "$manifest" "$trust" "$config_dir/session.json"; do
+      [ ! -e "$target" ] && [ ! -L "$target" ] || { echo 'Existing installation or foreign path; refusing replacement.' >&2; exit 3; }
+    done
+    if /usr/bin/grep -q '^# BEGIN FocusDeckGuard v1 ' /private/etc/hosts; then
+      echo 'Existing managed hosts section; explicit recovery required before idle installation.' >&2; exit 3
+    fi
+    if launchctl print "system/$label" >/dev/null 2>&1; then echo 'Existing loaded service; refusing replacement.' >&2; exit 3; fi
+    for directory in /Library/PrivilegedHelperTools /Library/LaunchDaemons "$config_dir"; do
+      if [ -e "$directory" ] || [ -L "$directory" ]; then check_dir "$directory" || { echo 'Unsafe directory ownership/link/mode.' >&2; exit 3; }; fi
+    done
+    if [ -d "$config_dir" ]; then [ "$(stat -f %Lp "$config_dir")" = 700 ] || exit 3; fi
+    codesign --verify --strict build/FocusDeckRootGuard
+    codesign --verify --strict build/FocusDeckGuardAdmin
+    committed=0
+    rollback() {
+      status=$?
+      if [ "$committed" = 0 ]; then
+        launchctl bootout "system/$label" >/dev/null 2>&1 || true
+        rm -f "$helper" "$admin" "$plist" "$manifest" "$trust"
+      fi
+      exit "$status"
+    }
+    trap rollback EXIT
+    trap 'exit 130' INT TERM HUP
+    install -d -o root -g wheel -m 755 /Library/PrivilegedHelperTools /Library/LaunchDaemons
+    install -d -o root -g wheel -m 700 "$config_dir"
+    install -o root -g wheel -m 755 build/FocusDeckRootGuard "$helper"
+    install -o root -g wheel -m 755 build/FocusDeckGuardAdmin "$admin"
+    install -o root -g wheel -m 644 Packaging/dev.stanislav.focusdeck.guard.plist "$plist"
+    /usr/bin/python3 - "$trust" "$caller_uid" "$ui_hash" config/study.json <<'PY'
+import json,os,sys
+out,uid,hash_value,policy=sys.argv[1:]
+policy=json.load(open(policy))
+ids=policy['blocked_app_bundle_ids']
+with open(out,'x') as f: json.dump(dict(schemaVersion=1,allowedUID=int(uid),uiCDHash=hash_value,blockedSigningIDs=ids,blockedDomains=policy['blocked_domains'],protectedDomains=policy['protected_domains']),f)
+os.chmod(out,0o600)
+PY
+    shasum -a 256 "$helper" "$admin" "$plist" "$trust" > "$manifest"
+    chmod 600 "$manifest"
+    launchctl bootstrap system "$plist"
+    committed=1
+    echo 'Idle root app guard installed. No session policy published; no apps blocked. Website domains are not enforced by this daemon.'
+    ;;
+  --recover|--remove)
+    [ "$#" = 1 ] || exit 2
+    check_dir "$config_dir" && check_file "$manifest" || { echo 'No trusted installation manifest; refusing removal.' >&2; exit 3; }
+    for target in "$helper" "$admin" "$plist" "$trust"; do check_file "$target" || { echo 'Foreign/replaced installation metadata; refusing removal.' >&2; exit 3; }; done
+    shasum -a 256 -c "$manifest" >/dev/null || { echo 'Installed content changed; refusing to execute or remove it.' >&2; exit 3; }
+    [ "$(/usr/libexec/PlistBuddy -c 'Print :Label' "$plist")" = "$label" ] || exit 3
+    [ "$(/usr/libexec/PlistBuddy -c 'Print :ProgramArguments:0' "$plist")" = "$helper" ] || exit 3
+    "$admin" --recover
+    if [ "$1" = --recover ]; then exit 0; fi
+    if launchctl print "system/$label" >/dev/null 2>&1; then launchctl bootout "system/$label"; fi
+    rm -f "$helper" "$admin" "$plist" "$manifest" "$trust"
+    echo 'Own verified root app guard removed. Task/history data preserved.'
+    ;;
+  *) echo 'Use --install-idle TARGET_UID ABSOLUTE_UI_BINARY RUNTIME_CDHASH or --remove.' >&2; exit 2;;
+esac

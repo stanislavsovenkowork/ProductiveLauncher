@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <package android:name="dev.stanislav.focusdeck.guard" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- статистика использования: выдаётся вручную в настройках, не через runtime-диалог -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- свайп вниз открывает шторку -->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="dev.stanislav.focusdeck.guard.permission.SCHEDULE_WAKE" />
+
+    <application
+        android:name=".FocusDeckApp"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.FocusDeck"
+        android:enableOnBackInvokedCallback="true">
+
+        <service android:name=".ui.restrictions.AppGateService"
+            android:exported="true" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:label="FocusDeck: ограничение приложений">
+            <intent-filter><action android:name="android.accessibilityservice.AccessibilityService" /></intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/app_gate_service" />
+        </service>
+        <service android:name=".domainfilter.DomainFilterVpnService" android:exported="true"
+            android:permission="android.permission.BIND_VPN_SERVICE" android:foregroundServiceType="specialUse">
+            <intent-filter><action android:name="android.net.VpnService" /></intent-filter>
+            <meta-data android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON" android:value="false" />
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="User-enabled local DNS filtering for a limited protection window" />
+        </service>
+        <service android:name=".data.sync.TelemetrySyncJobService" android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <receiver android:name=".ui.home.BreakReminderReceiver" android:exported="false" />
+
+        <!-- windowSoftInputMode=adjustResize, а не adjustPan: разметка сама отступает
+             под клавиатуру через imePadding. С adjustPan окно двигала ещё и система,
+             и на экране записи дневника это давало рывок — форма появлялась на месте,
+             потом проваливалась и доезжала анимацией. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            android:excludeFromRecents="true"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize|screenLayout|keyboard|uiMode"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.FocusDeck">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

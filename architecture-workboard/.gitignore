@@ -1,0 +1,7 @@
+node_modules/
+build/
+server/bin/
+server/obj/
+**/bin/
+**/obj/
+.atlas/

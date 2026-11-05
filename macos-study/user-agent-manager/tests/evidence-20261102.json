@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-02",
+  "scope": "Unique synthetic user LaunchAgent, own temp job/socket/data, scoped; no production services or personal ledger modified.",
+  "result": "PASS: install, active update refusal, Chrome-host conflict, completed-window update, exact ledger and recurring schedule preservation, failed-start rollback to prior authenticated agent, uninstall with ledger retained.",
+  "cleanup": "Own job, agent process and socket absent; paired scope start/end observed.",
+  "sha256": {
+    "manager_source": "303aae5d14711ec48895e7fc8be02ac3fd149a94d099e2eae4fa32327e428256",
+    "build_script": "0407aef17d1e0f40aa653ae2a3a056697e004943b5007d4cc3e8d43647cc3661",
+    "test_scenario": "f082c8e321b642d22552bd510292b92e91d9694fa5439bcf5964d17224504916",
+    "test_manager": "f9f3e2dfe85899009271b0581fcfa03262dee13d1a90d91798bebae828cbc8ee",
+    "agent_v1": "1f5dac1024e1a387ec18403d284fdbd78980482f723f6a602a72be363132da4b",
+    "agent_v2": "9699b98047abc9ebd09a87b9da104dbed916d6e8cca99be223d1273c5eec19d2",
+    "bad_agent": "b7dc4d648b03f09de33800efa4990e8edd9f9c03adbf518504746e310d3f7ba7",
+    "conflicts_scenario": "d4431e6d327a34d75728924a569ffce85231099c6fa17552bf6967dd2bc2a705"
+  },
+  "limitations": "Test build only; no user production installation, actual SMAppService state check from UI, crash during update, stale-socket recovery, reboot/login, sleep or physical Chrome profile tested.",
+  "additional_result": "PASS: existing foreign plist retained; occupied socket and loaded synthetic SM job reject install; mismatched signed Chrome host pin rejects install."
+}

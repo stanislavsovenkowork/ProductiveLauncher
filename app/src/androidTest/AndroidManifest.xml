@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Safe target for testing the launcher gate; never included in the personal application. -->
+        <activity android:name="dev.stanislav.focusdeck.qa.LauncherProbeActivity"
+            android:label="FocusDeck QA Probe" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
